@@ -83,11 +83,4 @@
     <script async src="{{ '/js/mainnavigation.min.js' | absolute_url }}"></script>
     {% endif %}
 
-    <!-- JS redirect to https -->
-    <script type="text/javascript">
-    var host = "protesilaos.com";
-    if ((host == window.location.host) && (window.location.protocol != 'https:')) {
-    window.location = window.location.toString().replace(/^http:/, "https:");
-    }
-    </script>
 </head>
