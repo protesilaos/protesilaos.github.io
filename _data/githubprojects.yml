@@ -13,6 +13,3 @@
 - name: Tempus Themes Generator
   description: "Tool to build Tempus themes on demand. The epicentre of the Tempus themes project and where all the underlying code and schemes are to be found."
   url: "https://github.com/protesilaos/tempus-themes-generator"
-- name: Tempus Themes utils
-  description: "Helper scripts and utilities to streamline and automate the maintenance of the Tempus themes project."
-  url: "https://github.com/protesilaos/tempus-themes-utils"
