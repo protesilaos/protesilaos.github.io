@@ -12,7 +12,7 @@ exclude:
   - _archive
   - master.xml
   - _layouts/seminar.html
-  - _pages/certificates
+  - pages/certificates
   - _pages # --------------------- Static Pages --------------------
   - _pages/blog
   - _pages/books
