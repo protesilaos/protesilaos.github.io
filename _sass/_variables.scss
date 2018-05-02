@@ -81,22 +81,22 @@ $notifycrit: $col1;
 // Scale and measures
 // =============================================================================
 
-// Homepage and any greeter page
-$impact-text-s: 1.802rem;
-$impact-text-m: 2.027rem;
-$impact-text-l: 2.28rem;
-$impact-text-xl: 2.542rem;
-
+// Major second (ratio is X * 1.125)
 // NOTE responsive font sizes under mixins section
-// Major second
 $xxxlsize: 1.602rem;
 $xxlsize: 1.424rem;
 $xlsize: 1.266rem;
-$lsize: 1.115rem;
+$lsize: 1.125rem;
 $msize: 1rem;
 $ssize: 0.889rem;
 $xssize: 0.79rem;
 $xxssize: 0.702rem;
+
+// Homepage and any greeter page
+$impact-text-s: 1.802rem;
+$impact-text-m: 2.027rem;
+$impact-text-l: 2.281rem;
+$impact-text-xl: 2.566rem;
 
 // Space
 // -----------------------------------------------------------------------------
@@ -110,7 +110,7 @@ $space-3: 3rem;
 // Typographic spacing
 $base-font-size: 16px;
 $line-height: 1.424; // Equal to $xxlsize
-$heading-line-height: 1.115; // Equal to $lsize
+$heading-line-height: 1.125; // Equal to $lsize
 $vertical-rhythm-0: #{$line-height}rem;
 $vertical-rhythm-1: #{$line-height * 1.5}rem;
 $vertical-rhythm-2: #{$line-height * 2.5}rem;
