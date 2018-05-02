@@ -1,0 +1,18 @@
+- name: AUR packages
+  description: "The packages I maintain on the Arch User Repository (for use in Arch Linux and derivatives)."
+  url: "https://github.com/protesilaos/aur-packages"
+- name: Dotfiles
+  description: "My custom working environment and configuration files for some of my favourite programs on GNU/Linux. Managed with GNU Stow."
+  url: "https://github.com/protesilaos/dotfiles"
+- name: Prot16
+  description: "Colour schemes mainly for highlighting code syntax. Each theme uses a 16-colour palette. It comes in light and dark variants."
+  url: "https://github.com/protesilaos/prot16"
+- name: Tempus Themes
+  description: "Tempus is a collection of themes for Vim, text editors, and terminal emulators that are compliant at the very least with the WCAG AA accessibility standard for colour contrast"
+  url: "https://github.com/protesilaos/tempus-themes"
+- name: Tempus Themes Generator
+  description: "Tool to build Tempus themes on demand. The epicentre of the Tempus themes project and where all the underlying code and schemes are to be found."
+  url: "https://github.com/protesilaos/tempus-themes-generator"
+- name: Tempus Themes utils
+  description: "Helper scripts and utilities to streamline and automate the maintenance of the Tempus themes project."
+  url: "https://github.com/protesilaos/tempus-themes-utils"

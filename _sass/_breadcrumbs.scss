@@ -1,0 +1,31 @@
+.breadcrumbs {
+    @extend %clearfix;
+
+    @include fluid-font-size($msize);
+    @include border(top, $border-width-medium, solid, $border-color-dark-1);
+    @include border(bottom, $border-width-medium, solid, $border-color-dark-1);
+
+    @include tablet {
+        margin-top: $vertical-rhythm-2;
+    }
+
+    @include desktop {
+        margin-top: $vertical-rhythm-3;
+    }
+
+    background: $basebgalt;
+    padding: $space-1;
+    margin: $vertical-rhythm-1 0;
+
+    .breadcrumbs-path-link {
+        font-weight: 700;
+    }
+
+    .breadcrumbs-divider {
+        font-weight: 700;
+    }
+
+    .breadcrumbs-current-item-title {
+        font-style: italic;
+    }
+}

@@ -1,0 +1,65 @@
+// TODO review class names and this entire stylesheet
+.books-meta {
+    @include fluid-font-size($ssize);
+
+    font-size: $ssize;
+
+    .books-options {
+        @extend %clearfix;
+
+        margin: $space-1 0;
+        padding: $space-1 0;
+
+        a.books-button {
+            @include radius(3%);
+            @include transition;
+
+            @include tablet {
+                padding: $space-0 $space-1;
+            }
+
+            border-bottom: none;
+            display: inline-block;
+            padding: $space-1;
+            text-transform: lowercase;
+
+            &:hover,
+            &:focus,
+            &:active {
+                border-bottom: none;
+            }
+
+            &:last-of-type {
+                margin-left: $space-0;
+            }
+
+            &.read-online {
+                background: $btnmainbg;
+                color: $btnmainfg;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background: $btnmainbgactive;
+                    color: $btnmainfgactive;
+                }
+            }
+
+            &.read-offline {
+                background: $btnaltbg;
+                color: $btnaltfg;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background: $btnaltbgactive;
+                    color: $btnaltfgactive;
+                }
+            }
+        }
+    }
+
+    span {
+        font-weight: 700;
+    }
+}

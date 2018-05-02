@@ -1,0 +1,69 @@
+// Prot16 project pages
+// =============================================================================
+
+// Main palette
+// -----------------------------------------------------------------------------
+.scheme-item-page-palette {
+    @extend %clearfix;
+}
+
+.scheme-item-page-color-block {
+    @include tablet {
+        width: (($measure / 4) - $space-0) - $space-0;
+        height: (($measure / 4) - $space-0) - $space-0;
+        line-height: (($measure / 4) - $space-0) - $space-0;
+        margin: $space-0;
+    }
+
+    @include desktop {
+        width: (($measure-xl / 4) - $space-0) - $space-0;
+        height: (($measure-xl / 4) - $space-0) - $space-0;
+        line-height: (($measure-xl / 4) - $space-0) - $space-0;
+    }
+
+    display: block;
+    float: left;
+    width: (($measure / 8) - ($space-0 / 2)) - ($space-0 / 2);
+    height: (($measure / 8) - ($space-0 / 2)) - ($space-0 / 2);
+    padding: 0;
+    margin: $space-0 / 2; // XXX NOTE this is an ad hoc measure and should be avoided
+
+    // NOTE these style the text with the colour value
+    // NOTE line-height should be equal to height for vertical centering
+    text-align: center;
+    line-height: (($measure / 8) - ($space-0 / 2)) - ($space-0 / 2);
+}
+
+// Terminal palette
+// -----------------------------------------------------------------------------
+.scheme-item-page-terminal,
+.scheme-item-page-terminal-palette {
+    @extend %clearfix;
+}
+
+.scheme-item-page-terminal-color-block {
+    @include tablet {
+        width: (($measure / 8) - $space-0) - $space-0;
+        height: (($measure / 8) - $space-0) - $space-0;
+        line-height: (($measure / 8) - $space-0) - $space-0;
+        margin: $space-0;
+    }
+
+    @include desktop {
+        width: (($measure-xl / 8) - $space-0) - $space-0;
+        height: (($measure-xl / 8) - $space-0) - $space-0;
+        line-height: (($measure-xl / 8) - $space-0) - $space-0;
+    }
+
+    display: block;
+    float: left;
+    width: (($measure / 8) - ($space-0 / 2)) - ($space-0 / 2);
+    height: (($measure / 8) - ($space-0 / 2)) - ($space-0 / 2);
+    padding: 0;
+    margin: $space-0 / 2; // XXX NOTE this is an ad hoc measure and should be avoided
+
+    // NOTE these style the text with the colour value
+    // NOTE line-height should be equal to height for vertical centering
+    text-align: center;
+    line-height: (($measure / 8) - ($space-0 / 2)) - ($space-0 / 2);
+}

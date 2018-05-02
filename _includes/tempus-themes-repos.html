@@ -1,0 +1,6 @@
+{% assign repos = site.data.tempus-themes-repos %}
+<ul>
+{% for repo in repos %}
+<li><a href="{{ repo.url }}">{{ repo.name }}</a></li>
+{% endfor %}
+</ul>

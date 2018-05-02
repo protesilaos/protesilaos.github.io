@@ -1,0 +1,29 @@
+---
+layout: index
+title: "Coding blog"
+subtitle: "Writings about code, free software, and my experience with GNU/Linux."
+excerpt: "Writings about code, free software, and my experience with GNU/Linux."
+index-feed:
+  text: Code Blog RSS
+  url: "/codelog.xml"
+permalink: /codelog/
+---
+{% assign codelogs = site.codelog | sort: 'date' | reverse %}
+
+<div class="index index-blog">
+
+    <p class="info index-notification">
+        For my political writings, refer to the <a href="/blog/">main blog</a>.
+    </p>
+
+    <ul>
+    {% for codelog in codelogs %}
+        <li>
+            <a class="index-blog-post-heading" href="{{ codelog.url | relative_url }}">{{ codelog.title }}</a>
+            <time class="index-blog-post-timestamp">{{ codelog.date | date: site.date_format }}</time>
+            <p class="index-blog-post-excerpt">{{ codelog.excerpt }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+
+</div>

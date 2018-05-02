@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="index-impact-header">
+    <div class="index-impact-header-inner">
+        <h1 class="index-impact-header-title">
+            {{ page.title }}
+        </h1>
+
+        {% if page.subtitle %}
+            <h2 class="index-impact-header-subtitle">
+                {{ page.subtitle }}
+            </h2>
+        {% endif %}
+
+        {% if page.index-feed %}
+            <div class="index-impact-header-meta">
+                <a class="index-rss-feed" href="{{ page.index-feed.url }}">
+				<img class="index-rss-icon" src="{{ 'images/svg/rss.svg' | absolute_url }}" alt="RSS/Atom Feed icon"/>
+                    {{ page.index-feed.text }}
+                </a>
+            </div>
+        {% endif %}
+
+    </div>
+</div>
+
+<div class="index-wrapper">
+    {{ content }}
+</div>

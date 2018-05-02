@@ -1,0 +1,25 @@
+---
+layout: index
+title: "Blog Archive"
+excerpt: "Archive of my writings."
+index-feed:
+  text: EU Blog RSS
+  url: "/feed.xml"
+permalink: /blog-archive/
+---
+{% assign archives = site.archive | sort: 'date' | reverse %}
+
+<div class="index index-blog">
+
+    <p class="info index-notification">This section contains older posts. To view the most recent ones, refer to the <a href="/blog">main politics blog</a>.</p>
+
+    <ul>
+    {% for archive in archives %}
+        <li>
+            <a class="index-blog-post-heading" href="{{ archive.url | relative_url }}">{{ archive.title }}</a>
+            <time class="index-blog-post-timestamp">{{ archive.date | date: site.date_format }}</time>
+        </li>
+    {% endfor %}
+    </ul>
+
+</div>

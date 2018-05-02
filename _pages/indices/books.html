@@ -1,0 +1,25 @@
+---
+layout: index
+permalink: /books/
+title: "Books and publications"
+subtitle: "Independent web based publishing on protesilaos.com"
+excerpt: "Index of the books published on protesilaos.com. These are free of charge."
+---
+
+{% assign books = site.data.books | sort: 'date' | reverse %}
+
+<div class="index index-blog">
+    <ul>
+    {% for book in books %}
+        <li>
+            <a class="index-blog-post-heading" href="{{ book.url | relative_url }}">{{ book.title }}</a>
+            <time class="index-blog-post-timestamp">{{ book.date | date: site.date_format }}</time>
+            <p class="index-blog-post-excerpt">{{ book.description }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+    
+    <div class="index-notice-card index-notification">
+        {{ site.data.text.books.distribution }}
+    </div>
+</div>

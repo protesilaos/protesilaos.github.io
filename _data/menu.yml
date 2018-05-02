@@ -1,0 +1,8 @@
+- name: About
+  url: "/author/"
+- name: Blog
+  url: "/blog/"
+- name: Books
+  url: "/books/"
+- name: Code
+  url: "/code/"

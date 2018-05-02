@@ -1,0 +1,97 @@
+// Homepage must be single screen. No scrollbar.
+.homepage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background: $brandbg;
+    color: $brandfg;
+}
+
+// The content must be vertically centered
+.homepage-greeter {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.homepage-greeter-inner {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    max-width: calc(calc(100% - 1rem) - 1rem); // FIXME space-1 was not being parsed
+    padding: $space-1;
+}
+
+.homepage-greeter-title {
+    @include fluid-font-size($impact-text-xl);
+
+    font-size: $xxlsize;
+    color: $brandfg;
+}
+
+.homepage-greeter-subtitle {
+    @include fluid-font-size($impact-text-s);
+
+    font-size: $lsize;
+    font-weight: 400;
+    color: $brandfgalt;
+}
+
+.homepage-greeter-navigation {
+    @include fluid-font-size($impact-text-s);
+
+    font-size: $lsize;
+
+    ul {
+        @extend %clearfix;
+
+        @include tablet {
+            margin: $space-2 0;
+        }
+
+        @include desktop {
+            margin: $space-3 0;
+        }
+
+        list-style-type: none;
+        margin: $space-1 0 0;
+        padding: 0;
+
+        li {
+            @include tablet {
+                display: inline-block;
+                margin: 0 $space-1;
+                padding: $space-1 $space-1;
+            }
+
+            display: block;
+            width: calc(calc(100% - $space-1) - $space-1);
+            padding: $space-0 0;
+            margin: $space-0;
+
+            a {
+                @include tablet {
+                    font-weight: 400;
+                }
+
+                font-weight: 700;
+                color: $brandlink;
+
+                &:hover {
+                    color: $brandlinkalt;
+                }
+            }
+        }
+    }
+}

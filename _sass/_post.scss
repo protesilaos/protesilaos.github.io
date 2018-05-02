@@ -1,0 +1,126 @@
+%container {
+    @include tablet {
+        max-width: $measure;
+    }
+
+    @include desktop {
+        max-width: $measure-xl;
+    }
+
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: $space-1;
+}
+
+.post {
+    @extend %container;
+}
+
+.post-header {
+    padding: 0;
+
+    @include tablet {
+        padding: $vertical-rhythm-0 0;
+    }
+
+    h1 {
+        color: $basefg;
+    }
+
+    .subtitle {
+        color: $basefgalt;
+        font-weight: 400;
+    }
+
+    time {
+        @include fluid-font-size($xxssize);
+
+        font-size: $ssize;
+        margin: $vertical-rhythm-0 0;
+    }
+}
+
+.post-header-inner,
+.post-footer-inner {
+    @extend %container;
+}
+
+// NOTE same styles are found in _sass/_index.scss for `.index-item-label`
+// NOTE used in seminar layout to display arbitrary 'label' (description of seminar series)
+.post-header-subtitle-label {
+    @include fluid-font-size($xxssize);
+
+    font-size: $ssize;
+    color: $basefgalt;
+}
+
+.post-footer {
+    background: $basebg;
+}
+
+.post-meta {
+    @extend p;
+
+    // TODO check whether this applies anywhere except _layouts for books
+    // Rendered irrelevant as books will use time tag instead
+    span {
+        &:not(a) {
+            color: $basefgalt;
+        }
+
+        + span {
+            @include tablet {
+                display: inline;
+                margin-left: $space-0;
+
+                &::before {
+                    content: '//';
+                    display: inline-block;
+                    padding-right: $space-0;
+                }
+            }
+
+            display: block;
+            font-size: $ssize;
+            margin-top: $space-0;
+        }
+    }
+}
+
+p,
+li {
+    code {
+        background: $inlinecodebg;
+        color: $inlinecodefg;
+    }
+}
+
+// Auxiliary styles
+h1.h1-plus {
+    font-size: $impact-text-l; // For books print-page title
+}
+
+.profile-pic {
+    border-radius: 50%;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.author-profile-pic img { // Used in about me page
+    max-height: 150px;
+    max-width: 150px;
+
+    @include tablet {
+        float: right;
+        margin-left: $space-1;
+        margin-bottom: $space-1;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    @include desktop {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}

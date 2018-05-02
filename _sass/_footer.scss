@@ -1,0 +1,26 @@
+.footer {
+    @extend %clearfix;
+
+    @include fluid-font-size($msize);
+
+    @include tablet {
+        padding: $vertical-rhythm-0 0;
+    }
+
+    font-size: $msize;
+    padding: $space-0 0;
+    margin-top: $vertical-rhythm-0;
+}
+
+.footer-block {
+    @include fluid-width-measure;
+
+    color: $brandfg;
+    display: block;
+    padding: $space-1;
+    margin: 0 auto;
+
+    + .footer-block {
+        @include border(top, $border-width-thin, solid, $border-color-light-2);
+    }
+}

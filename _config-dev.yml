@@ -1,0 +1,61 @@
+limit_posts: 1
+incremental: false
+exclude:
+  - README.md # ------------------ Basis ---------------------------
+  - Gemfile
+  - vendor
+  - package.json
+  - node_modules
+  - gulpfile.js
+  - .stylelintrc
+  - images
+  - _archive
+  - master.xml
+  - _layouts/seminar.html
+  - _pages/certificates
+  - _pages # --------------------- Static Pages --------------------
+  - _pages/blog
+  - _pages/books
+  - _pages/indices
+  - greek.xml # ------------------ Greek ---------------------------
+  - _greek
+  - _pages/indices/greek.html
+  - _books # --------------------- Books ---------------------------
+  - _books/eudi
+  - _books/euguide
+  - _books/euhandbook
+  - _books/sov
+  - _books/stsns
+  - _pages/indices/books
+  - _pages/indices/books.html
+  - _layouts/eudi.html
+  - _layouts/euguide.html
+  - _layouts/euhandbook.html
+  - _layouts/print.html
+  - _layouts/sov.html
+  - _layouts/stsns.html
+  - _includes/booksnav.html
+  - _codelog # ------------------- Code ----------------------------
+  - codelog.xml
+  - _pages/indices/codelog.html
+  - _pages/indices/code.html
+  - _includes/cypher-syntax.scss
+  - _schemes # ------------------- Schemes -------------------------
+  - _includes/main.min.js
+  - _pages/indices/schemes.html
+  - _layouts/scheme.html
+  - _data/themes.yml
+  - _includes/prot16-project-template.md
+  - _includes/prot16-packages.html
+  - _includes/prot16-palette.html
+  - _includes/prot16-vim-packages.html
+  - _includes/prot16-project-template.md
+  - _tempus-themes
+  - _pages/indices/tempus-themes.html
+  - _data/tempus-themes.yml
+  - _data/tempus-themes-packages.yml
+  - _data/tempus-themes-repos.yml
+  - _includes/tempus-themes-packages.html
+  - _includes/tempus-themes-palette.html
+  - _includes/tempus-themes-project-template.md
+  - _includes/tempus-themes-repos.html

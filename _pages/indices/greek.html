@@ -1,0 +1,27 @@
+---
+layout: index
+title: "Αρθρογραφία στα ελληνικά"
+subtitle: "Κείμενα πολιτικού στοχασμού"
+excerpt: "Συλλογή των άρθρων μου στην ελληνική."
+index-feed:
+  text: Ροή RSS
+  url: "/greek.xml"
+permalink: /greek/
+---
+
+{% assign greeks = site.greek | sort: 'date' | reverse %}
+
+<div class="index index-blog">
+
+    <p class="info index-notification">For my political writings, refer to the <a href="/blog/">main blog</a>.</p>
+
+    <ul>
+    {% for greek in greeks %}
+        <li>
+            <a class="index-blog-post-heading" href="{{ greek.url | relative_url }}">{{ greek.title }}</a>
+            <time class="index-blog-post-timestamp">{{ greek.date | date: site.date_format }}</time>
+            <p class="index-blog-post-excerpt">{{ greek.excerpt }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+</div>

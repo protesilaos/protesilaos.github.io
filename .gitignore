@@ -1,0 +1,12 @@
+public
+test
+.sass-cache/
+.jekyll-metadata
+node_modules
+.directory
+vendor
+.bundle
+*.swp
+.#*
+**/.#*
+npm-debug.log

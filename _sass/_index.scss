@@ -1,0 +1,321 @@
+// Index header impact styles
+// =============================================================================
+.index-impact-header {
+    @extend %clearfix;
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.index-impact-header-inner {
+    @include fluid-width-measure;
+
+    @include tablet {
+        padding: $vertical-rhythm-1 0;
+    }
+
+    @include desktop {
+        padding: $vertical-rhythm-2 0;
+    }
+
+    display: block;
+    max-width: 100%;
+    padding: $vertical-rhythm-0 $space-1;
+    margin: 0 auto;
+}
+
+// Clear default styles for heading elements
+// Add spacing between them
+%index-impact-heading-elements {
+    padding: 0;
+    margin: 0;
+
+    + %index-impact-heading-elements {
+        @include tablet {
+            margin-top: $vertical-rhythm-1;
+        }
+
+        margin-top: $vertical-rhythm-0;
+    }
+}
+
+.index-impact-header-title {
+    @extend %index-impact-heading-elements;
+
+    @include fluid-font-size($impact-text-l);
+
+    font-size: $xxlsize;
+    font-weight: 400;
+    color: $basefg;
+}
+
+.index-impact-header-subtitle {
+    @extend %index-impact-heading-elements;
+
+    @include fluid-font-size($impact-text-s);
+
+    font-size: $lsize;
+    font-weight: 400;
+    color: $basefgalt;
+}
+
+.index-impact-header-meta {
+    @extend %index-impact-heading-elements;
+
+    .index-rss-feed {
+        @include fluid-font-size($ssize);
+		@include radius(3%);
+		@include transition;
+
+        font-size: $ssize;
+        background: $btnmainbg;
+        color: $btnmainfg;
+        padding: $space-0;
+
+        &:hover {
+            background: $btnmainbgactive;
+            color: $btnmainfgactive;
+        }
+    }
+
+    .index-rss-icon {
+        @include fluid-icon-size($msize);
+        
+        width: $msize;
+        height: $msize;
+        vertical-align: middle;
+    }
+}
+
+// Index content styles
+// =============================================================================
+.index {
+    padding: $space-1;
+
+    // For indices that include multiple loops, e.g. /code/
+    + .index {
+        @include tablet {
+            margin-top: $vertical-rhythm-1;
+        }
+
+        @include desktop {
+            margin-top: $vertical-rhythm-2;
+        }
+
+        margin-top: $vertical-rhythm-0;
+    }
+}
+
+.index-blog {
+    @include fluid-width-measure;
+    @include fluid-font-size($msize);
+
+    @include tablet {
+        margin: $vertical-rhythm-1 auto;
+    }
+
+    @include desktop {
+        margin: $vertical-rhythm-2 auto;
+    }
+
+    margin: $vertical-rhythm-0 auto;
+    font-size: $msize;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: block;
+            width: 100%;
+
+            + li {
+                @include tablet {
+                    padding-top: $vertical-rhythm-1;
+                    margin-top: $vertical-rhythm-1;
+                }
+
+                @include desktop {
+                    padding-top: $vertical-rhythm-2;
+                    margin-top: $vertical-rhythm-2;
+                }
+
+                @include border(top, $border-width-thin, solid, $border-color-dark-0);
+
+                padding-top: $vertical-rhythm-0;
+                margin-top: $vertical-rhythm-0;
+            }
+        }
+    }
+}
+
+.index-blog-section-heading {
+    @include fluid-font-size($impact-text-l);
+    @include border(bottom, $border-width-thick, solid, $border-color-dark-2);
+
+    @include tablet {
+        margin-bottom: $vertical-rhythm-1;
+    }
+
+    @include desktop {
+        margin-bottom: $vertical-rhythm-2;
+    }
+
+    font-size: $xxlsize;
+    margin-bottom: $vertical-rhythm-0;
+}
+
+// Clear index blog item contents and add space between them
+%index-blog-post-content-element {
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    + %index-blog-post-content-element {
+        margin-top: $vertical-rhythm-0;
+    }
+}
+
+.index-blog-post-heading {
+    @extend %index-blog-post-content-element;
+
+    @include fluid-font-size($xlsize);
+
+    font-size: $xlsize;
+    font-weight: 700;
+    line-height: $heading-line-height;
+}
+
+.index-blog-post-timestamp {
+    @extend %index-blog-post-content-element;
+
+    @include fluid-font-size($ssize);
+
+    font-size: $ssize;
+}
+
+.index-blog-post-excerpt {
+    @extend %index-blog-post-content-element;
+
+    @include fluid-font-size($msize);
+
+    font-size: $msize;
+}
+
+// Used in seminars index to display seminar theme
+.index-blog-post-meta-label {
+    @extend %index-blog-post-content-element;
+
+    @include fluid-font-size($ssize);
+
+    font-size: $ssize;
+    font-style: italic;
+    color: $basefgalt;
+}
+
+// Used to display a prominent message in the posts' array
+// Currently implemented in the books section
+.index-notice-card {
+    @include fluid-font-size($ssize);
+    @include notification($notifyinfo);
+
+    @include tablet {
+        margin-top: $vertical-rhythm-2;
+    }
+
+    @include desktop {
+        margin-top: $vertical-rhythm-3;
+    }
+
+    font-size: $ssize;
+    padding: $space-1;
+    margin-top: $vertical-rhythm-1;
+}
+
+// Adds some extra styles to the _notifications
+.index-notification {
+    a {
+        font-weight: 700;
+    }
+}
+
+// The "all posts" button
+.index-blog-redirection-button {
+    @include fluid-font-size($msize);
+
+    @include tablet {
+        margin-top: $vertical-rhythm-1;
+    }
+
+    @include desktop {
+        margin-top: $vertical-rhythm-2;
+    }
+
+    margin-top: $vertical-rhythm-0;
+    display: block;
+
+    a {
+        background: $btnmainbg;
+        color: $btnmainfg;
+        padding: $space-0;
+
+        &:hover {
+            background: $btnmainbgactive;
+            color: $btnmainfgactive;
+        }
+    }
+}
+
+// Index for Prot16 elements
+// =============================================================================
+
+// Each li item in the loop
+.index-scheme-item {
+    @extend %clearfix;
+
+    display: block;
+
+    + .index-scheme-item {
+        @include tablet {
+            margin-top: $vertical-rhythm-2;
+        }
+
+        @include desktop {
+            margin-top: $vertical-rhythm-3;
+        }
+
+        margin-top: $vertical-rhythm-1;
+    }
+}
+
+// The wrapper of the entire palette
+.index-scheme-palette {
+    @extend %clearfix;
+
+    @include fluid-width-measure;
+
+    display: block;
+}
+
+// Each colour of the palette
+.index-scheme-palette-color-block {
+    @include tablet {
+        width: (($measure / 8) - $space-0) - $space-0;
+        height: (($measure / 8) - $space-0) - $space-0;
+        margin: $space-0;
+    }
+
+    @include desktop {
+        width: (($measure-xl / 8) - $space-0) - $space-0;
+        height: (($measure-xl / 8) - $space-0) - $space-0;
+    }
+
+    display: block;
+    float: left;
+    width: (($measure / 16) - ($space-0 / 2)) - ($space-0 / 2);
+    height: (($measure / 16) - ($space-0 / 2)) - ($space-0 / 2);
+    padding: 0;
+    margin: $space-0 / 2; // XXX NOTE this is an ad hoc measure and should be avoided
+}

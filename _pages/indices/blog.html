@@ -1,0 +1,26 @@
+---
+layout: index
+title: "Blog on EU and politics"
+subtitle: "Analyses on political theory, current EU issues, and the European integration process in general."
+excerpt: "Opinion on European Union politics"
+index-feed:
+  text: EU Blog RSS
+  url: "/feed.xml"
+permalink: /blog/
+---
+
+<div class="index index-blog">
+    <ul>
+    {% for post in site.posts %}
+        <li>
+            <a class="index-blog-post-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <time class="index-blog-post-timestamp">{{ post.date | date: site.date_format }}</time>
+            <p class="index-blog-post-excerpt">{{ post.excerpt }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <div class="index-blog-redirection-button">
+        <a href="/blog-archive/">Entire blog archive</a>
+    </div>
+</div>

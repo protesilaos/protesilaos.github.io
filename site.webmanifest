@@ -1,0 +1,19 @@
+{
+    "name": "Protesilaos",
+    "short_name": "Protesilaos",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?v=WGL35pk4QR",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png?v=WGL35pk4QR",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#36508a",
+    "background_color": "#36508a",
+    "display": "standalone"
+}

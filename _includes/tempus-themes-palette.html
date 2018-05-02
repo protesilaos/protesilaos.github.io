@@ -1,0 +1,80 @@
+{% assign termcolorClass = 'scheme-item-page-terminal-color-block' %}
+
+{% assign themes = site.data.tempus-themes %}
+
+{% for theme in themes %}
+{% if page.permalink contains theme.slug %}
+
+{% if theme.colvr == 'dark' %}
+
+<div class="scheme-item-page-terminal">
+
+    <div class="clearfix">
+        <div class="{{ termcolorClass }}" style="{{ theme.col0 | prepend: 'background: #' }}; {{ theme.colfg | prepend: 'color: #' }}">{{ theme.col0 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col1 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col1 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col2 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col2 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col3 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col3 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col4 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col4 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col5 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col5 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col6 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col6 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col7 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col7 }}</div>
+    </div>
+
+    <div class="clearfix">
+        <div class="{{ termcolorClass }}" style="{{ theme.col8 | prepend: 'background: #' }}; {{ theme.colfg | prepend: 'color: #' }}">{{ theme.col8 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col9 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col9 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col10 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col10 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col11 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col11 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col12 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col12 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col13 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col13 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col14 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col14 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col15 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col15 }}</div>
+    </div>
+
+</div>
+
+{% else %}
+
+<div class="scheme-item-page-terminal">
+
+    <div class="clearfix">
+        <div class="{{ termcolorClass }}" style="{{ theme.col0 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col0 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col1 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col1 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col2 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col2 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col3 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col3 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col4 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col4 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col5 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col5 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col6 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col6 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col7 | prepend: 'background: #' }}; {{ theme.colfg | prepend: 'color: #' }}">{{ theme.col7 }}</div>
+    </div>
+
+    <div class="clearfix">
+        <div class="{{ termcolorClass }}" style="{{ theme.col8 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col8 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col9 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col9 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col10 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col10 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col11 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col11 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col12 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col12 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col13 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col13 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col14 | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.col14 }}</div>
+        <div class="{{ termcolorClass }}" style="{{ theme.col15 | prepend: 'background: #' }}; {{ theme.colfg | prepend: 'color: #' }}">{{ theme.col15 }}</div>
+    </div>
+
+</div>
+
+{% endif %}
+<div class="scheme-item-page-terminal">
+    <div class="scheme-item-page-terminal-theme-variant">
+        <p>
+            <strong>Base values</strong><br/>
+            Background: <span style="{{ theme.colbg | prepend: 'background: #' }}; {{ theme.colfg | prepend: 'color: #' }}">{{ theme.colbg }}</span><br/>
+            Background-alt: <span style="{{ theme.colbgalt | prepend: 'background: #' }}; {{ theme.colfgalt | prepend: 'color: #' }}">{{ theme.colbgalt }}</span><br/>
+            Foreground: <span style="{{ theme.colfg | prepend: 'background: #' }}; {{ theme.colbg | prepend: 'color: #' }}">{{ theme.colfg }}</span><br/>
+            Foreground-alt: <span style="{{ theme.colfgalt | prepend: 'background: #' }}; {{ theme.colbgalt | prepend: 'color: #' }}">{{ theme.colfgalt }}</span><br/>
+            Cursor: <span style="{{ theme.colcr | prepend: 'background: #' }}; {{ theme.colcr2 | prepend: 'color: #' }}">{{ theme.colcr }}</span><br/>
+            Cursor2: <span style="{{ theme.colcr2 | prepend: 'background: #' }}; {{ theme.colcr | prepend: 'color: #' }}">{{ theme.colcr2 }}</span><br/>
+        </p>
+    </div>
+</div>
+
+{% endif %}
+{% endfor %}

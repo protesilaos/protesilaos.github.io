@@ -1,0 +1,33 @@
+.medialayer {
+    width: 100%;
+    padding: $vertical-rhythm-0 0;
+    margin: $vertical-rhythm-0 0;
+}
+
+.mediaframe {
+    @include tablet {
+        max-width: $measure;
+    }
+
+    @include desktop {
+        max-width: $measure-xl;
+    }
+
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.mediawrapper {
+    height: 0;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    position: relative;
+
+    iframe {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}

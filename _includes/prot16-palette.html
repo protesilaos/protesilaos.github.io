@@ -1,0 +1,48 @@
+{% assign themes = site.data.themes %}
+
+{% for theme in themes %}
+{% if page.permalink contains theme.url %}
+
+<div class="scheme-item-page-palette">
+
+    <div class="clearfix">
+        <h3>Dark base</h3>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.dbg | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.dbg }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.dhl | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.dhl }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.dt2 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt2 }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt1 }}</div>
+    </div>
+
+    <div class="clearfix">
+        <h3>Light base</h3>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.lbg | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.lbg }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.lhl | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.lhl }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.lt2 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt2 }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt1 }}</div>
+    </div>
+
+    <div class="clearfix">
+        <h3>Accent values</h3>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.red | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.red }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.ora | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.ora }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.gre | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.gre }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.blu | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.blu }}</div>
+    </div>
+    
+    <div class="clearfix">
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.mag | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.mag }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.yel | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.yel }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.cya | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.cya }}</div>
+        <div class="scheme-item-page-color-block" style="{{ theme.palette.vio | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.vio }}</div>
+    </div>
+
+    <br/>
+
+    <small>
+        Base values from left to right: background, background highlight, secondary text, primary text.
+    </small>
+
+</div>
+
+{% endif %}
+{% endfor %}

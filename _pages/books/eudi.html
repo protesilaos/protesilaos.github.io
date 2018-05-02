@@ -1,0 +1,48 @@
+---
+layout: index
+title: "Dialogues on EU politics"
+subtitle: "On the specifics of EU politics and the European integration process"
+excerpt: "A free web based book about politics, political theory, the European Union, and the European integration process."
+permalink: /eudi/
+breadcrumbs: true
+---
+
+{% assign eudis = site.books | where: 'flag', 'eudi' %}
+
+<div class="index index-blog">
+
+    <div class="books-meta">
+
+        <p>Published: <span>{{ site.data.text.eudi.datefull }}</span><br/>Book version: <span>{{ site.data.text.eudi.version }}</span></p>
+
+        <div class="books-options">
+
+            <a class="books-button read-online" href="{{ '/eudi/introduction/'  | prepend: site.url }}">
+            Read online
+            </a>
+            <a class="books-button read-offline" href="{{ '/eudi/print/'  | prepend: site.url }}">
+            Print version
+            </a>
+
+        </div>
+
+    </div>
+    
+    <h2 class="index-blog-section-heading">Contents</h2>
+
+    <div>
+
+        <ul>
+        {% for eudi in eudis %}
+            <li>
+                <a class="index-blog-post-heading" href="{{ eudi.url | relative_url }}">{{ forloop.index }}. {{ eudi.title }}</a>
+                <p class="index-blog-post-excerpt">{{ eudi.excerpt }}</p>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </div>
+
+    {% include booksnav.html %}
+    
+</div>

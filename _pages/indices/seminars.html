@@ -1,0 +1,25 @@
+---
+layout: index
+title: "Seminars on politics"
+subtitle: "Presentations on current issues and theoretical themes"
+excerpt: "A series of seminars on European Union politics and other issues of political organisation."
+index-feed:
+  text: EU Blog RSS
+  url: "/feed.xml"
+permalink: /seminars/
+---
+
+{% assign seminars = site.posts | where: 'layout', 'seminar' | sort: 'date' | reverse %}
+
+<div class="index index-blog">
+    <ul>
+    {% for seminar in seminars %}
+        <li>
+            <a class="index-blog-post-heading" href="{{ seminar.url | relative_url }}">{{ seminar.title }}</a>
+            <time class="index-blog-post-timestamp">{{ seminar.date | date: site.date_format }}</time>
+            <p class="index-blog-post-excerpt">{{ seminar.excerpt }}</p>
+            <p class="index-blog-post-meta-label">{{ seminar.lecturetheme }} ({{ seminar.lecture }})</p>
+        </li>
+    {% endfor %}
+    </ul>
+</div>

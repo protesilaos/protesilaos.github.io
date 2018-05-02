@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post container">
+
+    <div class="post-inner">
+        <div class="post-header">
+            <h1>{{ page.title }}</h1>
+            {% if page.subtitle %}
+                <h2 class="subtitle">{{ page.subtitle }}</h2>
+            {% endif %}
+	    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    </div>
+    {{ content }}
+
+</div>
+
+</article>
+
+<div class="post-footer">
+
+  <div class="post-footer-inner">
+
+    <div id="book-nextprev" class="nextprev clearfix">
+      <div class="nextprev-item">
+        <span class="nextprev-link">See all:</span> <a href="/books/">Books and publications</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>

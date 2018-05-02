@@ -1,0 +1,41 @@
+a {
+    color: $baselinkfg;
+    text-decoration: none;
+
+    &:not(.active) {
+        @include transition;
+    }
+
+    &:hover,
+    &:active {
+        color: $baselinkfghover;
+    }
+
+    &:not(.skip-link):focus {
+        background: inherit;
+        color: inherit;
+        outline: 2px dotted $baselinkfgfocus;
+    }
+
+    &.active {
+        font-weight: 700;
+    }
+
+    .post & {
+        text-decoration: underline;
+
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    article:not(.packages) &,
+    .homepage-container p &,
+    .index p & {
+        &[href^="#fn"] {
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+}

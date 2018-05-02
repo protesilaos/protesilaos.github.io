@@ -1,0 +1,48 @@
+---
+layout: index
+title: "Little Guide to the European Union"
+subtitle: "On the specifics of the European polity"
+excerpt: "An in-depth examination of European politics and the European integration process."
+permalink: /euguide/
+breadcrumbs: true
+---
+
+{% assign euguides = site.books | where: "flag", "euguide" %}
+
+<div class="index index-blog">
+
+    <div class="books-meta">
+
+        <p>Published: <span>{{ site.data.text.euguide.datefull }}</span><br/>Book version: <span>{{ site.data.text.euguide.version }}</span></p>
+
+        <div class="books-options">
+
+            <a class="books-button read-online" href="{{ '/euguide/preface/'  | prepend: site.url }}">
+            Read online
+            </a>
+            <a class="books-button read-offline" href="{{ '/euguide/print/'  | prepend: site.url }}">
+            Print version
+            </a>
+
+        </div>
+
+    </div>
+
+    <h2 class="index-blog-section-heading">Contents</h2>
+
+    <div>
+
+        <ul>
+        {% for euguide in euguides %}
+            <li>
+                <a class="index-blog-post-heading" href="{{ euguide.url | relative_url }}">{{ forloop.index }}. {{ euguide.title }}</a>
+                <p class="index-blog-post-excerpt">{{ euguide.excerpt }}</p>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </div>
+
+    {% include booksnav.html %}
+
+</div>

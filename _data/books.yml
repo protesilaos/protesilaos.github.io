@@ -1,0 +1,48 @@
+- title: "Notes on the Thinkable"
+  version: 2.0.0
+  description: "A series of logicophilosophical notes examining the hypothesis that the thought of the thing is not the thing as such"
+  date: 2013-11-27
+  datefull: "27 November 2013"
+  url: "notes-on-the-thinkable-2-0"
+- title: "A Handbook on the European Union"
+  version: "1.0.0"
+  description: "An informed opinion on Europe's experiment in transnational democracy"
+  date: 2015-11-08
+  datefull: "8 November 2015"
+  url: "euhandbook"
+- title: "Little Guide to the European Union"
+  version: "1.1.1"
+  description: "On the specifics of the European polity"
+  date: 2016-05-09
+  datefull: "9 May 2016"
+  url: "euguide"
+- title: "Essays on Sovereignty"
+  version: "1.0.0"
+  description: "On the theoretical aspects and underpinnings of supreme political authority"
+  date: 2016-11-14
+  datefull: "14 November 2016"
+  url: "sov"
+- title: "Dialogues on EU politics"
+  version: "1.0.0"
+  description: "On the specifics of EU politics and the European integration process"
+  date: 2017-07-01
+  datefull: "1 July 2017"
+  url: "eudi"
+- title: "Notes on the modes of Scepticism"
+  version: 1.0.0
+  description: "On the empirical, epistemological, and metaphysical grounds for scepticism: a pragmatic and holistic disposition towards knowledge and learning."
+  date: 2017-07-28
+  datefull: "28 July 2017"
+  url: "notes-modes-scepticism"
+- title: "Prolegomena to a study of Metaethics"
+  version: 1.0.0
+  description: "On the abstract structure of ethics and its implications on such magnitudes as individuality, agency, reward, punishment, free will."
+  date: 2017-08-11
+  datefull: "11 August 2017"
+  url: "prolegomena-study-metaethics"
+- title: "Structured Text on Sovereignty, Nationhood, Statehood"
+  version: "1.0.0"
+  description: "On the core tenets of modern politics, examining in abstract the problématiques of 'who governs' and 'where is the locus of power'."
+  date: 2018-03-29
+  datefull: "29 March 2018"
+  url: "stsns"

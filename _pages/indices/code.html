@@ -1,0 +1,144 @@
+---
+layout: index
+title: "Free software projects"
+subtitle: "Experiences from the world of GNU/Linux"
+excerpt: "Includes my colour schemes, my coding blog, and related items."
+permalink: /code/
+---
+
+{% assign codelogs = site.codelog | sort: 'date' | reverse %}
+
+<div class="index index-blog">
+
+    <h2 class="index-blog-section-heading">Coding blog</h2>
+
+    <ul>
+    {% for codelog in codelogs limit:3 %}
+        <li>
+            <a class="index-blog-post-heading" href="{{ codelog.url | relative_url }}">{{ codelog.title }}</a>
+            <time class="index-blog-post-timestamp">{{ codelog.date | date: site.date_format }}</time>
+            <p class="index-blog-post-excerpt">{{ codelog.excerpt }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <div class="index-blog-redirection-button">
+        <a href="/codelog/">All code blog entries</a>
+    </div>
+
+</div>
+
+<div class="index index-blog">
+
+    <h2 class="index-blog-section-heading">Tempus themes project</h2>
+
+    <p>
+        {{ site.data.text.tempus.description }}
+    </p>
+
+    <ul>
+    {% assign schemes = site.data.tempus-themes | sort: 'name' %}
+    {% for scheme in schemes limit:3 %}
+        <li class="index-scheme-item">
+            <a class="index-blog-post-heading index-scheme-item" href="{{ scheme.slug | prepend: '/' }}">
+                <div>
+                    <span>
+                    {{ scheme.name }}
+                    </span>
+                </div>
+                <div class="index-scheme-palette">
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col0 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col1 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col2 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col3 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col4 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col5 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col6 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col7 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col8 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col9 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col10 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col11 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col12 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col13 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col14 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col15 | prepend: 'background: #' }}"></div>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <div class="index-blog-redirection-button">
+        <a href="/tempus-themes/">All Tempus themes</a>
+    </div>
+
+</div>
+
+<div class="index index-blog">
+
+    <h2 class="index-blog-section-heading">Prot16 syntax themes</h2>
+
+    <p>
+        <em>Prot16</em> is a collection of colour schemes following the design philosophy of Ethan Schoonover's <em>Solarized</em>. Each scheme consists of 8 base values, divided by two groups into 'light' and 'dark', plus 8 accent values which remain constant across light and dark variations of an applied theme. The idea is to easily transition from light to dark while retaining the same feel. The accents are variants of red, orange, yellow, green, cyan, blue, violet, and magenta.
+    </p>
+
+    <ul>
+    {% assign schemes = site.data.themes | sort: 'date' | reverse %}
+    {% for scheme in schemes limit:3 %}
+        <li class="index-scheme-item">
+            <a class="index-blog-post-heading index-scheme-item" href="{{ scheme.url | prepend: '/' }}">
+                <div>
+                    <span>
+                    {{ scheme.name }}
+                    </span>
+                </div>
+                <div class="index-scheme-palette">
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.dbg | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.dhl | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.dt2 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.dt1 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.lbg | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.lhl | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.lt2 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.lt1 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.red | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.ora | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.yel | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.gre | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.cya | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.blu | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.vio | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.palette.mag | prepend: 'background: #' }}"></div>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <div class="index-blog-redirection-button">
+        <a href="/schemes/">All Prot16 items</a>
+    </div>
+
+</div>
+
+{% assign githubprojects = site.data.githubprojects | sort: 'name' %}
+
+<div class="index index-blog">
+
+    <h2 class="index-blog-section-heading">Links to selected GitHub projects</h2>
+
+    <ul>
+    {% for githubproject in githubprojects %}
+        <li>
+            <a class="index-blog-post-heading" href="{{ githubproject.url }}">{{ githubproject.name }}</a>
+            <p class="index-blog-post-excerpt">{{ githubproject.description }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <div class="index-blog-redirection-button">
+        <a href="https://github.com/protesilaos">My GitHub profile</a>
+    </div>
+
+</div>

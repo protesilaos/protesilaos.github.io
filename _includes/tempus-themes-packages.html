@@ -1,0 +1,6 @@
+{% assign distropacks = site.data.tempus-themes-packages %}
+<ul>
+{% for distropack in distropacks %}
+<li><a href="{{ distropack.url }}">{{ distropack.name }}</a> {% if distropack.comment %}({{ distropack.comment }}){% endif %}</li>
+{% endfor %}
+</ul>

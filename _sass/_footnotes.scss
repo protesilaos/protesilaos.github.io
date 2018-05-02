@@ -1,0 +1,12 @@
+.footnotes {
+    @include fluid-font-size($ssize);
+    @include border(top, $border-width-thin, solid, $border-color-dark-0);
+
+    font-size: $ssize;
+    margin: $vertical-rhythm-2 0 0;
+    padding: $vertical-rhythm-0 0 0;
+
+    p {
+        margin-bottom: $space-0;
+    }
+}

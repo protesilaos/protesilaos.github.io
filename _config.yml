@@ -1,0 +1,135 @@
+# Site settings
+title: Protesilaos Stavrou
+email: public@protesilaos.com
+author: Protesilaos Stavrou
+description: "EU policy analyst. Philosopher. Free/libre software contributor."
+baseurl: ""
+url: "https://protesilaos.com"
+date_format: "%Y-%m-%d"
+logo: "/images/brand/protesilaos-logo.png"
+
+# Collections
+collections:
+  books:
+    output: true
+  tempus-themes:
+    output: true
+  schemes:
+    output: true
+  codelog:
+    output: true
+  archive:
+    output: true
+  greek:
+    output: true
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      type: books
+    values:
+      image: "/images/brand/protesilaos-logo.png"
+      master: true
+  - scope:
+      type: posts
+    values:
+      layout: post
+      index: "/blog/"
+      group: Blog entries
+      image: "/images/brand/protesilaos-logo.png"
+      master: true
+  - scope:
+      type: pages
+    values:
+      layout: page
+      image: "/images/brand/protesilaos-logo.png"
+      master: false
+  - scope:
+      type: greek
+    values:
+      layout: elpost
+      index: "/greek/"
+      group: Αναρτήσεις στα ελληνικά
+      image: "/images/brand/protesilaos-logo.png"
+      master: true
+  - scope:
+      type: archive
+    values:
+      layout: post
+      index: "/blog-archive/"
+      group: Blog archive entries
+      image: "/images/brand/protesilaos-logo.png"
+  - scope:
+      type: codelog
+    values:
+      layout: post
+      index: "/codelog/"
+      group: Codelog entries
+      image: "/images/brand/protesilaos-logo.png"
+      master: true
+  - scope:
+      type: schemes
+    values:
+      layout: scheme
+      index: "/schemes/"
+      group: Prot16 schemes
+      image: "/images/brand/protesilaos-logo.png"
+      master: true
+  - scope:
+      type: tempus-themes
+    values:
+      layout: scheme
+      index: "/tempus-themes/"
+      group: Tempus Themes
+      image: "/images/brand/protesilaos-logo.png"
+      master: true
+
+# Social SEO
+twitter:
+  username: "@protstavrou"
+social:
+  name: Protesilaos Stavrou
+  links:
+    - https://twitter.com/protstavrou
+    - https://github.com/protesilaos
+    - https://gitlab.com/protesilaos
+    - https://www.npmjs.com/~protesilaos
+    - https://atom.io/users/protesilaos
+    - https://keybase.io/protesilaos
+    - https://www.reddit.com/user/protesilaos
+
+# Where things are
+source:       .
+destination:  _site
+plugins_dir:  _plugins
+layouts_dir:  _layouts
+data_dir:     _data
+includes_dir: _includes
+
+# Build settings
+incremental: false
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: false
+  footnote_backlink: ^
+  hard_wrap: false
+  syntax_highlighting: rouge
+highlighter: rouge
+permalink: pretty
+sass:
+  style: compressed
+plugins:
+  - github-pages
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+exclude:
+  - README.md
+  - Gemfile
+  - vendor
+  - package.json
+  - node_modules
+  - gulpfile.js
+  - .stylelintrc

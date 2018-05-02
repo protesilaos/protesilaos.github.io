@@ -1,0 +1,255 @@
+// Colours
+// =============================================================================
+
+// Website brand colours
+// -----------------------------------------------------------------------------
+
+// For header and footer sections
+// WCAG AAA compliant
+$brandbg: #f3f1f5;
+$brandfg: #43474a;
+$brandfgalt: #634e2f;
+$brandlink: #36508a;
+$brandlinkalt: #991e54;
+$brandhighlight: #7033a0; // for use against brandbg
+
+// Palette for content elements (header and footer use brand colours)
+// -----------------------------------------------------------------------------
+// Base values are bgs: col15, col7 // fgs: col0, col8. Others are accents
+// Base value combinations (fgs <=> bgs) are WCAG AAA for small and large text
+// All accent values values are WCAG AA compliant against base bgs (5.5:1)
+// All accent bright values are WCAG AAA compliant for large sizes against bgs
+// Colours for body text (baselinkfg) must have minimum contrast 3:1 against fgs
+// Any bright accent is suitable for big text links or block highlights
+$col0: #0a0a0a; // black variant
+$col1: #cc1300; // red variant
+$col2: #1a753d; // green variant
+$col3: #945800; // yellow variant
+$col4: #0062d0; // blue variant
+$col5: #a2447d; // magenta variant
+$col6: #1a707d; // cyan variant
+$col7: #fafce6; // white variant
+$col8: #30385a; // bright black variant
+$col9: #ba571c; // bright red variant
+$col10: #3f823c; // bright green variant
+$col11: #8e7000; // bright yellow variant
+$col12: #1c77c2; // bright blue variant
+$col13: #b4508c; // bright magenta variant
+$col14: #307c99; // bright cyan variant
+$col15: #fafafa; // bright white variant
+
+// Colour mapping
+// -----------------------------------------------------------------------------
+
+// Base values
+$basebg: $col15;
+$basebgalt: $col7;
+$basefg: $col0;
+$basefgalt: $col8;
+
+// Links
+$baselinkfg: $col4;
+$baselinkfghover: $col5;
+$baselinkfgfocus: $col3;
+
+// Buttons and action elements
+$btnmainbg: $col14;
+$btnmainbgactive: $col13;
+$btnmainfg: $col15;
+$btnmainfgactive: $col15;
+
+$btnaltbg: $col12;
+$btnaltbgactive: $btnmainbgactive;
+$btnaltfg: $col15;
+$btnaltfgactive: $col15;
+
+$btnskipbg: $col0;
+$btnskipbgactive: $btnmainbgactive;
+$btnskipfg: $col15;
+$btnskipfgactive: $col15;
+
+// Inline code element
+$inlinecodebg: $col7;
+$inlinecodefg: $col1;
+
+// Notifications
+$notifyinfo: $col6;
+$notifynote: $col2;
+$notifywarn: $col11;
+$notifycrit: $col1;
+
+// Scale and measures
+// =============================================================================
+
+// Homepage and any greeter page
+$impact-text-s: 1.802rem;
+$impact-text-m: 2.027rem;
+$impact-text-l: 2.28rem;
+$impact-text-xl: 2.542rem;
+
+// NOTE responsive font sizes under mixins section
+// Major second
+$xxxlsize: 1.602rem;
+$xxlsize: 1.424rem;
+$xlsize: 1.266rem;
+$lsize: 1.115rem;
+$msize: 1rem;
+$ssize: 0.889rem;
+$xssize: 0.79rem;
+$xxssize: 0.702rem;
+
+// Space
+// -----------------------------------------------------------------------------
+
+// White space
+$space-0: 0.5rem;
+$space-1: 1rem;
+$space-2: 2rem;
+$space-3: 3rem;
+
+// Typographic spacing
+$base-font-size: 16px;
+$line-height: 1.424; // Equal to $xxlsize
+$heading-line-height: 1.115; // Equal to $lsize
+$vertical-rhythm-0: #{$line-height}rem;
+$vertical-rhythm-1: #{$line-height * 1.5}rem;
+$vertical-rhythm-2: #{$line-height * 2.5}rem;
+$vertical-rhythm-3: #{$line-height * 3.5}rem;
+
+// Page measure
+$measure: 38rem;
+$measure-xl: $measure + 4;
+
+// Dividers
+$border-width-thin: 1px;
+$border-width-medium: 3px;
+$border-width-thick: 5px;
+// NOTE Minimum contrast of WCAG AAA against col15 and brandbg
+$border-color-dark-0: #111;
+$border-color-dark-1: #333;
+$border-color-dark-2: #555;
+$border-color-light-0: #eee;
+$border-color-light-1: #cecece;
+$border-color-light-2: #aeaeae;
+$border-color-highlight: $notifyinfo;
+$border-color-highlight-alt: $brandlinkalt;
+
+// Viewports
+$tablet: 44.375em;
+$desktop: 75em;
+
+// Typography
+// =============================================================================
+
+// Font stacks
+// -----------------------------------------------------------------------------
+$serif: serif;
+$sans: 'Noto Sans', sans-serif;
+$mono: monospace;
+
+// Functions
+// =============================================================================
+
+// Mixins
+// -----------------------------------------------------------------------------
+@mixin font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin radius($degree) {
+    border-radius: $degree;
+}
+
+@mixin transition {
+    transition: all ease-in-out 300ms;
+}
+
+@mixin notification($border-colour) {
+    border: 1px solid $border-colour;
+    border-left: 10px solid $border-colour;
+    margin: $vertical-rhythm-0 0;
+}
+
+@mixin tablet {
+    @media screen and (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin tablet-font-size($tablet-font-size) {
+    font-size: $tablet-font-size + 0.08;
+}
+
+@mixin desktop-font-size($desktop-font-size) {
+    font-size: $desktop-font-size + 0.16;
+}
+
+// NOTE Combines the above two and is the preferred option
+@mixin fluid-font-size($fluid-font-size) {
+    @include tablet {
+        @include tablet-font-size($fluid-font-size);
+    }
+
+    @include desktop {
+        @include desktop-font-size($fluid-font-size);
+    }
+}
+
+@mixin tablet-icon-size($tablet-icon-size) {
+    width: $tablet-icon-size + 0.08;
+    height: $tablet-icon-size + 0.08;
+}
+
+@mixin desktop-icon-size($desktop-icon-size) {
+    width: $desktop-icon-size + 0.16;
+    height: $desktop-icon-size + 0.16;
+}
+
+// NOTE Combines the above two and is the preferred option
+@mixin fluid-icon-size($fluid-icon-size) {
+    @include tablet {
+        @include tablet-icon-size($fluid-icon-size);
+    }
+
+    @include desktop {
+        @include desktop-icon-size($fluid-icon-size);
+    }
+}
+
+@mixin border($border-position: bottom, $border-width: 1px, $border-style: solid, $border-color: #000) {
+    border-#{$border-position}: $border-width $border-style $border-color;
+}
+
+@mixin fluid-width-measure {
+    @include tablet {
+        max-width: $measure;
+    }
+
+    @include desktop {
+        max-width: $measure-xl;
+    }
+    max-width: 100%;
+}
+
+// Global placeholders
+// Placeholders are normally defined within the stylesheet => DRY
+// -----------------------------------------------------------------------------
+%clearfix {
+    &::before {
+        content: '';
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}

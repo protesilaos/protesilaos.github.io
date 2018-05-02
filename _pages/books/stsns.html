@@ -1,0 +1,48 @@
+---
+layout: index
+title: "Structured Text on Sovereignty, Nationhood, Statehood"
+subtitle: "On the core tenets of modern politics, examining in abstract the problématiques of 'who governs' and 'where is the locus of power'."
+excerpt: "A free web based book on political philosophy. Studying the abstract structure of the core tenets of modern politics."
+permalink: /stsns/
+breadcrumbs: true
+---
+
+{% assign stsnss = site.books | where: 'flag', 'stsns' %}
+
+<div class="index index-blog">
+
+    <div class="books-meta">
+
+        <p>Published: <span>{{ site.data.text.stsns.datefull }}</span><br/>Book version: <span>{{ site.data.text.stsns.version }}</span></p>
+
+        <div class="books-options">
+
+            <a class="books-button read-online" href="{{ '/stsns/introduction/'  | prepend: site.url }}">
+            Read online
+            </a>
+            <a class="books-button read-offline" href="{{ '/stsns/print/'  | prepend: site.url }}">
+            Print version
+            </a>
+
+        </div>
+
+    </div>
+    
+    <h2 class="index-blog-section-heading">Contents</h2>
+
+    <div>
+
+        <ul>
+        {% for stsns in stsnss %}
+            <li>
+                <a class="index-blog-post-heading" href="{{ stsns.url | relative_url }}">{{ forloop.index }}. {{ stsns.title }}</a>
+                <p class="index-blog-post-excerpt">{{ stsns.excerpt }}</p>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </div>
+
+    {% include booksnav.html %}
+    
+</div>

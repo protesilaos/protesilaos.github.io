@@ -1,0 +1,42 @@
+{
+  "name": "protesilaos.com",
+  "version": "0.1.0",
+  "description": "Source code of the personal website of Protesilaos Stavrou",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:protesilaos/protesilaos.gitlab.io.git"
+  },
+  "keywords": [
+    "politics",
+    "eu",
+    "euro",
+    "philosophy",
+    "jekyll",
+    "linux",
+    "front-end"
+  ],
+  "author": "Protesilaos Stavrou",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "imagemin-pngquant": "^5.0.0",
+    "jshint": "^2.9.2",
+    "postcss-flexbugs-fixes": "^2.1.0",
+    "postcss-scss": "^0.4.0",
+    "stylefmt": "^5.1.1",
+    "stylelint": "^7.8.0",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}

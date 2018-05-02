@@ -1,0 +1,9 @@
+- name: Tempus themes GTK3 Source View
+  comment: "Gedit, Pluma, Xed, etc."
+  url: "https://aur.archlinux.org/packages/tempus-themes-gtksourceview3/"
+- name: Tempus themes Konsole
+  url: "https://aur.archlinux.org/packages/tempus-themes-konsole/"
+- name: Tempus themes Tilix
+  url: "https://aur.archlinux.org/packages/tempus-themes-tilix/"
+- name: Tempus themes Xfce4 terminal
+  url: "https://aur.archlinux.org/packages/tempus-themes-xfce4-terminal/"

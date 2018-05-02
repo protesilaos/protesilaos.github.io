@@ -1,0 +1,184 @@
+html {
+    font-family: sans-serif;
+    font-size: $base-font-size;
+    -webkit-text-size-adjust: 100%;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+body {
+    @include fluid-font-size($msize);
+
+    background-color: $basebg;
+    color: $basefg;
+    font-family: $sans;
+    font-size: $msize;
+    line-height: $line-height;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $sans;
+    line-height: $heading-line-height;
+    padding: 0;
+    margin-bottom: $space-0;
+}
+
+h1,
+.h1 {
+    @include fluid-font-size($xxlsize);
+
+    font-size: $xxlsize;
+    font-weight: 700;
+}
+
+h2,
+.h2 {
+    @include fluid-font-size($xlsize);
+
+    font-size: $xlsize;
+    font-weight: 700;
+}
+
+h3,
+.h3 {
+    @include fluid-font-size($lsize);
+
+    font-size: $lsize;
+    font-weight: 400;
+}
+
+h4,
+.h4 {
+    @include fluid-font-size($msize);
+
+    font-size: $msize;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h5,
+.h5 {
+    @include fluid-font-size($ssize);
+
+    font-size: $ssize;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h6,
+.h6 {
+    @include fluid-font-size($xssize);
+
+    font-size: $xssize;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0 0 $vertical-rhythm-0;
+    padding: 0;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+blockquote {
+    @include border(left, $border-width-thick, solid, $border-color-dark-2);
+
+    margin: 0;
+    padding: 0;
+
+    p {
+        font-style: italic;
+        padding-left: $vertical-rhythm-0;
+    }
+}
+
+ul,
+ol {
+    margin: 0 0 $vertical-rhythm-0;
+    padding: 0 0 0 $space-1;
+}
+
+pre,
+code,
+samp {
+    font-family: $mono;
+}
+
+pre {
+    @include fluid-font-size($xssize);
+
+    margin: $vertical-rhythm-0 0;
+    padding: $space-1;
+	padding-left: $vertical-rhythm-0;
+    overflow-x: auto;
+    white-space: pre;
+    word-break: inherit;
+    word-wrap: inherit;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+}
+
+small {
+    font-size: $xssize;
+}
+
+time {
+    @extend p;
+
+    color: $basefgalt;
+    display: block;
+}
+
+abbr {
+    @include border(bottom, $border-width-thin, dotted, $border-color-dark-0);
+
+    cursor: help;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}

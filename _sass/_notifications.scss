@@ -1,0 +1,31 @@
+// NOTE also see the notification mixin in _variables
+%notification {
+    @include fluid-font-size($ssize);
+
+    font-size: $ssize;
+    padding: $space-1;
+}
+
+.info {
+    @include notification($notifyinfo);
+
+    @extend %notification;
+}
+
+.note {
+    @include notification($notifynote);
+
+    @extend %notification;
+}
+
+.warn {
+    @include notification($notifywarn);
+
+    @extend %notification;
+}
+
+.critical {
+    @include notification($notifycrit);
+
+    @extend %notification;
+}

@@ -1,0 +1,57 @@
+# General
+blog: "Blog on EU politics"
+description: "EU policy analyst. Philosopher. Free/libre software contributor."
+publications: "Books and independent publications"
+greek: "Άρθρα στα ελληνικά (articles in greek)"
+
+# Front end
+code: "Front end projects"
+schemes: "Prot16 syntax themes"
+codelog: "Coding blog"
+
+# Tempus themes
+tempus:
+  description: "Tempus is a collection of themes for Vim, text editors, and terminal emulators that are compliant at the very least with the WCAG AA accessibility standard for colour contrast."
+
+# Books
+# Only for random access. Loops are through _data/books.yml
+# NOTE The structured data only applies for books that have their own flag/filter and directory.
+# Each has its own index page under pages/**/books/
+# The `monograph` is self contained. It only needs to be referenced in `_data/books.yml` in order to appear in the index pages.
+books:
+  distribution: "All my publications are available free of charge and freed from traditional copyright restrictions. They are distributed under the terms of the Creative Commons Attribution-ShareAlike Licence (CC BY SA) 4.0."
+euhandbook:
+  title: "A Handbook on the European Union"
+  version: "1.0.0"
+  description: "An informed opinion on Europe's experiment in transnational democracy"
+  date: 2015-11-08
+  datefull: "8 November 2015"
+  url: "euhandbook"
+euguide:
+  title: "Little Guide to the European Union"
+  version: "1.1.1"
+  description: "On the specifics of the European polity"
+  date: 2016-05-09
+  datefull: "9 May 2016"
+  url: "euguide"
+sov:
+  title: "Essays on Sovereignty"
+  version: "1.0.0"
+  description: "On the theoretical aspects and underpinnings of supreme political authority"
+  date: 2016-11-14
+  datefull: "14 November 2016"
+  url: "sov"
+eudi:
+  title: "Dialogues on EU politics"
+  version: "1.0.0"
+  description: "On the specifics of EU politics and the European integration process"
+  date: 2017-07-01
+  datefull: "1 July 2017"
+  url: "eudi"
+stsns:
+  title: "Structured Text on Sovereignty, Nationhood, Statehood"
+  version: "1.0.0"
+  description: "On the abstract structure of the core tenets of modern politics"
+  date: 2018-03-29
+  datefull: "29 March 2018"
+  url: "stsns"

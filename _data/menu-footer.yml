@@ -1,0 +1,10 @@
+- name: About
+  url: "/author/"
+- name: Contact
+  url: "/contact/"
+- name: Blog
+  url: "/blog/"
+- name: Books
+  url: "/books/"
+- name: Code
+  url: "/code/"

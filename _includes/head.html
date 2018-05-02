@@ -1,0 +1,93 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% feed_meta %}
+
+    {% seo %}
+
+    <!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=WGL35pk4QR">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=WGL35pk4QR">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=WGL35pk4QR">
+	<link rel="manifest" href="/site.webmanifest?v=WGL35pk4QR">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=WGL35pk4QR" color="#36508a">
+	<link rel="shortcut icon" href="/favicon.ico?v=WGL35pk4QR">
+	<meta name="apple-mobile-web-app-title" content="Protesilaos">
+	<meta name="application-name" content="Protesilaos">
+	<meta name="msapplication-TileColor" content="#36508a">
+	<meta name="theme-color" content="#36508a">
+
+    <!-- Main styles -->
+    <style type="text/css">
+    {% capture cypher %}
+        {% include cypher.scss %}
+    {% endcapture %}
+    {{ cypher | scssify }}
+    </style>
+
+    <!-- Web fonts -->
+    <link rel="stylesheet" href="{{ '/css/webfonts.min.css'  | absolute_url }}" type="text/css" charset="utf-8">
+
+    <!-- Secondary styles -->
+    <link rel="stylesheet" href="{{ '/css/cypher-secondary.css'  | absolute_url }}">
+
+    <!-- Print only -->
+    <link rel="stylesheet" type="text/css" href="{{ '/css/cypher-print.css'  | absolute_url }}" media="print">
+
+    <!-- Code styles and modules -->
+    {% if page.layout == "scheme" or page.url contains "codelog" or page.component contains "codeblock" %}
+
+    <style type="text/css">
+    {% capture cypher-syntax %}
+        {% include cypher-syntax.scss %}
+    {% endcapture %}
+    {{ cypher-syntax | scssify }}
+    </style>
+
+    <!-- Homepage styles -->
+    {% elsif page.layout == "homepage" %}
+
+    <style type="text/css">
+    {% capture cypher-homepage %}
+        {% include cypher-homepage.scss %}
+    {% endcapture %}
+    {{ cypher-homepage | scssify }}
+    </style>
+
+    <!-- Book indices navigation styles -->
+    {% elsif page.breadcrumbs %}
+
+    <style type="text/css">
+    {% capture cypher-books %}
+        {% include cypher-books.scss %}
+    {% endcapture %}
+    {{ cypher-books | scssify }}
+    </style>
+
+    <!-- Guest author styles -->
+    {% elsif page.guest %}
+
+    <style type="text/css">
+    {% capture cypher-guest %}
+        {% include cypher-guest.scss %}
+    {% endcapture %}
+    {{ cypher-guest | scssify }}
+    </style>
+
+    {% endif %}
+
+    <!-- Active menu item script -->
+    {% if page.layout == "page" or page.layout == "index" or page.layout == "index-wide" %}
+    <script async src="{{ '/js/mainnavigation.min.js' | absolute_url }}"></script>
+    {% endif %}
+
+    <!-- JS redirect to https -->
+    <script type="text/javascript">
+    var host = "protesilaos.com";
+    if ((host == window.location.host) && (window.location.protocol != 'https:')) {
+    window.location = window.location.toString().replace(/^http:/, "https:");
+    }
+    </script>
+</head>

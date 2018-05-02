@@ -1,0 +1,49 @@
+---
+layout: index
+title: "A Handbook on the European Union"
+subtitle: "An informed opinion on Europe's experiment in transnational democracy"
+excerpt: "An examination of European politics and the European integration process."
+permalink: /euhandbook/
+breadcrumbs: true
+---
+
+{% assign euhandbooks = site.books | where: "flag", "euhandbook" %}
+
+<div class="index index-blog">
+
+    <div class="books-meta">
+
+        <p>Published: <span>{{ site.data.text.euhandbook.datefull }}</span><br/>Book version: <span>{{ site.data.text.euhandbook.version }}</span></p>
+
+        <div class="books-options">
+
+            <a class="books-button read-online" href="{{ '/euhandbook/introduction/'  | prepend: site.url }}">
+            Read online
+            </a>
+            <a class="books-button read-offline" href="{{ '/euhandbook/print/'  | prepend: site.url }}">
+            Print version
+            </a>
+
+        </div>
+
+    </div>
+    
+    <h2 class="index-blog-section-heading">Contents</h2>
+
+    <div>
+
+        <ul>
+        {% for euhandbook in euhandbooks %}
+            <li>
+                <a class="index-blog-post-heading" href="{{ euhandbook.url | relative_url }}">{{ forloop.index }}. {{ euhandbook.title }}</a>
+                <p class="index-blog-post-excerpt">{{ euhandbook.excerpt }}</p>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </div>
+
+    {% include booksnav.html %}
+
+</div>
+

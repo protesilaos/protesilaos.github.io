@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post container">
+
+    <div class="post-inner">
+
+        <div class="post-header">
+            <h1>{{ page.title }}</h1>
+
+            {% if page.subtitle %}
+              <h2 class="subtitle">{{ page.subtitle }}</h2>
+            {% endif %}
+	    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+        </div>
+
+        {% if page.group == "Blog archive entries" %}
+            <p class="warn">This post is archived. Opinions expressed herein may no longer represent my current views. Links, images and other media might not work as intended.</p>
+        {% endif %}
+        {{ content }}
+  
+    </div>
+
+</article>
+
+<div class="post-footer">
+
+    <div class="post-footer-inner">
+        {% include nextprev.html %}
+    </div>
+
+</div>

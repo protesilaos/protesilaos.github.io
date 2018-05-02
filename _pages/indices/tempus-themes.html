@@ -1,0 +1,50 @@
+---
+layout: index
+permalink: /tempus-themes/
+title: "Tempus Themes project"
+subtitle: "Accessible themes for terminals and text editors"
+excerpt: "Accessible themes for terminals and text editors"
+---
+
+<div class="index index-blog">
+
+    <p>
+        {{ site.data.text.tempus.description }}
+    </p>
+
+    <h2 class="index-blog-section-heading">Item pages (A-Z)</h2>
+
+    <ul>
+    {% assign schemes = site.data.tempus-themes | sort: 'name' %}
+    {% for scheme in schemes %}
+        <li class="index-scheme-item">
+            <a class="index-blog-post-heading index-scheme-item" href="{{ scheme.slug | prepend: '/' }}">
+                <div>
+                    <span>
+                    {{ scheme.name }}
+                    </span>
+                </div>
+                <div class="index-scheme-palette">
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col0 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col1 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col2 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col3 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col4 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col5 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col6 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col7 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col8 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col9 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col10 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col11 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col12 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col13 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col14 | prepend: 'background: #' }}"></div>
+                    <div class="index-scheme-palette-color-block" style="{{ scheme.col15 | prepend: 'background: #' }}"></div>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+
+</div>

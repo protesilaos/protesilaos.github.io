@@ -1,0 +1,32 @@
+.nextprev {
+    @extend %clearfix;
+
+    @include border(top, $border-width-medium, solid, $border-color-dark-2);
+
+    display: block;
+    margin: $vertical-rhythm-1 auto;
+    padding: $vertical-rhythm-1 0;
+    overflow: hidden;
+
+    div {
+        display: block;
+        padding: $vertical-rhythm-0 0;
+
+        &:last-child {
+            padding: $vertical-rhythm-0 0;
+        }
+
+        + div {
+            padding-top: $vertical-rhythm-0;
+        }
+    }
+
+    span {
+        color: $basefgalt;
+        margin-right: $space-0;
+    }
+
+    a {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,59 @@
+{% assign themes = site.data.themes %}
+
+{% for theme in themes %}
+{% if page.permalink contains theme.url %}
+
+<div class="scheme-item-page-terminal">
+
+    <div>
+        <p>For {{ theme.name }}, the following terminal emulators are supported thus far:
+            <ul>
+                <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/urxvt">RXVT-Unicode (urxvt)</a></li>
+                <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/xfce4-terminal">Xfce4 Terminal</a></li>
+                <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/xterm">XTERM</a></li>
+            </ul>
+
+            Below are the specs to copy-paste into a terminal that is not supported yet.
+        </p>
+    </div>
+
+    <div class="scheme-item-page-terminal-palette">
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.dbg | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.dbg }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.red | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.red }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.gre | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.gre }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.yel | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.yel }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.blu | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.blu }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.mag | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.mag }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.cya | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.cya }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.lhl | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.lhl }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.dhl | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.dhl }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.ora | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.ora }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt1 }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.dt2 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt2 }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.lt2 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt2 }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.vio | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.vio }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt1 }}</div>
+        <div class="scheme-item-page-terminal-color-block" style="{{ theme.palette.lbg | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.lbg }}</div>
+    </div>
+
+    <div class="scheme-item-page-terminal-theme-variant">
+        <p>
+            <strong>Terminal Base values (light theme)</strong><br/>
+            Background: <span style="{{ theme.palette.lbg | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.lbg }}</span><br/>
+            Foreground: <span style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt1 }}</span><br/>
+            Cursor: <span style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt1 }}</span><br/>
+            Bold colour: <span style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt1 }}</span>
+        </p>
+        <p>
+            <strong>Terminal Base values (dark theme)</strong><br/>
+            Background: <span style="{{ theme.palette.dbg | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.dbg }}</span><br/>
+            Foreground: <span style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt1 }}</span><br/>
+            Cursor: <span style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt1 }}</span><br/>
+            Bold colour: <span style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt1 }}</span>
+        </p>
+    </div>
+
+</div>
+
+{% endif %}
+{% endfor %}
