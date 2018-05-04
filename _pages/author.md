@@ -17,22 +17,23 @@ layout: page
 
 ## Skills and education
 
-**Academic:** European Politics, Economics, and Law at the European University Cyprus (summa cum laude)  
+**Academic:** European Politics, Economics, and Law at the European University Cyprus  
 **Literary:** Essay writing, conceptual analysis, interdisciplinary research  
 **Technological:** Front end web development (SCSS, HTML, Git, Gulp, WordPress, Jekyll, ...), GNU/Linux power user, Free and Open Source Software contributor  
 **Linguistic:** Greek (native), English (professional), French (proficient), Spanish (intermediate), Portuguese (basic)
 
-## Blogs and relevant content indices
+## Main content indices on this website
 
-- [Blog on EU politics](/blog/)  
-- [Books and publications](/books/)  
-- [Audio and video seminars](/seminars/)  
-- [Coding blog](/codelog/)  
+- [Blog on EU politics](/blog/)
+- [Books and publications on politics and philosophy](/books/)
+- [Audio and video seminars on politics](/seminars/)
+- [Coding blog, mostly about free software](/codelog/)
 - [Αρθρογραφία στα ελληνικά (Articles in Greek)](/greek/)
 
 ## Selected published works by topic
 
 ### Books and standalone essays
+
 - [Structured Text on Sovereignty, Nationhood, Statehood](/stsns/) (29 March 2018)
 - [Prolegomena to a study of Metaethics](/prolegomena-study-metaethics/) (11 August 2017)
 - [Notes on the modes of Scepticism](/notes-modes-scepticism/) (28 July 2017)
@@ -42,6 +43,7 @@ layout: page
 - [A Handbook on the European Union](/euhandbook/) (8 November 2015)
 
 ### Seminars
+
 - [Sovereignty and the vertical separation of powers in the EU](/seminars/sovereignty-eu-federation/) (31 December 2017)
 - [Factors of statehood and the EU as a republic](/seminars/statehood-factors-eu-republic/) (24 October 2017)
 - [On sovereignty, nationalism, secessionism](/seminars/sov-nation-secession/) (16 October 2017)
@@ -50,6 +52,10 @@ layout: page
 - [The economic governance of the European Union](/seminars/eu-economic-governance/) (10 March 2016)
 
 ### Blog posts
+
+- [EU integration and "German Europe"](/eu-integration-german-europe/) (12 April 2018)
+- [Differentiated integration and its challenges](/challenges-multi-speed-eu/) (11 January 2018)
+- [Why EU financial union is not enough](/eu-financial-union-eu-effective-sovereignty/) (9 January 2018)
 - [On the EU reflection paper about globalisation](/eu-reflection-paper-globalisation/) (11 May 2017)
 - [ECB independence: concept, scope, and implications](/ecb-independence-review/) (2 April 2017)
 - [Treaty for Euro democracy: a four-fold critique](/euro-area-democracy-treaty/) (28 March 2017)
@@ -64,6 +70,7 @@ layout: page
 - [Dialogue on Europe’s sovereignty mismatch](/dialogue-eu-sovereignty-mismatch/) (20 October 2015)
 
 ### Blog post archive
+
 - [Confessions of a former libertarian](/confessions-former-libertarian/) (24 April 2015)
 - [Constitutional subject and order](/constitutional-subject-order/) (26 March 2015)
 - [Thoughts on the Paradox of Theseus](/theseus-paradox/) (9 December 2014)
@@ -71,10 +78,12 @@ layout: page
 
 ### Αρθρογραφία (articles in Greek)
 
-- [Τι πρέπει να κάνει η βουλή για το Κυπριακό](/greek/2017-11-26-parl-cy-problem/) (26 November 2017)
-- [Περί φεμινισμού, δικαιοσύνης, και κοινωνικής πολιτικής](/greek/2017-11-04-feminism-social-dimension/) (4 November 2017)
-- [Γιατί υποστηρίζουμε το ελεύθερο λογισμικό](/greek/2017-10-06-support-free-software/) (6 October 2017)
-- [Ποια πρέπει να είναι η θέση μας για την Ευρώπη;](/greek/2017-09-27-new-left-europe/) (27 September 2017)
+- [Ας μιλήσουμε κυριολεκτικά για το ψωμί του λαού](/greek/2018-04-13-real-bread/) (13 Απριλίου 2018)
+- [Περί της ρητορικής για «ψευδοκράτος»](/greek/2018-01-07-cy-pseudo-state-rhetoric/) (7 Ιανουαρίου 2018)
+- [Τι πρέπει να κάνει η βουλή για το Κυπριακό](/greek/2017-11-26-parl-cy-problem/) (26 Νοεμβρίου 2017)
+- [Περί φεμινισμού, δικαιοσύνης, και κοινωνικής πολιτικής](/greek/2017-11-04-feminism-social-dimension/) (4 Νοεμβρίου 2017)
+- [Γιατί υποστηρίζουμε το ελεύθερο λογισμικό](/greek/2017-10-06-support-free-software/) (6 Οκτωβρίου 2017)
+- [Ποια πρέπει να είναι η θέση μας για την Ευρώπη;](/greek/2017-09-27-new-left-europe/) (27 Σεπτεμβρίου 2017)
 
 ### Code projects (on GitHub)
 {% assign githubprojects = site.data.githubprojects | sort: 'name' %}
@@ -86,11 +95,11 @@ layout: page
 {% endfor %}
 </ul>
 
-## Selected work experience
+<!-- ## Selected work experience -->
 
-Parliamentary assistant to MEP Rui TAVARES for the Greens/EFA group during the seventh parliamentary term.
+<!-- Parliamentary assistant to MEP Rui TAVARES for the Greens/EFA group during the seventh parliamentary term. -->
 
-External expert for CEPS (Centre for European Policy Studies) in the preparation of the H2020 project proposal *Examining The Processes Of Legitimacy. Rule of Law, Fundamental Rights and Crises in the EU (EURULNET)*, within the Call CULT-COOP-01-2017 of the European Commission.
+<!-- External expert for CEPS (Centre for European Policy Studies) in the preparation of the H2020 project proposal *Examining The Processes Of Legitimacy. Rule of Law, Fundamental Rights and Crises in the EU (EURULNET)*, within the Call CULT-COOP-01-2017 of the European Commission. -->
 
 ## About protesilaos.com
 
