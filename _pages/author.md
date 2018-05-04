@@ -96,7 +96,7 @@ External expert for CEPS (Centre for European Policy Studies) in the preparation
 
 I have been posting content on [protesilaos.com](/) since February 2011. This is the platform that presents in an organised and meaningful way all of my intellectual work. It is at the epicentre of all I do in terms of thinking, writing, and coding: a major content hub, hosting over 500 articles and featuring a growing number of publications on several fronts.
 
-This website has evolved considerably over the years. It started off as a blog on Blogger, turner into a self-hosted WordPress site, and now exists as a set of files that are transformed into static pages with Jekyll. I have written from scratch every line of the [underlying code base](https://gitlab.com/protesilaos/protesilaos.gitlab.io).
+This website has evolved considerably over the years. It started off as a blog on Blogger, turner into a self-hosted WordPress site, and now exists as a set of files that are transformed into static pages with Jekyll. I have written from scratch every line of the [underlying code base](https://github.com/protesilaos/protesilaos.github.io).
 
 ## Note on contacting me
 

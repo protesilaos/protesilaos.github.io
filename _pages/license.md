@@ -21,7 +21,7 @@ All original code presented herein is distributed under the terms of the [GNU Ge
 
 ## Resources
 
-All files referenced in this section are from this website's [git repository](https://gitlab.com/protesilaos/protesilaos.gitlab.io).
+All files referenced in this section are from this website's [git repository](https://github.com/protesilaos/protesilaos.github.io).
 {:.note}
 
 ### Front end
@@ -34,7 +34,7 @@ The web fonts are [Noto Sans](https://www.google.com/get/noto/).
 
 Built with [Jekyll](http://jekyllrb.com). For the relevant dependencies, see `Gemfile`.
 
-Hosted on [GitLab Pages](https://pages.gitlab.io/). Continuous integration and deployment follows the steps defined in `.gitlab-ci.yml`.
+Hosted on [GitHub Pages](https://pages.github.com/).
 
 ### Nodejs dependencies
 
