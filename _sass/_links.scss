@@ -2,19 +2,20 @@ a {
     color: $baselinkfg;
     text-decoration: none;
 
-    &:not(.active) {
-        @include transition;
-    }
-
-    &:hover,
-    &:active {
+    &:hover {
         color: $baselinkfghover;
     }
 
+    &:active {
+        background: $basebgalt;
+        color: $baselinkfgactive;
+    }
+
     &:not(.skip-link):focus {
-        background: inherit;
-        color: inherit;
-        outline: 2px dotted $baselinkfgfocus;
+        background: $basebgalt;
+        color: $baselinkfgfocus;
+        text-decoration: none;
+        outline: 1px dotted $baselinkfgfocus;
     }
 
     &.active {
@@ -22,11 +23,15 @@ a {
     }
 
     .post & {
+        color: $bodylinkfg;
         text-decoration: underline;
 
-        &:hover,
+        &:hover {
+            color: $bodylinkfghover;
+        }
+
         &:active {
-            text-decoration: underline;
+            color: $bodylinkfgactive;
         }
     }
 
