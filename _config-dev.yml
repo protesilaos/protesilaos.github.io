@@ -2,31 +2,68 @@ limit_posts: 1
 incremental: false
 exclude:
   - README.md # ------------------ Basis ---------------------------
-  - Gemfile
-  - vendor
-  - package.json
-  - node_modules
-  - gulpfile.js
+  - .bundle
+  - .git
+  - .gitignore
   - .stylelintrc
-  - images
-  - _archive
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package-lock.json
+  - package.json
+  - vendor
+  - _archive # ------------------- Unusual -------------------------
+  - 404.md
+  - _includes/cypher-guest.scss
+  - _includes/guestbox.html
+  - css/cypher-print.css
   - master.xml
-  - _layouts/seminar.html
   - pages/certificates
-  - _pages # --------------------- Static Pages --------------------
+  - fonts # ---------------------- Webfonts ------------------------
+  - css/webfonts.min.css
+  - _assets/css
+  - js # ------------------------- JavaScript ----------------------
+  - _assets/js
+  - images # --------------------- Images --------------------------
+  - android-chrome-192x192.png
+  - android-chrome-256x256.png
+  - apple-touch-icon.png
+  - browserconfig.xml
+  - favicon-16x16.png
+  - favicon-32x32.png
+  - favicon.ico
+  - manifest.json
+  - mstile-150x150.png
+  - safari-pinned-tab.svg
+  - site.webmanifest
+  - _posts # --------------------- Posts ---------------------------
+  - _layouts/post.html
+  - _posts/2016
+  - _posts/2017
+  - _posts/opeds
+  - _posts/seminars
+  - _layouts/seminar.html
+  - _pages # --------------------- Pages ---------------------------
   - _pages/blog
-  - _pages/books
   - _pages/indices
+  - _layouts/index.html
+  - _layouts/page.html
+  - _data/text.yml
+  - _data/githubprojects.yml
   - greek.xml # ------------------ Greek ---------------------------
   - _greek
   - _pages/indices/greek.html
+  - _layouts/elpost.html
   - _books # --------------------- Books ---------------------------
+  - _data/books.yml
   - _books/eudi
   - _books/euguide
   - _books/euhandbook
   - _books/sov
   - _books/stsns
-  - _pages/indices/books
+  - _pages/books
   - _pages/indices/books.html
   - _layouts/eudi.html
   - _layouts/euguide.html
@@ -34,28 +71,29 @@ exclude:
   - _layouts/print.html
   - _layouts/sov.html
   - _layouts/stsns.html
+  - _layouts/monograph.html
   - _includes/booksnav.html
+  - _includes/cypher-books.scss
   - _codelog # ------------------- Code ----------------------------
   - codelog.xml
   - _pages/indices/codelog.html
   - _pages/indices/code.html
   - _includes/cypher-syntax.scss
   - _schemes # ------------------- Schemes -------------------------
-  - _includes/main.min.js
-  - _pages/indices/schemes.html
-  - _layouts/scheme.html
   - _data/themes.yml
-  - _includes/prot16-project-template.md
   - _includes/prot16-packages.html
   - _includes/prot16-palette.html
-  - _includes/prot16-vim-packages.html
   - _includes/prot16-project-template.md
+  - _includes/prot16-project-template.md
+  - _includes/prot16-vim-packages.html
+  - _layouts/scheme.html
+  - _pages/indices/schemes.html
   - _tempus-themes
-  - _pages/indices/tempus-themes.html
-  - _data/tempus-themes.yml
   - _data/tempus-themes-packages.yml
   - _data/tempus-themes-repos.yml
+  - _data/tempus-themes.yml
   - _includes/tempus-themes-packages.html
   - _includes/tempus-themes-palette.html
   - _includes/tempus-themes-project-template.md
   - _includes/tempus-themes-repos.html
+  - _pages/indices/tempus-themes.html
