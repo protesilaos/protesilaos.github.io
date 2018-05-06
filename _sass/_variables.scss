@@ -68,20 +68,20 @@ $bodylinkfgfocus: $col10;
 $bodylinkfgactive: $col11;
 
 // Buttons and action elements
-$btnmainbg: $col14;
-$btnmainbgactive: $col13;
+$btnmainbg: $col8;
+$btnmainbgactive: $col5;
 $btnmainfg: $col15;
-$btnmainfgactive: $col15;
+$btnmainfgactive: $btnmainfg;
 
-$btnaltbg: $col12;
+$btnaltbg: $col11;
 $btnaltbgactive: $btnmainbgactive;
-$btnaltfg: $col15;
-$btnaltfgactive: $col15;
+$btnaltfg: $btnmainfg;
+$btnaltfgactive: $btnmainfg;
 
 $btnskipbg: $col0;
 $btnskipbgactive: $btnmainbgactive;
-$btnskipfg: $col15;
-$btnskipfgactive: $col15;
+$btnskipfg: $btnmainfg;
+$btnskipfgactive: $btnmainfg;
 
 // Inline code element
 $inlinecodebg: $col7;
