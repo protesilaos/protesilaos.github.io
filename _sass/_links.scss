@@ -2,12 +2,9 @@ a {
     color: $baselinkfg;
     text-decoration: none;
 
-    &:hover {
-        color: $baselinkfghover;
-    }
-
+    &:hover,
     &:active {
-        color: $baselinkfgactive;
+        color: $baselinkfghover;
     }
 
     &:not(.skip-link):focus {
@@ -25,12 +22,9 @@ a {
         color: $bodylinkfg;
         text-decoration: underline;
 
-        &:hover {
-            color: $bodylinkfghover;
-        }
-
+        &:hover,
         &:active {
-            color: $bodylinkfgactive;
+            color: $bodylinkfghover;
         }
     }
 
