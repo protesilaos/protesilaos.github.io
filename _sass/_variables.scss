@@ -13,30 +13,39 @@ $brandlink: #36508a;
 $brandlinkalt: #991e54;
 $brandhighlight: #7033a0; // for use against brandbg
 
-// Palette for content elements (header and footer use brand colours)
+// Palette for content elements (header uses brand colours)
 // -----------------------------------------------------------------------------
 // Base values are bgs: col15, col7 // fgs: col0, col8. Others are accents
-// Base value combinations (fgs <=> bgs) are WCAG AAA for small and large text
-// All accent values values are WCAG AA compliant against base bgs (5.5:1)
-// All accent bright values are WCAG AAA compliant for large sizes against bgs
-// Colours for body text (baselinkfg) must have minimum contrast 3:1 against fgs
-// Any bright accent is suitable for big text links or block highlights
-$col0: #0a0a0a; // black variant
-$col1: #cc1300; // red variant
-$col2: #1a753d; // green variant
-$col3: #945800; // yellow variant
-$col4: #0062d0; // blue variant
-$col5: #a2447d; // magenta variant
-$col6: #1a707d; // cyan variant
-$col7: #fafce6; // white variant
-$col8: #30385a; // bright black variant
-$col9: #ba571c; // bright red variant
-$col10: #3f823c; // bright green variant
-$col11: #8e7000; // bright yellow variant
-$col12: #1c77c2; // bright blue variant
-$col13: #b4508c; // bright magenta variant
-$col14: #307c99; // bright cyan variant
-$col15: #fafafa; // bright white variant
+// col0 is base fg, col15 is base bg; col8 and col7 are their alternatives
+// All base values are WCAG AAA compliant (>= 7.79:1)
+//
+// All accent values are WCAG AAA compliant against col15 (8.25:1)
+// All accent values are WCAG AAA compliant against col7 (7.00:1)
+//
+// All bright accents are WCAG AAA compliant for large sizes against col15 (5.50:1)
+// All bright accents are WCAG AAA compliant for large sizes against col7 (4.70:1)
+//
+// Colours for body text must have minimum contrast 3:1 against fgs
+// All bright accents qualify
+//
+// Any accent is suitable for big text links (except body) or block highlights
+
+$col0: #1a1a1a; // black variant
+$col1: #a20000; // red variant
+$col2: #065c08; // green variant
+$col3: #6c4700; // yellow variant
+$col4: #0044bb; // blue variant
+$col5: #960c67; // magenta variant
+$col6: #005479; // cyan variant
+$col7: #e7eef7; // white variant
+$col8: #3c476b; // bright black variant
+$col9: #cc2222; // bright red variant
+$col10: #3d7628; // bright green variant
+$col11: #995a00; // bright yellow variant
+$col12: #2d63d0; // bright blue variant
+$col13: #b03890; // bright magenta variant
+$col14: #007196; // bright cyan variant
+$col15: #ffffff; // bright white variant
 
 // Colour mapping
 // -----------------------------------------------------------------------------
@@ -50,7 +59,13 @@ $basefgalt: $col8;
 // Links
 $baselinkfg: $col4;
 $baselinkfghover: $col5;
-$baselinkfgfocus: $col3;
+$baselinkfgfocus: $col2;
+$baselinkfgactive: $col3;
+
+$bodylinkfg: $col12;
+$bodylinkfghover: $col13;
+$bodylinkfgfocus: $col10;
+$bodylinkfgactive: $col11;
 
 // Buttons and action elements
 $btnmainbg: $col14;
@@ -73,10 +88,10 @@ $inlinecodebg: $col7;
 $inlinecodefg: $col1;
 
 // Notifications
-$notifyinfo: $col6;
-$notifynote: $col2;
+$notifyinfo: $col14;
+$notifynote: $col10;
 $notifywarn: $col11;
-$notifycrit: $col1;
+$notifycrit: $col9;
 
 // Scale and measures
 // =============================================================================
