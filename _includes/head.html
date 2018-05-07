@@ -28,6 +28,10 @@
     </style>
 
     <!-- Web fonts -->
+	{% unless site.environment == 'development' %}
+		/* The webfonts are Open Serif. For the attached license, see https://protesilaos.com/license */
+		@import url("//hello.myfonts.net/count/369081");
+    {% endunless %}
     <link rel="stylesheet" href="{{ '/css/webfonts.min.css'  | absolute_url }}" type="text/css" charset="utf-8">
 
     <!-- Secondary styles -->

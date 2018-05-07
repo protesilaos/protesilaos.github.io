@@ -128,8 +128,9 @@ samp {
 }
 
 pre {
-    @include fluid-font-size($xssize);
+    @include fluid-font-size($ssize);
 
+    font-size: $ssize;
     margin: $vertical-rhythm-0 0;
     padding: $space-1;
 	padding-left: $vertical-rhythm-0;

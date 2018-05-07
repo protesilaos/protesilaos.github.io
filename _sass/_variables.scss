@@ -130,7 +130,7 @@ $vertical-rhythm-2: #{$line-height * 2.5}rem;
 $vertical-rhythm-3: #{$line-height * 3.5}rem;
 
 // Page measure
-$measure: 38rem;
+$measure: 34rem;
 $measure-xl: $measure + 4;
 
 // Dividers
@@ -157,7 +157,7 @@ $desktop: 75em;
 // Font stacks
 // -----------------------------------------------------------------------------
 $serif: serif;
-$sans: 'Noto Sans', sans-serif;
+$sans: 'Open Serif', sans-serif;
 $mono: monospace;
 
 // Functions
@@ -197,11 +197,11 @@ $mono: monospace;
 }
 
 @mixin tablet-font-size($tablet-font-size) {
-    font-size: $tablet-font-size + 0.08;
+    font-size: $tablet-font-size + 0.02;
 }
 
 @mixin desktop-font-size($desktop-font-size) {
-    font-size: $desktop-font-size + 0.16;
+    font-size: $desktop-font-size + 0.04;
 }
 
 // NOTE Combines the above two and is the preferred option
@@ -216,13 +216,13 @@ $mono: monospace;
 }
 
 @mixin tablet-icon-size($tablet-icon-size) {
-    width: $tablet-icon-size + 0.08;
-    height: $tablet-icon-size + 0.08;
+    width: $tablet-icon-size + 0.02;
+    height: $tablet-icon-size + 0.02;
 }
 
 @mixin desktop-icon-size($desktop-icon-size) {
-    width: $desktop-icon-size + 0.16;
-    height: $desktop-icon-size + 0.16;
+    width: $desktop-icon-size + 0.04;
+    height: $desktop-icon-size + 0.04;
 }
 
 // NOTE Combines the above two and is the preferred option

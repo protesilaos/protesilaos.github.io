@@ -28,7 +28,40 @@ All files referenced in this section are from this website's [git repository](ht
 
 The entire underlying code base—HTML, CSS, JavaScript—is written by me. The implemented theme is internally referred to as `cypher`.
 
-The web fonts are [Noto Sans](https://www.google.com/get/noto/).
+The web fonts are [Open Serif](https://www.myfonts.com/fonts/matteson-typographics/open-serif/). The following notice is bundled with the stylesheet.
+
+```css
+/**
+ * @license
+ * MyFonts Webfont Build ID 3575937, 2018-05-07T02:29:00-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: OpenSerif-BoldItalic by Matteson Typographics
+ * URL: https://www.myfonts.com/fonts/matteson-typographics/open-serif/bold-italic/
+ * 
+ * Webfont: OpenSerif-Bold by Matteson Typographics
+ * URL: https://www.myfonts.com/fonts/matteson-typographics/open-serif/bold/
+ * 
+ * Webfont: OpenSerif-Italic by Matteson Typographics
+ * URL: https://www.myfonts.com/fonts/matteson-typographics/open-serif/italic/
+ * 
+ * Webfont: OpenSerif-Regular by Matteson Typographics
+ * URL: https://www.myfonts.com/fonts/matteson-typographics/open-serif/regular/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3575937
+ * Licensed pageviews: 20,000
+ * Webfonts copyright: Digitized data copyright (C) 2011-2016 Steve Matteson
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+```
 
 ### Back end
 
