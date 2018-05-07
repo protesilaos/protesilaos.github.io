@@ -1,3 +1,4 @@
+environment: development # to exclude assets from local setup
 limit_posts: 1
 incremental: false
 exclude:
