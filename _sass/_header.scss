@@ -21,6 +21,7 @@
 
     @include tablet {
         padding: $vertical-rhythm-2 $space-1;
+        max-width: $measure;
     }
 
     @include desktop {
@@ -29,9 +30,10 @@
 
     font-size: $lsize;
     text-align: left;
-    padding: $vertical-rhythm-0 $space-1;
+    display: block;
     margin: 0 auto;
-    max-width: $measure;
+    padding: $vertical-rhythm-0 $space-1;
+    max-width: 100%;
 
     .header-logo {
         @include fluid-font-size($xxlsize);
