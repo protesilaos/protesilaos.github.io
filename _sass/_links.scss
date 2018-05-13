@@ -1,33 +1,32 @@
+// General styles
+// --------------------------- 
 a {
     color: $baselinkfg;
     text-decoration: none;
 
     &:hover,
-    &:active {
+    &:focus {
         color: $baselinkfghover;
+        outline: none;
     }
 
-    &:not(.skip-link):focus {
-        background: $basebgalt;
-        color: $baselinkfgfocus;
-        text-decoration: none;
-        outline: 1px dotted $baselinkfgfocus;
-    }
-
+    // Main menu active item
     &.active {
         font-weight: 700;
     }
 
+    // Links surrounded by paragraph text
     .post & {
         color: $bodylinkfg;
         text-decoration: underline;
 
         &:hover,
-        &:active {
+        &:focus {
             color: $bodylinkfghover;
         }
     }
 
+    // Misc styles
     article:not(.packages) &,
     .homepage-container p &,
     .index p & {
@@ -35,5 +34,31 @@ a {
             text-decoration: none;
             font-weight: 700;
         }
+    }
+}
+
+// Brand styles
+// --------------------------- 
+.homepage a,
+.header a,
+.footer a {
+    color: $brandlink;
+
+    &:hover,
+    &:focus {
+        color: $brandlinkalt;
+    }
+}
+
+// Skip link (skip to content)
+// --------------------------- 
+a.skip-link {
+    background: $brandlink;
+    color: $brandbg;
+    
+    &:hover,
+    &:focus {
+        background: $brandlinkalt;
+        color: $brandbg;
     }
 }

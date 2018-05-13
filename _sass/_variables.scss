@@ -6,12 +6,12 @@
 
 // For header and footer sections
 // WCAG AAA compliant
-$brandbg: #f3f1f5;
-$brandfg: #43474a;
-$brandfgalt: #634e2f;
-$brandlink: #36508a;
-$brandlinkalt: #991e54;
-$brandhighlight: #7033a0; // for use against brandbg
+$brandbg: #102f49;
+$brandfg: #d7def7;
+$brandfgalt: #c5b6af;
+$brandlink: #a0b7ff;
+$brandlinkalt: #e0a6e0;
+$brandhighlight: #a0c2a0; // for use against brandbg
 
 // Palette for content elements (header uses brand colours)
 // -----------------------------------------------------------------------------
@@ -59,11 +59,9 @@ $basefgalt: $col8;
 // Links
 $baselinkfg: $col4;
 $baselinkfghover: $col5;
-$baselinkfgfocus: $col2;
 
 $bodylinkfg: $col12;
 $bodylinkfghover: $col13;
-$bodylinkfgfocus: $col10;
 
 // Buttons and action elements
 $btnmainbg: $col8;
@@ -75,11 +73,6 @@ $btnaltbg: $col11;
 $btnaltbgactive: $btnmainbgactive;
 $btnaltfg: $btnmainfg;
 $btnaltfgactive: $btnmainfg;
-
-$btnskipbg: $col0;
-$btnskipbgactive: $btnmainbgactive;
-$btnskipfg: $btnmainfg;
-$btnskipfgactive: $btnmainfg;
 
 // Inline code element
 $inlinecodebg: $col7;
@@ -143,9 +136,9 @@ $border-color-dark-1: #333;
 $border-color-dark-2: #555;
 $border-color-light-0: #eee;
 $border-color-light-1: #cecece;
-$border-color-light-2: #aeaeae;
+$border-color-light-2: #bababa;
 $border-color-highlight: $notifyinfo;
-$border-color-highlight-alt: $brandlinkalt;
+$border-color-highlight-alt: $notifycrit;
 
 // Viewports
 $tablet: 44.375em;

@@ -3,15 +3,6 @@
 
     background: $brandbg;
     color: $brandfg;
-
-    a {
-        color: $brandlink;
-
-        &:hover,
-        &:active {
-            color: $brandlinkalt;
-        }
-    }
 }
 
 .header-inner {

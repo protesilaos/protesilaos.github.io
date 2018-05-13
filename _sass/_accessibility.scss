@@ -10,8 +10,6 @@
 .skip-link {
     @include fluid-font-size($msize);
 
-    background: $btnskipbg;
-    color: $btnskipfg;
     display: block;
     left: -9999em;
     outline: none;
@@ -19,11 +17,6 @@
     text-decoration: none;
     text-transform: none;
     top: -9999em;
-
-    &:hover {
-        background: $btnskipbgactive;
-        color: $btnskipfgactive;
-    }
 
     &:focus {
         clip: auto;
@@ -35,10 +28,3 @@
     }
 }
 
-a.skip-link {
-    color: $btnskipfg;
-    
-    &:hover {
-	color: $btnskipfgactive;
-    }
-}

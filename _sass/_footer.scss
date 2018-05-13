@@ -7,6 +7,8 @@
         padding: $vertical-rhythm-0 0;
     }
 
+    background: $brandbg;
+    color: $brandfg;
     font-size: $msize;
     padding: $space-0 0;
     margin-top: $vertical-rhythm-0;
@@ -15,7 +17,6 @@
 .footer-block {
     @include fluid-width-measure;
 
-    color: $brandfg;
     display: block;
     padding: $space-1;
     margin: 0 auto;
