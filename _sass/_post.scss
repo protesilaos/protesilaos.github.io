@@ -1,11 +1,5 @@
 %container {
-    @include tablet {
-        max-width: $measure;
-    }
-
-    @include desktop {
-        max-width: $measure-xl;
-    }
+    @include fluid-width-measure;
 
     display: block;
     margin: 0 auto;
@@ -25,16 +19,19 @@
     }
 
     h1 {
+        @include fluid-font-size($impact-text-l);
+
         color: $basefg;
     }
 
+    // Inherits styles from h2
     .subtitle {
         color: $basefgalt;
         font-weight: 400;
     }
 
     time {
-        @include fluid-font-size($xxssize);
+        @include fluid-font-size($ssize);
 
         font-size: $ssize;
         margin: $vertical-rhythm-0 0;
@@ -49,9 +46,10 @@
 // NOTE same styles are found in _sass/_index.scss for `.index-item-label`
 // NOTE used in seminar layout to display arbitrary 'label' (description of seminar series)
 .post-header-subtitle-label {
-    @include fluid-font-size($xxssize);
+    @include fluid-font-size($ssize);
 
     font-size: $ssize;
+    font-style: italic;
     color: $basefgalt;
 }
 

@@ -8,15 +8,12 @@
 .header-inner {
     @extend %clearfix;
 
+    @include fluid-width-measure;
+
     @include fluid-font-size($lsize);
 
     @include tablet {
-        padding: $vertical-rhythm-2 $space-1;
-        max-width: $measure;
-    }
-
-    @include desktop {
-        max-width: $measure-xl;
+        padding: $vertical-rhythm-1 $space-1;
     }
 
     font-size: $lsize;

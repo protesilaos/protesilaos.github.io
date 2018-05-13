@@ -46,14 +46,12 @@
     @include fluid-font-size($impact-text-l);
 
     font-size: $xxlsize;
-    font-weight: 400;
-    color: $basefg;
 }
 
 .index-impact-header-subtitle {
     @extend %index-impact-heading-elements;
 
-    @include fluid-font-size($impact-text-s);
+    @include fluid-font-size($xlsize);
 
     font-size: $lsize;
     font-weight: 400;
