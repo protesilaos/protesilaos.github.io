@@ -2,14 +2,6 @@
 layout: default
 ---
 
-<div class="medialayer">
-    <div class="mediaframe">
-        <div class="mediawrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.mediaid }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-
 <article class="post container">
 
     <div class="post-inner">
@@ -23,6 +15,15 @@ layout: default
                 <h2 class="subtitle">{{ page.lecturetheme }} ({{ page.lecture }})</h2>
             {% endif %}
 	    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+        </div>
+
+
+        <div class="medialayer">
+            <div class="mediaframe">
+                <div class="mediawrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.mediaid }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
 
         {{ content }}
