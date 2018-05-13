@@ -36,12 +36,17 @@
 .homepage-greeter-title {
     @include fluid-font-size($impact-text-xl);
 
+    // On larger viewports, the greater size eliminates the need for bold
+    @include tablet {
+        font-weight: 400;
+    }
+
     font-size: $xxlsize;
     color: $brandfg;
 }
 
 .homepage-greeter-subtitle {
-    @include fluid-font-size($impact-text-s);
+    @include fluid-font-size($xlsize);
 
     font-size: $lsize;
     font-weight: 400;
