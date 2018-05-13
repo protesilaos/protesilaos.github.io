@@ -7,8 +7,8 @@
         padding: $vertical-rhythm-0 0;
     }
 
-    background: $brandbg;
-    color: $brandfgalt;
+    background: $basebg;
+    color: $basefg;
     font-size: $msize;
     padding: $space-0 0;
     margin-top: $vertical-rhythm-0;
@@ -23,5 +23,9 @@
 
     + .footer-block {
         @include border(top, $border-width-thin, solid, $border-color-light-2);
+    }
+
+    a {
+        font-weight: 700;
     }
 }
