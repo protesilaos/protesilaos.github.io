@@ -64,6 +64,9 @@
 
     // NOTE these style the text with the colour value
     // NOTE line-height should be equal to height for vertical centering
+    @include fluid-font-size($xxssize);
+
+    font-size: $xxssize;
     text-align: center;
     line-height: (($measure / 8) - ($space-0 / 2)) - ($space-0 / 2);
 }

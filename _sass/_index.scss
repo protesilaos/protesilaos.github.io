@@ -71,7 +71,8 @@
         color: $btnmainfg;
         padding: $space-0;
 
-        &:hover {
+        &:hover,
+        &:focus {
             background: $btnmainbgactive;
             color: $btnmainfgactive;
         }
@@ -97,10 +98,6 @@
             margin-top: $vertical-rhythm-1;
         }
 
-        @include desktop {
-            margin-top: $vertical-rhythm-2;
-        }
-
         margin-top: $vertical-rhythm-0;
     }
 }
@@ -109,16 +106,20 @@
     @include fluid-width-measure;
     @include fluid-font-size($msize);
 
-    @include tablet {
-        margin: $vertical-rhythm-1 auto;
-    }
-
-    @include desktop {
-        margin: $vertical-rhythm-2 auto;
-    }
-
-    margin: $vertical-rhythm-0 auto;
+    margin: 0 auto;
     font-size: $msize;
+
+    &:last-of-type {
+        @include tablet {
+            margin-bottom: $vertical-rhythm-1;
+        }
+
+        @include desktop {
+            margin-bottom: $vertical-rhythm-2;
+        }
+
+        margin-bottom: $vertical-rhythm-0;
+    }
 
     ul {
         list-style-type: none;
@@ -150,7 +151,7 @@
 }
 
 .index-blog-section-heading {
-    @include fluid-font-size($impact-text-l);
+    @include fluid-font-size($impact-text-s);
     @include border(bottom, $border-width-thick, solid, $border-color-dark-2);
 
     @include tablet {
@@ -259,7 +260,8 @@
         color: $btnmainfg;
         padding: $space-0;
 
-        &:hover {
+        &:hover,
+        &:focus {
             background: $btnmainbgactive;
             color: $btnmainfgactive;
         }
