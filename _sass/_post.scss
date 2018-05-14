@@ -19,13 +19,21 @@
     }
 
     h1 {
-        @include fluid-font-size($impact-text-l);
+        @include fluid-font-size($impact-text-xl);
 
-        color: $basefg;
+        @include tablet {
+            font-weight: 300;
+        }
     }
 
     // Inherits styles from h2
     .subtitle {
+        @include fluid-font-size($xxlsize);
+
+        @include tablet {
+            font-weight: 300;
+        }
+
         color: $basefgalt;
         font-weight: 400;
     }
@@ -53,9 +61,9 @@
     color: $basefgalt;
 }
 
-.post-footer {
-    background: $basebg;
-}
+// .post-footer {
+    // background: $basebg;
+// }
 
 .post-meta {
     @extend p;
@@ -95,6 +103,7 @@ li {
 }
 
 // Auxiliary styles
+// --------------------------- 
 h1.h1-plus {
     font-size: $impact-text-l; // For books print-page title
 }

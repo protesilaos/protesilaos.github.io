@@ -150,8 +150,8 @@ $desktop: 75em;
 // Font stacks
 // -----------------------------------------------------------------------------
 $serif: serif;
-$sans: 'Open Serif', sans-serif;
-$mono: monospace;
+$sans: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$mono: "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
 
 // Functions
 // =============================================================================

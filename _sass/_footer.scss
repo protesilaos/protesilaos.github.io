@@ -24,8 +24,4 @@
     + .footer-block {
         @include border(top, $border-width-thin, solid, $border-color-light-2);
     }
-
-    a {
-        font-weight: 700;
-    }
 }
