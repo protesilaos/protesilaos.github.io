@@ -61,7 +61,6 @@ gulp.task('webfonts', function() {
 
 gulp.task('img', function() {
 	var imagemin = require('gulp-imagemin');
-	var pngquant = require('imagemin-pngquant');
 
 	return gulp.src('images/**/*')
 		.pipe(imagemin([
