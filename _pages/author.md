@@ -7,7 +7,7 @@ layout: page
 ---
 ## Basic information
 
-**Name:** Protesilaos STAVROU  
+**Name:** Protesilaos STAVROU (Πρωτεσίλαος ΣΤΑΥΡΟΥ)  
 **Citizenship:** Cypriot, Greek, European  
 **Birth place:** Greece  
 **Birth year:** 1988
