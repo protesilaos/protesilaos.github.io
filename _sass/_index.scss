@@ -45,6 +45,10 @@
 
     @include fluid-font-size($impact-text-l);
 
+    @include tablet {
+        font-weight: 300;
+    }
+
     font-size: $xxlsize;
 }
 
@@ -152,10 +156,11 @@
 
 .index-blog-section-heading {
     @include fluid-font-size($impact-text-s);
-    @include border(bottom, $border-width-thick, solid, $border-color-dark-2);
+    @include border(bottom, $border-width-medium, solid, $border-color-dark-2);
 
     @include tablet {
         margin-bottom: $vertical-rhythm-1;
+        font-weight: 400;
     }
 
     @include desktop {
@@ -163,6 +168,7 @@
     }
 
     font-size: $xxlsize;
+    line-height: $line-height;
     margin-bottom: $vertical-rhythm-0;
 }
 
