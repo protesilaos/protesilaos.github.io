@@ -61,4 +61,4 @@ This seminar was produced using only free and open source software.
 - The presentation slides were prepared in [LibreOffice](http://www.libreoffice.org/) and converted from a `.pdf` into `.jpg` using  [Imagemagick](http://www.imagemagick.org/script/index.php).
 - The video editing was done with [Kdenlive](https://kdenlive.org/https://kdenlive.org/).
 - The transcript was written in [Vim](https://vim.sourceforge.io/).
-- All working on a GNU/Linux machine, specifically [Debian]"
+- All working on a GNU/Linux machine, specifically [Debian](https://www.debian.org)
