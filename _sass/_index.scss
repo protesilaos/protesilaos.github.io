@@ -210,6 +210,7 @@
 }
 
 // Used in seminars index to display seminar theme
+// Also added to the blog index where the below 'special' class is used
 .index-blog-post-meta-label {
     @extend %index-blog-post-content-element;
 
@@ -218,6 +219,11 @@
     font-size: $ssize;
     font-style: italic;
     color: $basefgalt;
+}
+
+.index-blog-post-meta-label-special {
+    font-weight: 700;
+    font-style: normal;
 }
 
 // Used to display a prominent message in the posts' array

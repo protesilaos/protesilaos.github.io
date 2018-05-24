@@ -16,6 +16,9 @@ permalink: /blog/
             <a class="index-blog-post-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a>
             <time class="index-blog-post-timestamp">{{ post.date | date: site.date_format }}</time>
             <p class="index-blog-post-excerpt">{{ post.excerpt }}</p>
+            {% if post.lecturetheme and post.lecture %}
+                <p class="index-blog-post-meta-label"><span class="index-blog-post-meta-label-special">Seminar series:</span> {{ post.lecturetheme }} ({{ post.lecture }})</p>
+            {% endif %}
         </li>
     {% endfor %}
     </ul>
