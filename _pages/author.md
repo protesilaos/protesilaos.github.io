@@ -44,6 +44,7 @@ layout: page
 
 ### Seminars
 
+- [The Melian Dialogue, Power, and Justice](/seminars/melian-dialogue-realism/) (24 May 2018)
 - [The Ring of Gyges, Realism, Exceptionalism](/seminars/ring-gyges-realism-exceptionalism/) (17 May 2018)
 - [Sovereignty and the vertical separation of powers in the EU](/seminars/sovereignty-eu-federation/) (31 December 2017)
 - [Factors of statehood and the EU as a republic](/seminars/statehood-factors-eu-republic/) (24 October 2017)
