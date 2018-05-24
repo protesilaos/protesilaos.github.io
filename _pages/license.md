@@ -28,7 +28,7 @@ All files referenced in this section are from this website's [git repository](ht
 
 The entire underlying code base—HTML, CSS, JavaScript—is written by me. The implemented theme is internally referred to as `cypher`.
 
-The web fonts are [Ubuntu](https://design.ubuntu.com/font/).
+The web fonts are [Roboto](https://github.com/google/roboto/).
 
 ### Back end
 
