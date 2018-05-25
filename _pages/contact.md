@@ -4,8 +4,7 @@ excerpt: "All the ways to get in touch with Protesilaos Stavrou."
 permalink: /contact/
 layout: page
 ---
-- Email (preferred method): <public@protesilaos.com>
-- Twitter: [@protstavrou](https://twitter.com/protstavrou)
+Email: <public@protesilaos.com>
 
 Feel free to send me your message regarding the content of this website (blog posts, coding stuff, books, etc.).
 

@@ -5,10 +5,7 @@ excerpt: "Why I decided to delete my Twitter account."
 permalink: /diary/twitter-delete/
 flag: diary
 ---
-**This post is outdated.** I am back on [Twitter @protstavrou](https://twitter.com/protstavrou). Browse through my website to see the new content I have been posting.
-{: .critical }
-
-My Twitter days are over. I will delete my account.[^DeleteSocial] This decision will enter into force on April 24, 2016 at 0700 CET, only so that it does not come as a total surprise. Please do not tweet back at me. I will not see your message.
+My Twitter days are over. I will delete my account. This decision will enter into force on April 24, 2016 at 0700 CET, only so that it does not come as a total surprise. Please do not tweet back at me. I will not see your message.
 
 The handles to be affected are two:
 
@@ -28,7 +25,5 @@ I have no alter-Twitter, at least not for the time being. If you are still inter
 As for this website, it remains my only real commitment on the Internet.
 
 Peace.
-
-[^DeleteSocial]: Update, May 9, 2016: I created a new Twitter handle ([@protstavrou](https://twitter.com/protstavrou)) only for receiving messages regarding the content of this website, i.e. as an alternative to email. I no longer am active on Twitter, as described in this post.
 
 [^JournalArticle]: Though quite a few, I wish to single out—and hereby express my gratitude to—Lluís Camprubi ([@lluiscamprubi](https://twitter.com/lluiscamprubi)) who found me via Twitter and eventually asked for my contribution to the journal of the Catalan Greens. My article was published on January 26, 2016 with the title *"Europe’s economic governance: context and reform prospects"*. It [was republished](/economic-governance-context-reform/) a day later on this website.

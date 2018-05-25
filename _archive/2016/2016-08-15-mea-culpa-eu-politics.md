@@ -10,7 +10,6 @@ In the rest of this announcement I provide the context and relevant details. Her
 
 1. Coming back also means that I will be writing about the subject, just as I used to do (provided sufficient free time).
 2. I am not completely abandoning the plan to pursue employment opportunities in front end web developement. I am a freelancer and am willing to be a policy analyst "by day" and a developer "by night". If some full time job comes along, then I will adapt accordingly.
-3. I am rejoining Twitter. I now recognise that it is the de facto medium of communication for EU professionals and those interested in those issues. Tweet me [@protstavrou](https://twitter.com/protstavrou).
 
 ## Context and why the U-turn
 
@@ -37,14 +36,5 @@ In an attempt to expand my revenue streams, I will continue to pursue opportunit
 ## The transitional phase
 
 I still have to make some changes to my website. There may be parts that need to be brought up to date. I started by rewriting my [profile](/author/) and [contact](/contact/) pages. Check them out and share your thoughts if you think something is amiss. I will take care of any irregularities in time.
-
-For those of you who use RSS/Atom (the kind of stuff parsed by Feedly), I have to warn you that my current feed is a "catch-all". It delivers everything I post on this website. Obviously this is not an ideal setting. EU policy should be kept separate from coding stuff. However I am not eager to proceed with multiple content-specific feeds for a couple of reasons:
-
-1. It is the kind of complexity that may confuse new readers.
-2. Because of my employment outlook, I still need to remind people that I am not *just* a policy analyst.
-
-Besides, I have realised that avid RSS followers, myself included, are a dying breed. Most users get updates from their social network of choice.
-
-Which brings me to the next point: I am back on Twitter [@protstavrou](https://twitter.com/protstavrou). It was foolish of me to quit in the first place. Twitter is where all the EU policy people are active and, quite frankly, I much prefer it to Facebook. So if you feel like it, tweet me your "hello". I still do not intend to be the most vociferous of users. Will limit my presence to updates about my writings and probably some carefully curated links from third parties.
 
 To conclude, I must apologise for all this mess. Please excuse me for going to great lengths just to cope with extraordinary circumstances. Things are stable now. I am regaining confidence and am looking forward to improving my condition. Thank you for your attention and understanding. See you around.

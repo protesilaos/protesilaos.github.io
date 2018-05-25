@@ -13,7 +13,6 @@ layout: page
 **Birth year:** 1988
 
 **Email:** <public@protesilaos.com>  
-**Twitter:** [@protstavrou](https://twitter.com/protstavrou)
 
 ## Skills and education
 
@@ -118,11 +117,3 @@ I prefer email over any other tool. I always reply in a timely fashion. If you h
 ```sh
 gpg --recv-keys A5B8A16D86ADECB21FB8D488BF48FD84FE21D72A
 ```
-
-## My online avatars
-
-On Twitter, GitHub, and perhaps elsewhere, I use one of the following images as my profile picture.
-
-![Protesilaos profile pic](/images/self/protesilaos_stavrou_2018.jpg)
-
-![Protesilaos profile pic drawing](/images/self/prot_portrait_small.jpg)

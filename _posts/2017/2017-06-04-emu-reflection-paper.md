@@ -69,4 +69,4 @@ The Commission's work has to be recognised as largely positive. It would be even
 
 [^EMUReflectionPaper]: [Reflection paper on the deepening of the economic and monetary union](https://ec.europa.eu/commission/publications/reflection-paper-deepening-economic-and-monetary-union_en). Published by the European Commission on May 31, 2017.
 
-[^NoteOnSimilarAnalyses]: Perhaps it is worth noting that much of the reflection paper's content has already been discussed over an extended series of articles on this website. Regular readers will notice as much. Any new ones may want to [subscribe to this blog via RSS](/feed.xml) and/or follow me on [Twitter @protstavrou](https://twitter.com/protstavrou).
+[^NoteOnSimilarAnalyses]: Perhaps it is worth noting that much of the reflection paper's content has already been discussed over an extended series of articles on this website. Regular readers will notice as much. Any new ones may want to [subscribe to this blog via RSS](/feed.xml).

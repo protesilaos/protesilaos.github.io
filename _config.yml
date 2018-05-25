@@ -86,17 +86,11 @@ defaults:
       master: true
 
 # Social SEO
-twitter:
-  username: "@protstavrou"
 social:
   name: Protesilaos Stavrou
   links:
-    - https://twitter.com/protstavrou
     - https://github.com/protesilaos
     - https://gitlab.com/protesilaos
-    - https://www.npmjs.com/~protesilaos
-    - https://atom.io/users/protesilaos
-    - https://keybase.io/protesilaos
     - https://www.reddit.com/user/protesilaos
 
 # Where things are
