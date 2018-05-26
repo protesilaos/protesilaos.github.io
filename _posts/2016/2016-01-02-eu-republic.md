@@ -68,7 +68,7 @@ Starting from the European Commission, the Union's *implementing executive*, it
 
 At first, it is led by a group of Commissioners (one per Member State) who are in fact appointed in office following a grand inter-governmental bargain, even though the European Parliament wants to believe that it has actually elected the Commission President (the *spitzenkandidaten* procedure).
 
-Secondly, the Commission's role is supposed to be purely technocratic in nature: to initiate the legislative process, to implement supranational acts, and to monitor the compliance of Member States with the Union's legal order—to be the "guardian of the Treaties". In spite of its technocratic mandate, it is headed by a college of Commissioners that are prolific politicians in their own right and who are in office courtesy of a political agreement.
+Secondly, the Commission's role is supposed to be purely technocratic in nature: to initiate the legislative process, to implement supranational acts, and to monitor the compliance of Member States with the Union's legal order—to be the "guardian of the Treaties". In spite of its technocratic mandate, it is headed by a college of Commissioners that are prominent politicians in their own right and who are in office courtesy of a political agreement.
 
 This is not to claim that Commissioners have any ill intentions or are unable to perform their duties and to forward a decent policy agenda, but only to suggest that the *political nature* of the Commission indeed hampers its technocratic purpose by making it prone to external pressures and ulterior political motives.
 

@@ -40,6 +40,6 @@ Thirdly, confer to the Union certain taxation competences for introducing taxes 
 
 Fourthly, place a political office—a European finance ministry—in charge of economic governance. It would have the dual task of enforcing the rules as well as initiating EU-level investments to cancel out any recessionary pressures.
 
-Fifthly, split the Commission into two: (1) an elected executive, and (2) the EU’s public service. Currently the Commission is supposed to be a technocratic institution, yet it is led by prolific politicians and makes political decisions, all while purporting to do just “technical” work.
+Fifthly, split the Commission into two: (1) an elected executive, and (2) the EU’s public service. Currently the Commission is supposed to be a technocratic institution, yet it is led by prominent politicians and makes political decisions, all while purporting to do just “technical” work.
 
 It is understandable, given the inherent gradualism of European integration, that a new Treaty will not overhaul the EMU. It also is unlikely that intergovernmental negotiations will deliver an ambitious plan. Still, reform is necessary. Even relatively minor changes can have a major impact, making the EMU more democratic and balanced overall.
