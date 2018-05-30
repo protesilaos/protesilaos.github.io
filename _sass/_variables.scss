@@ -124,7 +124,7 @@ $vertical-rhythm-3: #{$line-height * 3.5}rem;
 
 // Page measure
 $measure: 34rem;
-$measure-xl: $measure + 4;
+$measure-xl: $measure + 6;
 
 // Dividers
 $border-width-thin: 1px;
@@ -227,6 +227,9 @@ $mono: Consolas, Monaco, "Ubuntu Mono", "Liberation Mono", monospace;
     @include desktop {
         @include desktop-icon-size($fluid-icon-size);
     }
+
+    width: $fluid-icon-size;
+    height: $fluid-icon-size;
 }
 
 @mixin border($border-position: bottom, $border-width: 1px, $border-style: solid, $border-color: #000) {
