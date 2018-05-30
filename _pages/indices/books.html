@@ -11,10 +11,14 @@ excerpt: "Index of the books published on protesilaos.com. These are free of cha
 <div class="index index-blog">
     <ul>
     {% for book in books %}
-        <li>
-            <a class="index-blog-post-heading" href="{{ book.url | relative_url }}">{{ book.title }}</a>
+        <li class="index-blog-post-container">
             <time class="index-blog-post-timestamp">{{ book.date | date: site.date_format }}</time>
-            <p class="index-blog-post-excerpt">{{ book.description }}</p>
+            <a class="index-blog-post-link" href="{{ book.url | relative_url }}">
+                <span class="index-blog-post-heading">{{ book.title }}</span>
+                {% if book.book %}
+                <span class="index-blog-post-meta-label">Book</span>
+                {% endif %}
+            </a>
         </li>
     {% endfor %}
     </ul>

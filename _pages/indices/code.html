@@ -13,11 +13,12 @@ permalink: /code/
     <h2 class="index-blog-section-heading">Coding blog</h2>
 
     <ul>
-    {% for codelog in codelogs limit:3 %}
-        <li>
-            <a class="index-blog-post-heading" href="{{ codelog.url | relative_url }}">{{ codelog.title }}</a>
+    {% for codelog in codelogs limit:10 %}
+        <li class="index-blog-post-container">
             <time class="index-blog-post-timestamp">{{ codelog.date | date: site.date_format }}</time>
-            <p class="index-blog-post-excerpt">{{ codelog.excerpt }}</p>
+            <a class="index-blog-post-link" href="{{ codelog.url | relative_url }}">
+                <span class="index-blog-post-heading">{{ codelog.title }}</span>
+            </a>
         </li>
     {% endfor %}
     </ul>

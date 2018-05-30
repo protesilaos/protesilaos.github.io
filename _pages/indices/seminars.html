@@ -9,17 +9,29 @@ index-feed:
 permalink: /seminars/
 ---
 
+{% assign seminar_theme = site.data.seminar-themes %}
 {% assign seminars = site.posts | where: 'layout', 'seminar' | sort: 'date' | reverse %}
 
 <div class="index index-blog">
+
+    <p class="info index-notification">
+        For my political writings, refer to the <a href="/blog/">main blog</a>.
+    </p>
+
+
+    {% for i in seminar_theme %}
+    <h4 class="index-blog-section-heading-secondary">{{ i.theme }}</h4>
     <ul>
-    {% for seminar in seminars %}
-        <li>
-            <a class="index-blog-post-heading" href="{{ seminar.url | relative_url }}">{{ seminar.title }}</a>
+        {% for seminar in seminars %}
+        {% if i.theme == seminar.lecturetheme %}
+        <li class="index-blog-post-container">
             <time class="index-blog-post-timestamp">{{ seminar.date | date: site.date_format }}</time>
-            <p class="index-blog-post-excerpt">{{ seminar.excerpt }}</p>
-            <p class="index-blog-post-meta-label">{{ seminar.lecturetheme }} ({{ seminar.lecture }})</p>
+            <a class="index-blog-post-link" href="{{ seminar.url | relative_url }}">
+                <span class="index-blog-post-heading">{{ seminar.title }} ({{ seminar.lecture }})</span>
+            </a>
         </li>
-    {% endfor %}
+        {% endif %}
+        {% endfor %}
     </ul>
+    {% endfor %}
 </div>

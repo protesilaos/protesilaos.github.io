@@ -15,9 +15,11 @@ permalink: /blog-archive/
 
     <ul>
     {% for archive in archives %}
-        <li>
-            <a class="index-blog-post-heading" href="{{ archive.url | relative_url }}">{{ archive.title }}</a>
+        <li class="index-blog-post-container">
             <time class="index-blog-post-timestamp">{{ archive.date | date: site.date_format }}</time>
+            <a class="index-blog-post-link" href="{{ archive.url | relative_url }}">
+                <span class="index-blog-post-heading">{{ archive.title }}</span>
+            </a>
         </li>
     {% endfor %}
     </ul>

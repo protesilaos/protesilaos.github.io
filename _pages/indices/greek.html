@@ -17,10 +17,11 @@ permalink: /greek/
 
     <ul>
     {% for greek in greeks %}
-        <li>
-            <a class="index-blog-post-heading" href="{{ greek.url | relative_url }}">{{ greek.title }}</a>
+        <li class="index-blog-post-container">
             <time class="index-blog-post-timestamp">{{ greek.date | date: site.date_format }}</time>
-            <p class="index-blog-post-excerpt">{{ greek.excerpt }}</p>
+            <a class="index-blog-post-link" href="{{ greek.url | relative_url }}">
+                <span class="index-blog-post-heading">{{ greek.title }}</span>
+            </a>
         </li>
     {% endfor %}
     </ul>

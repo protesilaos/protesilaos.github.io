@@ -1,7 +1,7 @@
 ---
 layout: index
 title: "Coding blog"
-subtitle: "Writings about code, free software, and my experience with GNU/Linux."
+subtitle: "Writings about code and free software"
 excerpt: "Writings about code, free software, and my experience with GNU/Linux."
 index-feed:
   text: Code Blog RSS
@@ -18,10 +18,11 @@ permalink: /codelog/
 
     <ul>
     {% for codelog in codelogs %}
-        <li>
-            <a class="index-blog-post-heading" href="{{ codelog.url | relative_url }}">{{ codelog.title }}</a>
+        <li class="index-blog-post-container">
             <time class="index-blog-post-timestamp">{{ codelog.date | date: site.date_format }}</time>
-            <p class="index-blog-post-excerpt">{{ codelog.excerpt }}</p>
+            <a class="index-blog-post-link" href="{{ codelog.url | relative_url }}">
+                <span class="index-blog-post-heading">{{ codelog.title }}</span>
+            </a>
         </li>
     {% endfor %}
     </ul>
