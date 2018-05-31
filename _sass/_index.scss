@@ -137,7 +137,7 @@
             width: 100%;
 
             + li {
-                margin-top: $space-1;
+                margin-top: $vertical-rhythm-0;
             }
         }
     }
@@ -146,9 +146,9 @@
 .index-blog-post-timestamp {
     @include tablet {
         float: left;
-        width: calc(25 - $space-1);
+        width: calc(20% - #{$space-0});
         display: inline-block;
-        margin: 0 $space-1 0 0;
+        margin: 0 $space-0 0 0;
     }
 
     display: inline;
@@ -160,7 +160,7 @@
     @include tablet {
         float: left;
         display: inline-block;
-        width: 75%;
+        width: 80%;
     }
 
     display: inline;
@@ -172,13 +172,17 @@
 
 // Used in posts index to display label e.g. 'Seminar', 'Book'
 .index-blog-post-meta-label {
+    @include fluid-font-size($xssize);
+
     @include tablet {
-        margin-left: $space-0;
+        margin-left: $space-1 * 0.15;
     }
 
     background: $col14;
     color: $basebg;
-    padding: 0 $space-0;
+    font-size: $xssize;
+    padding: 0 ($space-1 * 0.15);
+    margin-left: $space-0;
 }
 
 .index-blog-section-heading {
