@@ -47,7 +47,7 @@ When we witness phenomena such as the multifaceted conflict in Syria, we cannot 
 
 In the same spirit, we witness the constraints imposed upon the United Nations' capacity to enforce international law. The UN is not sovereign. Its power rests on the collective will of its member states. If the nations do not agree, the UN can do very little. A case in point is the powerlessness of the international community to restore order in Syria, despite all its good intentions. And the same is true for every multilateral agreement, which by its nature lacks a central authority to safeguard its provisions. For instance, see how the nuclear deal with Iran is currently threatened with jeopardy, due to the unilateral actions of the United States of America.
 
-The absence of a universally recognised supreme political authority means that all sides resort to promoting their own interest, while being distrustful of the motives and aspirations of others. Under these circumstances, governance is contingent on a series of favourable circumstances and of the decentralised coordination of implementing common norms. In essence, though, there are no ultimate guarantees. No greater authority can intervene to make sure that the rules are respected.
+The absence of a universally recognised supreme political authority means that all sides resort to promoting their own interest, while being distrustful of the motives and aspirations of others. Under these circumstances, governance is contingent on a series of favourable conditions and of the decentralised coordination of implementing common norms. In essence, though, there are no ultimate guarantees. No greater authority can intervene to make sure that the rules are respected.
 
 ## Anarchy leads to our undoing
 
