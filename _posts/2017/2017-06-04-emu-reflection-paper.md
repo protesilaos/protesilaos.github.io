@@ -3,10 +3,9 @@ title: "On the EU reflection paper about euro reform"
 subtitle: "The EMU must become a state"
 excerpt: "The paper on the deepening of the Economic and Monetary Union is good. Next up are reforms on democracy, macroeconomics, and finance."
 date: 2017-06-04
-theme: "future-europe"
 permalink: /emu-reform-reflection-paper/
 ---
-On May 31, 2017 the European Commission published its third reflection paper about the future of the integration process.[^EUReflectionPapers] This one concerns the reform of the Economic and Monetary Union.[^EMUReflectionPaper] Overall, it is a decent piece of work, one that combines constructive self-criticism, factual accuracy, and pragmatic suggestions for the way forward. The Commission has recognised the shortcomings of the initial EMU setup, has internalised the relevant debates on past mistakes and future prospects, and is showing willingness to act.
+On May 31, 2017 the European Commission published its third reflection paper about the future of the integration process. This one concerns the reform of the Economic and Monetary Union.[^EMUReflectionPaper] Overall, it is a decent piece of work, one that combines constructive self-criticism, factual accuracy, and pragmatic suggestions for the way forward. The Commission has recognised the shortcomings of the initial EMU setup, has internalised the relevant debates on past mistakes and future prospects, and is showing willingness to act.
 
 While an official document, the reflection paper on EMU reform, reads like an independent analysis of the state of play and of the potential states of affairs.[^NoteOnSimilarAnalyses] That is a great positive, for it does not commit the fallacy of withdrawing the EU level from scrutiny. Indeed, reform can only be made possible first by recognising the problems and their source, then by figuring out the best course of action for the promotion of the general good.
 
@@ -63,9 +62,6 @@ At any rate, the thinking on EMU reform has enjoyed several years of refinement.
 About a decade ago these ideas would be treated as illusory. The prospect of turning the EMU into a state was depicted as a federalist utopia. Apologists of the original EMU design would rather laud the ostensible decentralised Europeanisation that was enabled by their achievement, where monetary affairs were detached from any kind of democratic scrutiny, while the Stability and Growth Pact offered the rules/guidelines for nations to pursue their own policies. An integrated system cannot afford such heterogeneity and path divergence. The eurocrisis proved as much. And it is encouraging that we are moving towards a proper Europeanisation of the relevant policy instruments and institutional arrangements rather than continuing to pursue neoliberal chimeras from the late 20th century.
 
 The Commission's work has to be recognised as largely positive. It would be even more so if alongside those reflection papers, some thematic documents were also drafted. Perhaps we could get concrete ideas on a European Treasury, a European Finance Minister, the incorporation of the Eurogroup in the wider Council framework, a redesign of the ESM's governance, and so on. The point is to keep the debate going and to demonstrate that major reforms in Europe can enjoy input from citizens and their representatives at all levels of government. The opportunity to offer feedback such as with this blog post should not be underestimated. The more we discuss the EU and learn about it, the greater the likelihood of improving it.
-
-
-[^EUReflectionPapers]: I have published analyses on all reflection papers thus far, as well as the White Paper on the future of Europe. This [page on the future of Europe](/blog/theme/future-europe/) is an index with all of my recent articles on the theme.
 
 [^EMUReflectionPaper]: [Reflection paper on the deepening of the economic and monetary union](https://ec.europa.eu/commission/publications/reflection-paper-deepening-economic-and-monetary-union_en). Published by the European Commission on May 31, 2017.
 

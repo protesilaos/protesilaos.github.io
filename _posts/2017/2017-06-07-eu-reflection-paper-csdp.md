@@ -3,10 +3,9 @@ title: "On the EU reflection paper about security and defence"
 subtitle: "Civilian means should be prioritised"
 excerpt: "The Commission is adopting a 'thin' view of security and defence. Its focus on the military does little to refashion European policy."
 date: 2017-06-08
-theme: "future-europe"
 permalink: /csdp-eu-reflection-paper/
 ---
-On June 7, 2017 the European Commission published a "reflection paper" on the future of Europe's defence and security policy.[^ReflectionPaperCSDPpresser] This is the fourth in the series.[^EUFutureTheme] It builds on a number of initiatives that were launched in the second half of last year regarding the further integration of European Security and Defence Policy (CSDP), as well as the White Paper on the future of the EU. The overarching theme is to lay the foundations of a holistic re-imagination of the European project once this election year is over and to proceed towards the next phase of [deeper] integration by 2025.
+On June 7, 2017 the European Commission published a "reflection paper" on the future of Europe's defence and security policy.[^ReflectionPaperCSDPpresser] This is the fourth in the series. It builds on a number of initiatives that were launched in the second half of last year regarding the further integration of European Security and Defence Policy (CSDP), as well as the White Paper on the future of the EU. The overarching theme is to lay the foundations of a holistic re-imagination of the European project once this election year is over and to proceed towards the next phase of [deeper] integration by 2025.
 
 The reflection paper itself offers precious little in terms of new content and fresh ideas. Everything it touches on has been covered at greater length in previous publications, notably the EU Global Strategy, published in June 2016,[^EUGlobalStrat] the Specific Plan on Security and Defence of November 14, 2016,[^SPSD] as well as the European Defence Action Plan of November 30, 2016.[^EDAP] What this document does is remind political leaders and the public at-large of the state of affairs and the immediate steps forward.
 
@@ -63,8 +62,6 @@ Military means are not the only conduit to lasting peace. The European integrati
 Indeed Europe needs to integrate further for the sake of improving its standing on the global order. Over the long term, that will also force deviations from USA or NATO priorities. Yet it is a major strategic mistake, a fundamental misreading of the evolving state of affairs in our world, to depict security and defence as largely military issues. The army is but a part of a greater whole. If Europe does not want to become yet another  Occidental war machine, it should do better on the conceptual/analytic front, adopt a 'thick' view of security and defence, and work meticulously to achieve peace also through—if not primarily with—civilian means.
 
 [^ReflectionPaperCSDPpresser]: Here is the [press release](http://europa.eu/rapid/press-release_IP-17-1516_en.htm) announcing the reflection paper on security and defense policy. Published on June 7, 2017.
-
-[^EUFutureTheme]: I have commented on all reflection papers and have written at length about the future of the European integration process. Links are available on [this thematic section](/blog/theme/future-europe/).
 
 [^EUGlobalStrat]: Shared Vision, Common Action: A Stronger Europe. [EU Global Strategy](https://europa.eu/globalstrategy/sites/globalstrategy/files/regions/files/eugs_review_web.pdf) (pdf). Published in June 2016.
 
