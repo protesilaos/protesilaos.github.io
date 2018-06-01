@@ -43,6 +43,7 @@ layout: page
 
 ### Seminars
 
+- [Leviathan, Sovereignty, Anarchy, and Peace](/seminars/leviathan-sovereignty-anarchy-peace/) (31 May 2018)
 - [The Melian Dialogue, Power, and Justice](/seminars/melian-dialogue-realism/) (24 May 2018)
 - [The Ring of Gyges, Realism, Exceptionalism](/seminars/ring-gyges-realism-exceptionalism/) (17 May 2018)
 - [Sovereignty and the vertical separation of powers in the EU](/seminars/sovereignty-eu-federation/) (31 December 2017)
