@@ -69,7 +69,6 @@
         @include fluid-font-size($ssize);
 
         font-size: $ssize;
-        padding: $space-0;
     }
 
     .index-rss-icon {
@@ -81,6 +80,7 @@
         color: $basebg;
         vertical-align: top;
         padding: $space-0 / 2;
+        margin-right: $space-0 / 2;
     }
 }
 
