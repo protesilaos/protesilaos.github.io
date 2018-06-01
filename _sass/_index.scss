@@ -67,27 +67,20 @@
 
     .index-rss-feed {
         @include fluid-font-size($ssize);
-		@include radius(3%);
-		@include transition;
 
         font-size: $ssize;
-        background: $btnmainbg;
-        color: $btnmainfg;
         padding: $space-0;
-
-        &:hover,
-        &:focus {
-            background: $btnmainbgactive;
-            color: $btnmainfgactive;
-        }
     }
 
     .index-rss-icon {
-        @include fluid-icon-size($msize);
+        @include radius(50%);
+        @include fluid-icon-size($ssize);
         
-        width: $msize;
-        height: $msize;
-        vertical-align: middle;
+        display: inline;
+        background: $col9;
+        color: $basebg;
+        vertical-align: top;
+        padding: $space-0 / 2;
     }
 }
 
