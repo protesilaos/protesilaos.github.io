@@ -1,6 +1,7 @@
 # General
-blog: "Blog on EU politics"
-description: "EU policy analyst. Philosopher. Free/libre software contributor."
+# NOTE these are currently not used
+blog: "Blog on politics"
+description: "Political analyst. Philosopher. Free software contributor."
 publications: "Books and independent publications"
 greek: "Άρθρα στα ελληνικά (articles in greek)"
 

@@ -1,7 +1,7 @@
 ---
 title: "About me"
-subtitle: "EU policy analyst. Philosopher. Free/libre software contributor."
-excerpt: "Profile page of Protesilaos Stavrou. European Union policy analyst. Philosopher. Free/libre software contributor."
+subtitle: "Political analyst. Philosopher. Free software contributor."
+excerpt: "Profile page of Protesilaos Stavrou. Political analyst. EU specialist. Philosopher. Free/libre software contributor."
 permalink: /author/
 layout: page
 ---
@@ -23,7 +23,7 @@ layout: page
 
 ## Main content indices on this website
 
-- [Blog on EU politics](/blog/)
+- [Blog on politics](/blog/)
 - [Books and publications on politics and philosophy](/books/)
 - [Audio and video seminars on politics](/seminars/)
 - [Coding blog, mostly about free software](/codelog/)
