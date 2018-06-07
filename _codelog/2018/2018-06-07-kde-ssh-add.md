@@ -9,6 +9,8 @@ I am using the KDE Plasma 5 desktop environment on my Debian Sid machines. Every
 
 Searching online for a solution gave a direction, but no immediate solution. The answers provided in the Arch Wiki and relevant fora did not work. So I had to experiment a bit. After a few rounds of trial and error, I figured out a surprisingly simple solution.
 
+## The solution
+
 Note that this works on an up-to-date Debian Sid (aka Debian "unstable") distribution, running the `kde-full` metapackage. Adapt accordingly based on your distribution's conventions.
 {:.note}
 
