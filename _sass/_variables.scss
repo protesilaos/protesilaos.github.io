@@ -4,6 +4,13 @@
 // Website brand colours
 // -----------------------------------------------------------------------------
 
+// For the homepage
+$homepagebg: #fff;
+$homepagefg: #000;
+$homepagefgalt: #333;
+$homepagelink: #009;
+$homepagelinkalt: #903;
+
 // For header and footer sections
 // WCAG AAA compliant
 $brandbg: #f9f9f9;
@@ -151,7 +158,7 @@ $desktop: 75em;
 // -----------------------------------------------------------------------------
 $serif: serif;
 $sans: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-$mono: Consolas, Monaco, "Ubuntu Mono", "Liberation Mono", monospace;
+$mono: Consolas, Monaco, monospace;
 
 // Functions
 // =============================================================================

@@ -6,8 +6,10 @@
     bottom: 0;
     right: 0;
     overflow: auto;
-    background: $brandbg;
-    color: $brandfg;
+    background-image: url("../images/other/circuits.svg");
+    background-repeat: repeat;
+    background-color: $homepagebg;
+    color: $homepagefg;
 }
 
 // The content must be vertically centered
@@ -31,6 +33,7 @@
     flex: none;
     max-width: calc(calc(100% - 1rem) - 1rem); // FIXME space-1 was not being parsed
     padding: $space-1;
+	background: $homepagebg;
 }
 
 .homepage-greeter-title {
@@ -42,7 +45,7 @@
     }
 
     font-size: $xxlsize;
-    color: $brandfg;
+    color: $homepagefg;
 }
 
 .homepage-greeter-subtitle {
@@ -50,7 +53,7 @@
 
     font-size: $lsize;
     font-weight: 400;
-    color: $brandfgalt;
+    color: $homepagefgalt;
 }
 
 .homepage-greeter-navigation {
@@ -91,10 +94,10 @@
                 }
 
                 font-weight: 700;
-                color: $brandlink;
+                color: $homepagelink;
 
                 &:hover {
-                    color: $brandlinkalt;
+                    color: $homepagelinkalt;
                 }
             }
         }
