@@ -37,7 +37,7 @@ Good emphasis is always done in moderation. Only a single form is recommended. T
 A general rule of effective emphasis is to read the text out loud. Test these:
 
 - **Can you read entire sentences out loud and, if so, do you still think that this kind of emphasis is effective to convey the intended meaning?** Did you manage to emphasise everything?
-- **_How can you use your voice to apply two forms of emphasis?_** I believe you cannot do that unless you are especially talented.
+- **How can you use your voice to apply two forms of emphasis?** I believe you cannot do that unless you are especially talented.
 
 Contextual emphasis is applied in speech by the use of pauses. A longer moment of silence than what the rhythm would suggest is sufficient to draw attention. One does not need to pause *and* shout.
 
