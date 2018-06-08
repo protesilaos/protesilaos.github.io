@@ -1,8 +1,11 @@
 .header {
     @extend %clearfix;
 
-    background: $brandbg;
+    background-image: url("../images/other/circuits.svg");
+    background-repeat: repeat;
+    background-color: $brandbg;
     color: $brandfg;
+    @include border(bottom, $border-width-thin, solid, #f5f5f5) // XXX NOTE col is same as circuits.svg "fill"
 }
 
 .header-inner {
@@ -16,8 +19,9 @@
         padding: $vertical-rhythm-1 $space-1;
     }
 
+    background: $brandbg;
     font-size: $lsize;
-    text-align: left;
+    text-align: center;
     display: block;
     margin: 0 auto;
     padding: $vertical-rhythm-0 $space-1;
