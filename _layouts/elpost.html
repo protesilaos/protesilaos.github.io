@@ -15,6 +15,16 @@ layout: default
 	    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
         </div>
 
+        {% if page.mediaid %}
+        <div class="medialayer">
+            <div class="mediaframe">
+                <div class="mediawrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.mediaid }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
         {{ content }}
 
     </div>
