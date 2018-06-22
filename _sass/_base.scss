@@ -112,6 +112,12 @@ blockquote {
     p {
         font-style: italic;
         padding-left: $vertical-rhythm-0;
+
+        strong,
+        b {
+            font-style: normal;
+            font-weight: 700;
+        }
     }
 }
 
