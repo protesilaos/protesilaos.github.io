@@ -123,17 +123,17 @@ permalink: /code/
 
 </div>
 
-{% assign githubprojects = site.data.githubprojects | sort: 'name' %}
+{% assign gitprojects = site.data.gitprojects | sort: 'name' %}
 
 <div class="index index-blog">
 
-    <h2 class="index-blog-section-heading">Links to selected GitHub projects</h2>
+    <h2 class="index-blog-section-heading">External links to selected Git projects</h2>
 
     <ul>
-    {% for githubproject in githubprojects %}
+    {% for gitproject in gitprojects %}
         <li>
-            <a class="index-blog-post-heading" href="{{ githubproject.url }}">{{ githubproject.name }}</a>
-            <p class="index-blog-post-excerpt">{{ githubproject.description }}</p>
+            <a class="index-blog-post-heading" href="{{ gitproject.url }}">{{ gitproject.name }}</a>
+            <p class="index-blog-post-excerpt">{{ gitproject.description }}</p>
         </li>
     {% endfor %}
     </ul>

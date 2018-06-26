@@ -88,12 +88,12 @@ layout: page
 - [Γιατί υποστηρίζουμε το ελεύθερο λογισμικό](/greek/2017-10-06-support-free-software/) (6 Οκτωβρίου 2017)
 - [Ποια πρέπει να είναι η θέση μας για την Ευρώπη;](/greek/2017-09-27-new-left-europe/) (27 Σεπτεμβρίου 2017)
 
-### Code projects (on GitHub)
-{% assign githubprojects = site.data.githubprojects | sort: 'name' %}
+### Code projects (external links)
+{% assign gitprojects = site.data.gitprojects | sort: 'name' %}
 <ul>
-{% for githubproject in githubprojects %}
+{% for gitproject in gitprojects %}
     <li>
-        <a href="{{ githubproject.url }}">{{ githubproject.name }}</a>. <span>{{ githubproject.description }}</span>
+        <a href="{{ gitproject.url }}">{{ gitproject.name }}</a>. <span>{{ gitproject.description }}</span>
     </li>
 {% endfor %}
 </ul>
