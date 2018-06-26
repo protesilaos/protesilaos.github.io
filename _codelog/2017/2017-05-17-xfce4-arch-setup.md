@@ -5,7 +5,11 @@ excerpt: "I use my 'dotfiles' git repo to restore my Xfce setup on a new Arch Li
 date: 2017-05-17
 permalink: /codelog/xfce-arch-setup/
 ---
-I recently had to re-install Arch Linux on one of my machines. What I needed was to setup my current working environment with as little effort as possible. Recreating it from scratch would have taken several hours, if not days. Good thing I maintain a git repo with [my dotfiles](https://github.com/protesilaos/dotfiles).
+**UPDATE 2018-06-26:** This post is out of date.  
+I have since switched full time to Debian Sid. I currently use a highly customised environment around `bspwm`.
+{:.critical}
+
+I recently had to re-install Arch Linux on one of my machines. What I needed was to setup my current working environment with as little effort as possible. Recreating it from scratch would have taken several hours, if not days. Good thing I maintain a git repo with [my dotfiles](https://gitlab.com/protesilaos/dotfiles).
 
 Once I had access to the shell, I cloned the repo, copied `.bashrc` and `.vimrc`, and went on to install the Xfce desktop environment as well as all the packages I use.
 

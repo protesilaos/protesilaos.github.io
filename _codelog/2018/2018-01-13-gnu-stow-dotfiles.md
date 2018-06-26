@@ -98,4 +98,4 @@ Data portability is already great in GNU/Linux land. With GNU Stow it just becom
 
 The one caveat is that `stow` will fail to create the symlinks if the directories/files already exist. So make sure you first double check the directory structures you intend to create symbolic links to.
 
-Remember, `man` is your friend. And here is the 'mandatory' link to [my dotfiles](https://github.com/protesilaos/dotfiles).
+Remember, `man` is your friend. And here is the 'mandatory' link to [my dotfiles](https://gitlab.com/protesilaos/dotfiles).

@@ -5,6 +5,10 @@ excerpt: "After two full weeks on KDE Plasma 5, I decided to switch to XFCE 4. G
 date: 2017-04-06
 permalink: /codelog/plasma-xfce-desktop/
 ---
+**UPDATE 2018-06-26:** This post is out of date.  
+I have since switched full time to Debian Sid. I currently use a highly customised environment around `bspwm`.
+{:.critical}
+
 In a recent article about my experience with Arch Linux I had mentioned how I went with the Cinnamon desktop environment after testing GNOME 3. I have known Cinnamon from my Linux Mint days. It is top notch, though the Arch packages are a bit buggy. I thus needed a more stable and probably mainstream alternative. Something like KDE Plasma 5.
 
 My initial impression of Plasma 5 was not particularly positive. I found its multiple option panels overwhelming. However, in the spirit of giving every piece of software a fair chance, I did make the switch. Plasma 5 was my only DE for two full weeks or so. My verdict is that it is a superb piece of work, especially for those with a penchant for a little bit of extra stylistic flair.
@@ -42,7 +46,7 @@ What may well be seen as a weakness, i.e. the absence of meaningful defaults, ca
 
 Make no mistake though. It does not fall short in the looks department. It just is not flamboyant. Add a good theme, probably Arc, an icon set like Papirus, and a cursor theme such as Breeze, and you got yourself a sleek, modern desktop environment.
 
-Having tried all other major DEs, I have come to consider XFCE 4 the best choice for my needs. I do, nonetheless, recognise its drawbacks. It is not ideal for new users. For such cases I continue to recommend either Mate or Plasma 5. That granted, I intend to add more content to my [dotfiles](https://github.com/protesilaos/dotfiles), just in case anyone else is interested in replicating (or learning from) my configs.
+Having tried all other major DEs, I have come to consider XFCE 4 the best choice for my needs. I do, nonetheless, recognise its drawbacks. It is not ideal for new users. For such cases I continue to recommend either Mate or Plasma 5. That granted, I intend to add more content to my [dotfiles](https://gitlab.com/protesilaos/dotfiles), just in case anyone else is interested in replicating (or learning from) my configs.
 
 As a teaser, here is a quick look at my favourite tools at the time of writing (key bindings in the comments)
 
