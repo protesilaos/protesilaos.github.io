@@ -52,7 +52,7 @@ exclude:
   - _layouts/index.html
   - _layouts/page.html
   - _data/text.yml
-  - _data/githubprojects.yml
+  - _data/gitprojects.yml
   - greek.xml # ------------------ Greek ---------------------------
   - _greek
   - _pages/indices/greek.html

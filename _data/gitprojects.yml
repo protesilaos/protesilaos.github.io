@@ -3,7 +3,7 @@
   url: "https://github.com/protesilaos/aur-packages"
 - name: Dotfiles
   description: "My custom working environment and configuration files for some of my favourite programs on GNU/Linux. Managed with GNU Stow."
-  url: "https://github.com/protesilaos/dotfiles"
+  url: "https://gitlab.com/protesilaos/dotfiles"
 - name: Prot16
   description: "Colour schemes mainly for highlighting code syntax. Each theme uses a 16-colour palette. It comes in light and dark variants."
   url: "https://github.com/protesilaos/prot16"
