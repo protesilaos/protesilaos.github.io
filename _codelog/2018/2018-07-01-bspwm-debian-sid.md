@@ -7,7 +7,9 @@ permalink: /codelog/how-to-bspwm-debian-sid/
 ---
 I have been running Debian Sid for about a year now. Overall, I think it is an excellent rolling release GNU/Linux distribution. Debian is my distro of choice because of (i) its importance to the free software world, (ii) its diverse community, (iii) its politics and stance on free software,[^NoteDFSGNonFree] and (iv) the fact that it is an "enterprise-grade" operating system without being backed by any one company (e.g. Ubuntu).
 
-Debian is not a beginner's choice. It does not try to make the experience user-friendly or to provide everything "out of the box". Users coming from distros such as the Ubuntu flavours or Linux Mint, thinking that they will just "cut out the middleman" and go directly to the source, are in for a hard time. A Debian user is expected to mould their system into their own needs, to make configurations and adaptations for their particular case. For example, you cannot use `sudo` with your regular user, unless you configure it to do so. The `lightdm` login screen will not show the user list by default. You will probably have to configure `fontconfig` in order to have consistent fonts across applications, such as in `chromium`. All desktop environments offer a basic experience, unlike the care and polish that goes into something like Linux Mint or Ubuntu MATE. And so on. As such, I would argue that Debian is targeted at experience GNU/Linux users and should be put in the same category as Arch Linux (which I have also used extensively).
+Debian is not an ideal choice for beginners. It does not try to make the experience the most user friendly or to provide everything "out of the box". Users coming from distros such as the Ubuntu flavours or Linux Mint, thinking that they will just "cut out the middleman" and go directly to the source, are in for a hard time.
+
+A Debian user is expected to mould their system into their own needs, to make configurations and adaptations for their particular case. For example, you cannot use `sudo` with your regular user, unless you configure it to do so. The `lightdm` login screen will not show the user list by default. You will probably have to configure `fontconfig` in order to have consistent fonts across applications, such as in `chromium`. All desktop environments offer a basic experience, unlike the care and polish that goes into something like the Linux Mint editions or Ubuntu MATE. And so on. As such, I would argue that Debian is targeted at experienced GNU/Linux users.
 
 In this article, I document all the steps I take to get my working environment on Debian *Sid*. The core of my setup is the Binary Space Partitioning Window Manager (BSPWM). It is a tilling window manager, similar to the arguably more popular i3 (i3WM).
 
@@ -46,6 +48,17 @@ Testing is the next Stable release, currently codenamed "Buster". It occupies th
 The Unstable branch gets newer packages, which are subject to regular updates. Unstable is always codenamed 'Sid'. It never has an actual version number, because it follows a rolling release model. Packages are updated as they come. Sid is only defined by approximation, based on what the current Testing branch is called. As such, the *current state* of Sid is internally referred to as Buster/Sid. Use Sid if you want to have a bleeding edge system and are prepared to resolve any problems as they arise.
 
 As for Experimental, its name denotes its function. It is meant for Debian developers.
+
+### 2.1 Why Sid instead of Testing
+
+The two reasons I favour Sid over Testing are as follows:
+
+- **Responsibility is yours.** You want to run a rolling release distribution. You should not expect it to be as hassle-free as Stable. If you value stability above everything else, you should not be thinking of Testing/Sid. Use Debian Stable, an Ubuntu LTS release, or Linux Mint.
+- **Testing offers the illusion of stability.** If you read various comparisons online, there is this view that you should use Testing over Sid because it has the best of both worlds. It is more like running Stable with newer packages. I find this kind of misleading. Testing is still a rolling release distribution. If you go into it thinking that it is perfectly stable, then you will run into trouble. And when you do come across problems, they will persist for longer compared to Sid. The reason is that upstream fixes go to Sid first and only after a certain period of time do they migrate to Testing.
+
+In other words, I think Sid makes it crystal clear that you are responsible for your system. Whereas Testing can give the impression that you can sort of cheat your way into having both bleeding edge software and stability. That is the wrong mentality to have if you are to use a rolling release distro. If, however, you know exactly what you are doing, there is almost no difference between Testing and Sid: it is just a matter of how close to the bleeding edge you want to be.
+
+At any rate, I consider the package `apt-listbugs` essential to running either of these options (more on that in the installation instructions below).
 
 ## 3 Why BSPWM over i3WM
 
