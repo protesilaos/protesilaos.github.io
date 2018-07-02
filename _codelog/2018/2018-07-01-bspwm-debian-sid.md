@@ -29,7 +29,7 @@ First some demos, then a few words about Debian release channels, a short note o
 
 ### 1.3 Change environment theme
 
-Demo of a script that changes all themes on demand, from terminals to command line utilities, the system bar, etc. It is invoked by my `tempusmenu`: a `dmenu` script that provides the available options. The [Tempus themes](https://gitlab.com/protesilaos/tempus-themes) are compliant *at minimum* with the WCAG AA accessibility standard for colour contrast.
+Demo of a script that changes all themes on demand, from terminals to command line utilities, the system bar, etc. It is invoked by my `tempusmenu`: a `dmenu` script that provides the available options. The [Tempus themes](/tempus-themes/) are compliant *at minimum* with the WCAG AA accessibility standard for colour contrast.
 
 ![bspwm demo of theme change](https://thumbs.gfycat.com/HandmadeSimplisticBetafish-size_restricted.gif)
 
@@ -47,7 +47,7 @@ The Unstable branch gets newer packages, which are subject to regular updates. U
 
 As for Experimental, its name denotes its function. It is meant for Debian developers.
 
-## 3 Why BSPWM over i3
+## 3 Why BSPWM over i3WM
 
 BSWPM represents windows as the leaves of a binary tree, dividing the working area between a focused node and a stack of inactive windows (technically a window spiral).
 
@@ -60,8 +60,6 @@ GNU/Linux users may already be familiar with i3, a popular tiling window manager
 
 ## 4 Installation instructions
 
-### 4.1 Setting up a clean Debian install
-
 These instructions may be updated at a future date.
 {:.info}
 
@@ -70,6 +68,8 @@ The following instructions were implemented on 2018-06-30 on a clean Debian 9.4 
 
 Do not try these instructions on mission critical infrastructure. Use a Virtual Machine or a spare computer. These work on my Lenovo ThinkPad X220 laptop and the Lenovo H30-05 desktop. Your mileage may vary. I do not claim to know how different hardware configurations will behave. The responsibility is yours. Proceed at your own risk.
 {:.critical}
+
+### 4.1 Setting up a clean Debian install
 
 I prefer to use the [net install of the current Stable release](https://www.debian.org/distrib/netinst). If you have a machine that does not have Ethernet access, or requires non-free drivers for Wi-Fi, then you will be better served by [one of those](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/).
 
@@ -91,7 +91,7 @@ Here is a representation:
 [x] standard system utilities
 ```
 
-You will get Debian Stable running the MATE desktop environment. I always choose a DE because it makes things like network access and a functional Xorg setup easier. It also provides a decent fallback option, as well as something that could be used by a visitor or a friend.
+You will get Debian Stable running the MATE desktop environment. I always choose a DE because it makes certain things easier, like network access and a functional Xorg display server. It also provides a decent fallback option, as well as something that could be used by other users in the house or a guest.
 
 Now to prepare for the transition to Debian Sid. Open a terminal and type the following commands (lines starting with `#` are comments and should not be added to the command line).
 
@@ -107,14 +107,16 @@ apt update
 apt install sudo vim apt-listbugs build-essential
 
 # add your username to the sudo group
-adduser USER sudo
+adduser USERNAME sudo
 ```
 
 Reboot your system.
 
 ### 4.2 Preparing the update to Sid
 
-Now edit `/etc/apt/sources.list` to enable Sid (you must be the root user or run with `sudo`). You will need to replace all references to `stable` or `stretch` with `sid`. This is the right time to also include support for non-free packages. This is all I have in that file, using the mirrors from Greece:
+Now edit `/etc/apt/sources.list` to enable Sid (you must be the root user or run with `sudo`). You will need to replace all references to `stable` or `stretch` with `sid`. This is the right time to also include support for non-free packages.
+
+This is all I have in my APT sources file, using the mirrors from Greece:
 
 ```sh
 deb http://ftp.gr.debian.org/debian/ sid main contrib non-free
@@ -139,7 +141,7 @@ Note though, that at the time of writing, there are some critical bugs that requ
 p <package-name>
 ```
 
-My actual pinning was like this
+My actual pinning was this:
 
 ```sh
 p synaptic libgpg-error0 efibootmgr libdrm-radeon1
@@ -314,7 +316,11 @@ To see what programs are auto started, see `~/.config/bspwm/bspwmrc`, as well as
 
 ### 5.4 The Tempus themes
 
-All the colours you see are part of my [Tempus themes](/tempus-themes/) project. The one you get is Tempus Dusk, which is a dark theme with slightly desaturated colours. To switch to something else, type `super + e ; t`. A drop-down menu will appear. Either type your choice and press enter or use the arrow keys and press enter. Some themes are light, others are dark. Open terminals should be updated live, but GUI applications must typically be closed and opened again for changes to take effect. To customise what GTK themes and icons are used in this switch, you must edit this script `~/bin/own_script_update_environment_theme` (search for the definition of the `modify_gtk3` function—current GTK themes are Materia, while icons are Mint-Y).
+All the colours you see are part of my [Tempus themes](/tempus-themes/) project. The one you get is Tempus Dusk, which is a dark theme with slightly desaturated colours. To switch to something else, type `super + e ; t`. A drop-down menu will appear. Either type your choice and press enter or use the arrow keys and press enter. Some themes are light, others are dark.
+
+Open terminals should be updated live (though not CLI programs, like `vim` or `ranger`), but GUI applications must typically be closed and opened again for changes to take effect.
+
+To customise what GTK themes and icons are used in this switch, you must edit this script `~/bin/own_script_update_environment_theme` (search for the definition of the `modify_gtk3` function—current GTK themes are Materia, while icons are Mint-Y). This script also changes the wallpaper if you go from a dark to a light theme and vice versa. To define the image for dark and light themes respectively, add the images of your choice at `~/Pictures/theme/dark.jpg` and `~/Pictures/theme/light.jpg` (edit the script if you wish to either disable this or use a different location—the function is `modify_wallpaper`).
 
 ### 5.5 Password manager (optional)
 
@@ -344,6 +350,35 @@ touch database log pid state sticker.sql
 To update the `mpd` database (assuming the presence of files at `~/Music`) either run `mpc update` in a terminal or type `ncmpcpp` and then press `u`. If your music is in a different directory, edit the path in this file `~/.config/mpd/mpd.conf`.
 
 You may need to reboot for the `systemd` service to stop interfering with your setup. To play music, learn how to use `ncmpcpp` (I typically switch to screen 4, by hitting `4`, then `A` and hit enter for an empty prompt which adds all available music to the playlist, then I toggle on repeat mode with `r` and random order with `z`).
+
+### 5.7 Use newsboat for RSS feeds (optional)
+
+To actually use `newsboat` (shortcut is `super + x ; 3`), you first need to provide a file with links to RSS/Atom feeds. This should be placed at `~/.config/newsboat/urls`. Here is a sample:
+
+```sh
+# Just a feed URL per line
+https://protesilaos.com/feed.xml
+https://protesilaos.com/codelog.xml
+
+# The words inside quotes are tags, separated by a space.
+# Tags can be used to filter content (see filters below).
+https://protesilaos.com/feed.xml "Blogs Politics"
+https://protesilaos.com/codelog.xml "Blogs FOSS"
+
+https://gitlab.com/protesilaos/dotfiles.atom "Packages"
+https://github.com/ubuntu-mate/mate-tweak/releases.atom "Packages"
+
+# Filters
+# =======
+
+# What goes after `query:` is the text that newsboat displays
+"query:Blogs:tags # \"Blogs\""
+"query:Git Packages:tags # \"Packages\""
+
+"query:Unread Articles:unread = \"yes\""
+```
+
+Configure this program to your liking by editing `~/.config/newsboat/config`. For all available options, check `man newsboat`.
 
 ## 6 Further steps
 
