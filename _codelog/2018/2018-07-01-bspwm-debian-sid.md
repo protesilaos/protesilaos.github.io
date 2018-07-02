@@ -5,7 +5,7 @@ excerpt: "Complete guide to set up Debian Sid/Unstable with a custom tiling wind
 date: 2018-07-01
 permalink: /codelog/how-to-bspwm-debian-sid/
 ---
-I have been running Debian Sid for about a year now. Overall, I think it is an excellent rolling release GNU/Linux distribution. Debian is my distro of choice because of (i) its importance to the free software world, (ii) its diverse community, (iii) its politics and stance on free software,[^NoteDFSGNonFree] and (iv) the fact that it is an "enterprise-grade" operating system without being backed by any one company (like Ubuntu).
+I have been running Debian Sid for about a year now. Overall, I think it is an excellent rolling release GNU/Linux distribution. Debian is my distro of choice because of (i) its importance to the free software world, (ii) its diverse community, (iii) its politics and stance on free software,[^NoteDFSGNonFree] and (iv) the fact that it is an "enterprise-grade" operating system without being backed by any one company (e.g. Ubuntu).
 
 Debian is not a beginner's choice. It does not try to make the experience user-friendly or to provide everything "out of the box". Users coming from distros such as the Ubuntu flavours or Linux Mint, thinking that they will just cut out the "middleman", are in for a hard time. A Debian user is expected to mould their system into their own needs, to make configurations and adaptations for their use case. As such, I would argue that Debian is targeted at experience GNU/Linux users and should be put in the same category as Arch Linux (which I have also used extensively).
 
