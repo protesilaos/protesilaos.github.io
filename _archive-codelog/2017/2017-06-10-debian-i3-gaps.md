@@ -8,7 +8,8 @@ permalink: /codelog/i3-gaps-debian/
 **UPDATE 2018-06-23:** This post is out of date.  
 I have since switched full time to Arch Linux and now Debian Sid. I currently use a highly customised environment around `bspwm` (still need to adapt it to Debian Sid). I think `bspwm` is better than `i3wm` because it has cleaner configs and some extra features (such as key chord chains, which greatly expand the number of shortcuts you can set). See my rather elaborate [dotfiles](https://gitlab.com/protesilaos/dotfiles) for more.  
 As for this article, I have added an Annex with an annotated version of my latest `i3-gaps` config file. You will need to have a close look at it and make adaptations where necessary.  
-For the sake of completeness, [this is the commit that removed i3](https://github.com/protesilaos/dotfiles/commit/aba729fed45939b3f1fbf00f68aae67ae784d415) from my dotfiles.
+For the sake of completeness, [this is the commit that removed i3](https://github.com/protesilaos/dotfiles/commit/aba729fed45939b3f1fbf00f68aae67ae784d415) from my dotfiles.  
+**UPDATE 2018-07-03:** I have a complete guide about [installing BSPWM on Debian Sid](/codelog/how-to-bspwm-debian-sid/).
 {:.critical}
 
 My favourite desktop environment is Xfce. It is lightweight, customisable, and strikes the right balance between stability and usability. The one area where I find it somewhat constraining is on window placement. The options provide for either an effectively random placement of new windows on the screen, or for them to appear at the centre. On a large monitor either option is suboptimal. Random placement introduces a noticeable mental disconnect of trying to anticipate the position of the new window. While central positioning grows inefficient when opening multiple applications, since each new window has to be moved out of the other's way.

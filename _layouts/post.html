@@ -15,7 +15,9 @@ layout: default
         </div>
 
         {% if page.group == "Blog archive entries" %}
-            <p class="warn">This post is archived. Opinions expressed herein may no longer represent my current views. Links, images and other media might not work as intended.</p>
+            <p class="warn">This post is archived. Opinions expressed herein may no longer represent my current views. Links, images and other media might not work as intended. You can <a href="/contact/">contact me</a> for further questions.</p>
+        {% elsif page.group == "Code blog archive entries" %}
+            <p class="warn">This post is archived. Any information or opinion provided herein may be out of date. Links, images and other media might not work as intended. You can <a href="/contact/">contact me</a> for further questions.</p>
         {% endif %}
         {{ content }}
   

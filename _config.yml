@@ -20,6 +20,8 @@ collections:
     output: true
   archive:
     output: true
+  archive-codelog:
+    output: true
   greek:
     output: true
   pages:
@@ -61,11 +63,18 @@ defaults:
       group: Blog archive entries
       image: "/images/brand/protesilaos-logo.png"
   - scope:
+      type: archive-codelog
+    values:
+      layout: post
+      index: "/codelog-archive/"
+      group: Code blog archive entries
+      image: "/images/brand/protesilaos-logo.png"
+  - scope:
       type: codelog
     values:
       layout: post
       index: "/codelog/"
-      group: Codelog entries
+      group: Code blog entries
       image: "/images/brand/protesilaos-logo.png"
       master: true
   - scope:

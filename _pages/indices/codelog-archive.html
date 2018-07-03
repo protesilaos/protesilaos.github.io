@@ -1,0 +1,30 @@
+---
+layout: index
+title: "Code blog archive"
+subtitle: "Archive of my writings about code."
+excerpt: "Archive of my writings about code."
+index-feed:
+  text: Code blog RSS
+  url: "/codelog.xml"
+permalink: /codelog-archive/
+---
+{% assign archive-codelogs = site.archive-codelog | sort: 'date' | reverse %}
+
+<div class="index index-blog">
+
+    <p class="warn index-notification">This section contains older posts. To view the most recent ones, refer to the <a href="/codelog/">main Code blog</a>.</p>
+
+
+    <ul>
+    {% for archive-codelog in archive-codelogs %}
+        <li class="index-blog-post-container">
+            <time class="index-blog-post-timestamp">{{ archive-codelog.date | date: site.date_format }}</time>
+            <a class="index-blog-post-link" href="{{ archive-codelog.url | relative_url }}">
+                <span class="index-blog-post-heading">{{ archive-codelog.title }}</span>
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+
+</div>
+

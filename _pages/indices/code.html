@@ -13,7 +13,7 @@ permalink: /code/
     <h2 class="index-blog-section-heading">Coding blog</h2>
 
     <ul>
-    {% for codelog in codelogs limit:10 %}
+    {% for codelog in codelogs limit:6 %}
         <li class="index-blog-post-container">
             <time class="index-blog-post-timestamp">{{ codelog.date | date: site.date_format }}</time>
             <a class="index-blog-post-link" href="{{ codelog.url | relative_url }}">
