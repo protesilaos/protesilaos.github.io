@@ -53,8 +53,8 @@ As for Experimental, its name denotes its function. It is meant for Debian devel
 
 The three-fold reason I favour Sid over Testing is as follows:
 
-- **Responsibility is yours.** You want to run a rolling release distribution. You should not expect it to be as hassle-free as Stable. If you value stability above everything else, you should not be thinking of Testing/Sid. Use Debian Stable, an Ubuntu LTS release, or Linux Mint.
-- **Testing offers the illusion of stability.** If you read various comparisons online, there is this belief that you should use Testing over Sid because it has the best of both worlds. It is more like running Stable with newer packages. I find this kind of misleading. Testing is still a rolling release distribution.
+- **Responsibility is yours.** You want to run a rolling release distribution. You should not expect it to be as hassle-free as Stable. If you value stability above everything else, you should not be thinking about switching to Testing/Sid. Use Debian Stable, an Ubuntu LTS release, or Linux Mint.
+- **Testing offers the illusion of stability.** If you read various comparisons online, there is this belief that you should use Testing over Sid because it has the best of both worlds. It is more like running Stable with newer packages. I find this kind of misleading. Testing is still a rolling release distribution, so *responsibility is yours*.
 - **Testing can remain broken for longer.** If you go into Testing thinking that it is perfectly stable, then you will run into trouble. And when you do come across problems, they will persist for longer compared to Sid. The reason is that upstream fixes go to Sid first and only after a certain period of time do they migrate to Testing.
 
 In other words, I think Sid makes it crystal clear that you are responsible for your system. Whereas Testing can give the impression that you can sort of cheat your way into having both bleeding edge software and stability. That is the wrong mentality to have if you are to use a rolling release distro. If, however, you know exactly what you are doing, there is almost no difference between Testing and Sid: it is just a matter of how close to the bleeding edge you want to be.
@@ -65,7 +65,7 @@ At any rate, I consider the package `apt-listbugs` essential to running either o
 
 BSWPM represents windows as the leaves of a binary tree, dividing the working area between a focused node and a stack of inactive windows (technically a window spiral).
 
-GNU/Linux users may already be familiar with i3, a popular tiling window manager. I have used `i3wm` for quite a while. Both the upstream and the popular `i3-gaps` fork. Overall, it is an excellent choice, but I think BSPWM is slightly better. For me, the main advantages are:
+GNU/Linux users may already be familiar with i3, a popular tiling window manager. I have used `i3wm` for quite a while. Both the upstream and the popular `i3-gaps` fork (which is not in the Debian repos). Overall, it is an excellent choice, but I think BSPWM is slightly better. For me, the main advantages are:
 
 1. Follows the UNIX philosophy. Does not come bundled with its own status bar or any extras. BSPWM is quite literally a window manager and nothing else.
 2. The configuration file is a shell executable, which allows scripting (e.g. if program exists, then run it, else do nothing) or sourcing other files.
