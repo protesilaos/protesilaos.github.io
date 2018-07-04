@@ -74,18 +74,20 @@ GNU/Linux users may already be familiar with i3, a popular tiling window manager
 
 ## 4 Installation instructions
 
-These instructions may be updated at a future date.
+These instructions may be updated at a future date. I do, in particular, plan to add a table of contents and expand on some further customisations the user may want to consider.
 {:.info}
 
 The following instructions were implemented on 2018-06-30 on a clean Debian 9.4 install, using the latest available net install option. The hardware is Lenovo ThinkPad X220.
 {:.note}
 
-Do not try these instructions on mission critical infrastructure. Use a Virtual Machine or a spare computer. These work on my Lenovo ThinkPad X220 laptop and the Lenovo H30-05 desktop. Your mileage may vary. I do not claim to know how different hardware configurations will behave. The responsibility is yours. Proceed at your own risk.
+**Do not try these instructions on mission critical infrastructure.** Use a Virtual Machine or a spare computer. These work on my Lenovo ThinkPad X220 laptop and the Lenovo H30-05 desktop. Your mileage may vary. I do not claim to know how different hardware configurations will behave. **The responsibility is yours. Proceed at your own risk.**
 {:.critical}
 
 ### 4.1 Setting up a clean Debian install
 
 I prefer to use the [net install of the current Stable release](https://www.debian.org/distrib/netinst). If you have a machine that does not have Ethernet access, or requires non-free drivers for Wi-Fi, then you will be better served by [one of those](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/).
+
+The reason I first install Debian Stable and then switch to Sid, is to have a solid starting point. There are ways to install Sid directly, but your timing might coincide with the presence of a major bug in a core piece of software. The package `apt-listbugs` (more on that below) will protect you from such unpleasant surprises.
 
 During the installation process, you will be asked to choose your major system components. A Desktop Environment, an SSH server, a print server, etc. I always keep the first option checked, then [using the space key to toggle on/off] I add MATE, SSH server, remove the print server, and keep the standard system utilities.
 
@@ -116,8 +118,8 @@ su
 # update the package archives
 apt update
 
-# install some core packages
-# NOTE `apt-listbugs` is essential if you want to run Sid
+# install some core packages, especially `apt-listbugs`
+# `apt-listbugs` is essential if you want to run Sid or even Testing
 apt install sudo vim apt-listbugs build-essential
 
 # add your username to the sudo group
@@ -128,7 +130,7 @@ Reboot your system.
 
 ### 4.2 Preparing the update to Sid
 
-Now edit `/etc/apt/sources.list` to enable Sid (you must be the root user or run with `sudo`). You will need to replace all references to `stable` or `stretch` with `sid`. This is the right time to also include support for non-free packages.
+Now edit `/etc/apt/sources.list` to enable Sid (you must be the root user or run with `sudo`). You will need to replace all references to `stable` or `stretch` with `sid`. This is the right time to also include support for non-free packages if you need them.
 
 This is all I have in my APT sources file, using the mirrors from Greece:
 
@@ -250,6 +252,9 @@ stow bin bspwm cli-tools colours extra fonts gtk shell polybar vim xorg music
 After running the `stow` command, check the files in the `xorg-extra` directory. There are instructions on how to fix xbacklight if it is not working.
 
 Just to be sure, reboot you system. Done! You can now choose to log in to BSPWM from the login screen (which should be `lightdm` if you selected the MATE desktop).
+
+Do not delete my dotfiles after running `stow`. It will break all the symlinks it created. Similarly, do not reorganise things. If you want to customise things, first familiarise yourself with `stow`. Then make a copy of my dotfiles, add your adaptations, and use those to create the symlinks. I strongly encourage you to use `stow`. It saves you from a lot of manual work and makes your dotfiles portable and easy to deploy.
+{:.warn}
 
 ## 5 Using the new system
 
@@ -394,6 +399,41 @@ https://github.com/ubuntu-mate/mate-tweak/releases.atom "Packages"
 
 Configure this program to your liking by editing `~/.config/newsboat/config`. For all available options, check `man newsboat`.
 
+### 5.8 Configure the notification daemon (optional)
+
+The daemon that handles notifications is `dunst`. Its options file is located at `~/.config/dunst/dunstrc`.
+
+For example, in case you want to change the icons that `dunst` uses, edit the paths in this:
+
+```conf
+# Paths to default icons.
+icon_folders = /usr/share/icons/Mint-Y/actions/32/:/usr/share/icons/Mint-Y/animations:/usr/share/icons/Mint-Y/apps/32/:/usr/share/icons/Mint-Y/categories:/usr/share/icons/Mint-Y/devices/32/:/usr/share/icons/Mint-Y/mimetypes/32/:/usr/share/icons/Mint-Y/panel/32/:/usr/share/icons/Mint-Y/places:/usr/share/icons/Mint-Y/status
+```
+
+To read about all the available settings, see `man dunst`.
+
+Note that the colours are changed every time you run the commands that change the Tempus themes (see above).
+
+#### 5.8.1 Custom notifications (optional)
+
+If you want to create your own notifications, check `man notify-send`. Here are some examples:
+
+```sh
+# Generic test
+notify-send "Test title" "Test body of text"
+
+# Generic test with a generic icon
+# uses the icon paths defined in `~/.config/dunst/dunstrc`
+notify-send -i firefox "Test title" "Test body of text"
+
+# Generic test with absolute path to icon
+notify-send -i /usr/share/icons/Mint-Y/apps/32/firefox.png "Test title" "Test body of text"
+
+# Display the output of another command
+# Show the status of the Music Player Daemon in a custom format
+notify-send -i rhythmbox "Now Playing" "$(mpc --format '%artist% ~ %title% \[%album%\]' current)"
+```
+
 ## 6 Further steps
 
 ### 6.1 General maintenance of Debian Sid
@@ -402,7 +442,13 @@ I always like to maintain a "Debian maintenance" file where I document all custo
 
 Also remember to run `sudo apt update` before installing packages that pull in new dependencies. The last thing you want is package conflicts arising from a combination of older and newer packages. As for upgrading packages, I always run `sudo apt full-upgrade` because it removes packages that become obsolete. Remove orphan packages with `sudo apt autoremove`.
 
-You already read about `apt-listbugs` and where it stores its data. Always inspect the output of this program and act on it. Debian Sid expects you to take full responsibility over the maintenance of your system. Furthermore, make sure you periodically check the packages that you pinned in case a fix has been provided.
+You already read about `apt-listbugs` that it stores its data at `/etc/apt/preferences.d/apt-listbugs`. In case you forgot about it, or I have not stressed enough the importance of this package, here is an excerpt from `man apt-listbugs`:
+
+> apt-listbugs is a tool which retrieves bug reports from the Debian Bug Tracking System and lists them. In particular, it is intended to be invoked before each installation or upgrade by APT, or other compatible package managers, in order to check whether the installation/upgrade is safe.
+>
+> In the typical use case, the user is installing or upgrading a number of packages with APT or some other compatible package manager. Before the package installation or upgrade is actually  performed, apt-listbugs is automatically invoked: it queries the Debian Bug Tracking System for bugs (of certain configured severities) that would be introduced into the system by the installation or upgrade; if any such bug is found, apt-listbugs warns the user and asks how to proceed. Among other things, the user has the opportunity to continue, to abort the installation or upgrade, or to pin some packages  (so  that  the  unsafe installation or upgrade is deferred). However, pinning is not effective immediately, and requires restarting the APT session (by aborting and then re-running the same APT command).
+
+Always inspect the output of this program and act on it. Debian Sid expects you to take full responsibility over the maintenance of your system. Furthermore, make sure you periodically check the packages that you pinned in case a fix has been provided.
 
 ### 6.2 Nodejs environment (optional)
 
@@ -433,11 +479,47 @@ sudo apt remove albatross-gtk-theme blackbird-gtk-theme bluebird-gtk-theme greyb
 
 If you want to add some other themes, the ones I recommend for their completeness are `arc-theme` and `papirus-icon-theme`.
 
+## 7 Troubleshooting
+
+### 7.1 Polybar is missing
+
+Note that `polybar` will not appear on screen if it does not recognise the active monitor. You need to edit `~/.config/polybar/config`. Search for "monitor" and change the value based on the output of `xrandr`.
+
+I find my connected monitor by typing this in a terminal `xrandr | grep -w connected`. You get something like this:
+
+```sh
+xrandr | grep -w connected
+
+VGA-0 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 480mm x 270mm
+```
+
+What you are looking for is the very first part, `VGA-0` in this case.
+
+### 7.2 URxvt does not show bold fonts
+
+The configuration file for `urxvt` (package name is `rxvt-unicode`) is placed in a custom location: `~/.my_urxvt/config`. I used to have these font definitions:
+
+```conf
+URxvt.font: xft:Hack:pixelsize=14,xft:DejaVu Sans Mono:pixelsize=14
+URxvt.boldFont: xft:Hack:pixelsize=14:bold,xft:DejaVu Sans Mono:pixelsize=14:bold
+URxvt.italicFont: xft:Hack:pixelsize=14:italic,xft:DejaVu Sans Mono:pixelsize=14:italic
+URxvt.bolditalicFont: xft:Hack:pixelsize=14:bold:italic,xft:DejaVu Sans Mono:pixelsize=14:bold:italic
+```
+
+But they do not seem to work any longer. So I changed to these:
+
+```conf
+URxvt.font: xft:Hack:style=Regular:pixelsize=14,xft:DejaVu Sans Mono:style=Book:pixelsize=14
+URxvt.italicFont: xft:Hack:style=Italic:pixelsize=14,xft:DejaVu Sans Mono:style=Italic:pixelsize=14
+URxvt.boldFont: xft:Hack:style=Bold:pixelsize=14,xft:DejaVu Sans Mono:style=Bold:pixelsize=14
+URxvt.boldItalicFont: xft:Hack:style=Bold Italic:pixelsize=14,xft:DejaVu Sans Mono:style=Bold Italic:pixelsize=14
+```
+
 ## Enjoy your new system
 
 I hope you make good use of these instructions and that you appreciate Debian Sid and BSPWM (and all the rest) as much as I do. While I have written this guide in a user-friendly way, I strongly encourage you to research *everything* before proceeding. **This is not a guide for inexperienced users who do not fully understand the effects of the commands they type in the terminal.**
 
-For any questions, feel free to [contact me](/contact/).
+For any questions or recommendations, feel free to [contact me](/contact/).
 
 [^NoteDFSGNonFree]: The Free Software Foundation does not include Debian in its [list of fully free GNU/Linux distributions](https://www.gnu.org/distros/free-distros.en.html), probably because Debian offers a convenient way to include non-free packages (mainly drivers and firmware). The FSF's stance is understandable, but I think Debian's realism is beneficial overall. Getting hardware that does not require any propriety code is quite tricky and typically comes at a premium. Not everyone can afford that.
 
