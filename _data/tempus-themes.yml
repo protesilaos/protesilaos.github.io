@@ -30,7 +30,7 @@
   slug: "tempus-dawn"
   slugunderscore: "tempus_dawn"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
-  description: "Light theme with a soft, slightly desaturated palette"
+  description: "Light theme with a soft, slightly desaturated palette (WCAG AA compliant)"
   col0: "53575a" # black variant
   col1: "9b3132" # red variant
   col2: "306130" # green variant
@@ -54,11 +54,39 @@
   colfgalt: "735e3f" # alternative foreground
   colcr: "53575a" # cursor background
   colcr2: "f3f1f5" # cursor foreground
+- name: "Tempus Day"
+  slug: "tempus-day"
+  slugunderscore: "tempus_day"
+  author: "Protesilaos Stavrou (https://protesilaos.com)"
+  description: "Light theme with warm colours (WCAG AA compliant)"
+  col0: "3b2820" # black variant
+  col1: "d62500" # red variant
+  col2: "207f20" # green variant
+  col3: "8a6900" # yellow variant
+  col4: "306ad0" # blue variant
+  col5: "c6365d" # magenta variant
+  col6: "00798d" # cyan variant
+  col7: "f5f0f5" # white variant
+  col8: "5b4440" # bright black variant
+  col9: "bb4b00" # bright red variant
+  col10: "5a7800" # bright green variant
+  col11: "9a6033" # bright yellow variant
+  col12: "6061d0" # bright blue variant
+  col13: "8850d0" # bright magenta variant
+  col14: "007c6d" # bright cyan variant
+  col15: "f8f1e0" # bright white variant
+  colvr: "light" # light or dark
+  colbg: "f8f1e0" # main background
+  colbgalt: "f5f0f5" # alternative background
+  colfg: "3b2820" # main foreground
+  colfgalt: "5b4440" # alternative foreground
+  colcr: "3b2820" # cursor background
+  colcr2: "f8f1e0" # cursor foreground
 - name: "Tempus Dusk"
   slug: "tempus-dusk"
   slugunderscore: "tempus_dusk"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
-  description: "Dark theme with a deep blue-ish, slightly desaturated palette."
+  description: "Dark theme with a deep blue-ish, slightly desaturated palette (WCAG AA compliant)"
   col0: "1f252d" # black variant
   col1: "cb8d56" # red variant
   col2: "8ba089" # green variant
@@ -86,7 +114,7 @@
   slug: "tempus-fugit"
   slugunderscore: "tempus_fugit"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
-  description: "Light, pleasant theme optimised for long writing/coding sessions"
+  description: "Light, pleasant theme optimised for long writing/coding sessions (WCAG AA compliant)"
   col0: "4d696f" # black variant
   col1: "df2014" # red variant
   col2: "587d0a" # green variant
@@ -138,6 +166,34 @@
   colfgalt: "bd9b87" # alternative foreground
   colcr: "a4a0ac" # cursor background
   colcr2: "18161d" # cursor foreground
+- name: "Tempus Night"
+  slug: "tempus-night"
+  slugunderscore: "tempus_night"
+  author: "Protesilaos Stavrou (https://protesilaos.com)"
+  description: "High contrast dark theme with bright colours (WCAG AAA compliant)"
+  col0: "1a1a1a" # black variant
+  col1: "fb7e8e" # red variant
+  col2: "4ab96d" # green variant
+  col3: "b0a800" # yellow variant
+  col4: "5aaaf2" # blue variant
+  col5: "ee80c0" # magenta variant
+  col6: "55b1c3" # cyan variant
+  col7: "c4bdaf" # white variant
+  col8: "18143d" # bright black variant
+  col9: "f69d6a" # bright red variant
+  col10: "88c400" # bright green variant
+  col11: "d7ae00" # bright yellow variant
+  col12: "8cb4f0" # bright blue variant
+  col13: "de99f0" # bright magenta variant
+  col14: "00ca9a" # bright cyan variant
+  col15: "e0e0e0" # bright white variant
+  colvr: "dark" # light or dark
+  colbg: "1a1a1a" # main background
+  colbgalt: "18143d" # alternative background
+  colfg: "e0e0e0" # main foreground
+  colfgalt: "c4bdaf" # alternative foreground
+  colcr: "e0e0e0" # cursor background
+  colcr2: "1a1a1a" # cursor foreground
 - name: "Tempus Past"
   slug: "tempus-past"
   slugunderscore: "tempus_past"
@@ -170,7 +226,7 @@
   slug: "tempus-rift"
   slugunderscore: "tempus_rift"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
-  description: "Dark theme with a subdued palette on the green side of the spectrum"
+  description: "Dark theme with a subdued palette on the green side of the spectrum (WCAG AA compliant)"
   col0: "2b353c" # black variant
   col1: "be9604" # red variant
   col2: "0eb40e" # green variant
