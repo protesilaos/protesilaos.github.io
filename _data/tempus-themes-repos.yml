@@ -1,20 +1,20 @@
 - name: Tempus themes Generator
-  url: "https://github.com/protesilaos/tempus-themes-generator"
+  url: "https://gitlab.com/protesilaos/tempus-themes-generator"
 - name: Tempus themes main repo (general)
-  url: "https://github.com/protesilaos/tempus-themes"
+  url: "https://gitlab.com/protesilaos/tempus-themes"
 - name: Tempus themes GTK3 Source View
-  url: "https://github.com/protesilaos/tempus-themes-gtksourceview3"
+  url: "https://gitlab.com/protesilaos/tempus-themes-gtksourceview3"
 - name: Tempus themes Konsole (KDE terminal)
-  url: "https://github.com/protesilaos/tempus-themes-konsole"
+  url: "https://gitlab.com/protesilaos/tempus-themes-konsole"
 - name: Tempus themes st (simple terminal)
-  url: "https://github.com/protesilaos/tempus-themes-st"
+  url: "https://gitlab.com/protesilaos/tempus-themes-st"
 - name: Tempus themes Tilix
-  url: "https://github.com/protesilaos/tempus-themes-tilix"
+  url: "https://gitlab.com/protesilaos/tempus-themes-tilix"
 - name: Tempus themes Rxvt-Unicode (URxvt)
-  url: "https://github.com/protesilaos/tempus-themes-urxvt"
+  url: "https://gitlab.com/protesilaos/tempus-themes-urxvt"
 - name: Tempus themes Vim plugin
-  url: "https://github.com/protesilaos/tempus-themes-vim"
+  url: "https://gitlab.com/protesilaos/tempus-themes-vim"
 - name: Tempus themes Xfce4 terminal
-  url: "https://github.com/protesilaos/tempus-themes-xfce4-terminal"
+  url: "https://gitlab.com/protesilaos/tempus-themes-xfce4-terminal"
 - name: Tempus themes Xterm
-  url: "https://github.com/protesilaos/tempus-themes-xterm"
+  url: "https://gitlab.com/protesilaos/tempus-themes-xterm"
