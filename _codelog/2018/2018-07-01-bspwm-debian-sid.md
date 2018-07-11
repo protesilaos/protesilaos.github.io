@@ -474,7 +474,7 @@ sudo apt install ruby ruby-dev ruby-bundler zlib1g-dev
 Unless you enjoy having a large collection of available fonts and themes (or are using one of the following), you will probably want to remove much of what is available:
 
 ```sh
-sudo apt remove albatross-gtk-theme blackbird-gtk-theme bluebird-gtk-theme greybird-gtk-theme murrine-themes mate-icon-theme-faenza gnome-icon-theme fonts-droid-fallback fonts-sil-gentium fonts-sil-gentium-basic fonts-linuxlibertine fonts-vlgothic fonts-crosextra-carlito fonts-lato
+sudo apt remove albatross-gtk-theme blackbird-gtk-theme bluebird-gtk-theme greybird-gtk-theme murrine-themes mate-icon-theme-faenza gnome-icon-theme fonts-droid-fallback fonts-sil-gentium fonts-sil-gentium-basic fonts-linuxlibertine fonts-vlgothic fonts-crosextra-carlito fonts-crosextra-caladea fonts-lato
 ```
 
 If you want to add some other themes, the ones I recommend for their completeness are `arc-theme` and `papirus-icon-theme`. For complete glyph coverage, consider `fonts-noto`.
