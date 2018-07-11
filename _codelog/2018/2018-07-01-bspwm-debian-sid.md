@@ -184,7 +184,7 @@ Now to install my custom environment. You might want to build the system yoursel
 sudo apt install git stow curl scrot feh materia-gtk-theme rxvt-unicode bspwm suckless-tools sxhkd xbacklight compton dunst libnotify-bin rsync i3lock lxappearance
 
 # essentials + extras
-sudo apt install git stow curl qtpass fonts-roboto fonts-hack-ttf neomutt abook ranger newsboat scrot feh materia-gtk-theme rxvt-unicode mpd mpc ncmpcpp bspwm suckless-tools sxhkd xbacklight compton dunst mpv youtube-dl imagemagick libnotify-bin taskwarrior w3m zathura firefox thunderbird redshift dtrx rsync i3lock lxappearance
+sudo apt install git stow curl qtpass fonts-roboto fonts-hack-ttf neomutt abook ranger newsboat scrot feh materia-gtk-theme rxvt-unicode mpd mpc ncmpcpp bspwm suckless-tools sxhkd xbacklight compton dunst mpv youtube-dl imagemagick libnotify-bin taskwarrior w3m zathura firefox thunderbird redshift dtrx rsync i3lock lxappearance fonts-font-awesome
 ```
 
 #### 4.3.2 Install the Mint-Y icons
@@ -231,13 +231,10 @@ sudo make install
 
 #### 4.3.4 Get my dotfiles (customisations)
 
-If you are reading this article long after its publication date (2018-07-01), I have probably made some adjustments. One area where I intend to introduce changes is the `polybar` configuration file. It lacks some flair, which was provided by the FontAwesome font, but which I have decided to deprecate.
-{:.note}
-
 Before proceeding, make sure you check this short blog post of mine about how I use [GNU Stow with my dotfiles](/codelog/gnu-stow-dotfiles/).
 {:.warn}
 
-All packages are in place. Now we need the dotfiles to complete the process. As I tend to tweak things here and there, I link you to the [current version of my dotfiles, which is v2.0.0](https://gitlab.com/protesilaos/dotfiles/tags/v2.0.0). You must download that version, decompress it in your `$HOME` directory, rename it "dotfiles-prot" (or something that works for you), and then prepare to run the following (here is the [canonical link to my dotfiles](https://gitlab.com/protesilaos/dotfiles), if you wish to clone the repo).
+All packages are in place. Now we need the dotfiles to complete the process. As I tend to tweak things here and there, I link you to the [current version of my dotfiles, which is v2.1.0](https://gitlab.com/protesilaos/dotfiles/tags/v2.1.0). You must download that version, decompress it in your `$HOME` directory, rename it "dotfiles-prot" (or something that works for you), and then prepare to run the following (here is the [canonical link to my dotfiles](https://gitlab.com/protesilaos/dotfiles), if you wish to clone the repo).
 
 ```sh
 # switch your current directory to my dotfiles
@@ -368,7 +365,11 @@ touch database log pid state sticker.sql
 
 To update the `mpd` database (assuming the presence of files at `~/Music`) either run `mpc update` in a terminal or type `ncmpcpp` and then press `u`. If your music is in a different directory, edit the path in this file `~/.config/mpd/mpd.conf`.
 
-You may need to reboot for the `systemd` service to stop interfering with your setup. To play music, learn how to use `ncmpcpp` (I typically switch to screen 4, by hitting `4`, then `A` and hit enter for an empty prompt which adds all available music to the playlist, then I toggle on repeat mode with `r` and random order with `z`).
+You may need to reboot for the `systemd` service to stop interfering with your setup.
+
+To play music, learn how to use `ncmpcpp` (I typically switch to screen 4, by hitting `4`, then `A` and hit enter for an empty prompt which adds all available music to the playlist, then I toggle on repeat mode with `r` and random order with `z`).
+
+If you do not like `ncmpcpp`, I highly recommend `cantata`, a graphical MPD frontend using the Qt toolkit.
 
 ### 5.7 Use newsboat for RSS feeds (optional)
 
@@ -477,7 +478,11 @@ Unless you enjoy having a large collection of available fonts and themes (or are
 sudo apt remove albatross-gtk-theme blackbird-gtk-theme bluebird-gtk-theme greybird-gtk-theme murrine-themes mate-icon-theme-faenza gnome-icon-theme fonts-droid-fallback fonts-sil-gentium fonts-sil-gentium-basic fonts-linuxlibertine fonts-vlgothic fonts-crosextra-carlito fonts-crosextra-caladea fonts-lato
 ```
 
-If you want to add some other themes, the ones I recommend for their completeness are `arc-theme` and `papirus-icon-theme`. For complete glyph coverage, consider `fonts-noto`.
+If you want to add some excellent alternatives, I recommend these:
+
+```sh
+sudo apt install arc-theme papirus-icon-theme fonts-noto-hinted fonts-noto-mono
+```
 
 ## 7 Troubleshooting
 
