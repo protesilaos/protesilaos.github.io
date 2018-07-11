@@ -469,15 +469,15 @@ This website is powered by Jekyll, a static site generator that is built with Ru
 sudo apt install ruby ruby-dev ruby-bundler zlib1g-dev
 ```
 
-### 6.4 Clean up GTK themes and icons (optional)
+### 6.4 Clean up GTK themes, icons, fonts (optional)
 
-Unless you enjoy having a large collection of available themes (or are using one of the following), you will probably want to remove much of what is available:
+Unless you enjoy having a large collection of available fonts and themes (or are using one of the following), you will probably want to remove much of what is available:
 
 ```sh
-sudo apt remove albatross-gtk-theme blackbird-gtk-theme bluebird-gtk-theme greybird-gtk-theme murrine-themes mate-icon-theme-faenza gnome-icon-theme
+sudo apt remove albatross-gtk-theme blackbird-gtk-theme bluebird-gtk-theme greybird-gtk-theme murrine-themes mate-icon-theme-faenza gnome-icon-theme fonts-droid-fallback fonts-sil-gentium fonts-sil-gentium-basic fonts-linuxlibertine fonts-vlgothic
 ```
 
-If you want to add some other themes, the ones I recommend for their completeness are `arc-theme` and `papirus-icon-theme`.
+If you want to add some other themes, the ones I recommend for their completeness are `arc-theme` and `papirus-icon-theme`. For complete glyph coverage, consider `fonts-noto`.
 
 ## 7 Troubleshooting
 
