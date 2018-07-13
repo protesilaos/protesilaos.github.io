@@ -9,7 +9,7 @@
   url: "https://github.com/protesilaos/prot16"
 - name: Tempus Themes
   description: "Tempus is a collection of themes for Vim, text editors, and terminal emulators that are compliant at the very least with the WCAG AA accessibility standard for colour contrast"
-  url: "https://github.com/protesilaos/tempus-themes"
+  url: "https://gitlab.com/protesilaos/tempus-themes"
 - name: Tempus Themes Generator
   description: "Tool to build Tempus themes on demand. The epicentre of the Tempus themes project and where all the underlying code and schemes are to be found."
-  url: "https://github.com/protesilaos/tempus-themes-generator"
+  url: "https://gitlab.com/protesilaos/tempus-themes-generator"
