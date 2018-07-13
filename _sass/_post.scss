@@ -22,7 +22,7 @@
         @include fluid-font-size($impact-text-xl);
 
         @include tablet {
-            font-weight: 300;
+            font-weight: 400;
         }
     }
 
@@ -31,7 +31,7 @@
         @include fluid-font-size($xxlsize);
 
         @include tablet {
-            font-weight: 300;
+            font-weight: 400;
         }
 
         color: $basefgalt;
