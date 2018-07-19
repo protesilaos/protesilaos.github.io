@@ -17,6 +17,8 @@ exclude:
   - vendor
   - _archive/ # ------------------- Unusual -------------------------
   - _pages/indices/blog-archive.html
+  - _assets/css
+  - _assets/js
   - _archive-codelog
   - _pages/indices/codelog-archive.html
   - 404.md
@@ -25,11 +27,9 @@ exclude:
   - css/cypher-print.css
   - master.xml
   - pages/certificates
-  - fonts ---------------------- Webfonts ------------------------
-  - css/webfonts.min.css
-  - _assets/css
   - js # ------------------------- JavaScript ----------------------
-  - _assets/js
+  - fonts # ---------------------- Webfonts ------------------------
+  - css/webfonts.min.css
   - images # --------------------- Images --------------------------
   - android-chrome-192x192.png
   - android-chrome-256x256.png
@@ -42,7 +42,7 @@ exclude:
   - mstile-150x150.png
   - safari-pinned-tab.svg
   - site.webmanifest
-  - _posts --------------------- Posts ---------------------------
+  - _posts # --------------------- Posts ---------------------------
   - _layouts/post.html
   - _posts/2016
   - _posts/2017
@@ -57,11 +57,11 @@ exclude:
   - _layouts/page.html
   - _data/text.yml
   - _data/gitprojects.yml
-  - greek.xml ------------------ Greek ---------------------------
+  - greek.xml # ------------------ Greek ---------------------------
   - _greek
   - _pages/indices/greek.html
   - _layouts/elpost.html
-  - _books --------------------- Books ---------------------------
+  - _books # --------------------- Books ---------------------------
   - _data/books.yml
   - _books/eudi
   - _books/euguide
@@ -85,7 +85,7 @@ exclude:
   - _pages/indices/codelog.html
   - _pages/indices/code.html
   - _includes/cypher-syntax.scss
-  - _schemes ------------------- Schemes -------------------------
+  - _schemes # ------------------- Schemes -------------------------
   - _data/themes.yml
   - _includes/prot16-packages.html
   - _includes/prot16-palette.html
