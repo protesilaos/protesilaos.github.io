@@ -135,6 +135,7 @@ samp {
 pre {
     @include fluid-font-size($ssize);
 
+    background: $basebgalt;
     font-size: $ssize;
     margin: $vertical-rhythm-0 0;
     padding: $space-1;
