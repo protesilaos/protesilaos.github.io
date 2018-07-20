@@ -1,4 +1,5 @@
-# Site settings
+# Basic information
+# ----------------------------
 title: Protesilaos Stavrou
 email: public@protesilaos.com
 author: Protesilaos Stavrou
@@ -9,52 +10,33 @@ date_format: "%Y-%m-%d"
 logo: "/images/brand/protesilaos-logo.png"
 
 # Collections
+# ----------------------------
+
+# define collections
 collections:
-  books:
-    output: true
-  tempus-themes:
-    output: true
-  schemes:
-    output: true
-  codelog:
-    output: true
   archive:
     output: true
   archive-codelog:
+    output: true
+  books:
+    output: true
+  codelog:
     output: true
   greek:
     output: true
   pages:
     output: true
+  schemes:
+    output: true
+  tempus-themes:
+    output: true
 
+# collection defaults
+# `group` is used by the `nextprev.html` module (_includes)
+# `image` defines a fallback for social media img metadata
+# `index` sets the base URL slug
+# `master` refers to the catch-all XML feed
 defaults:
-  - scope:
-      type: books
-    values:
-      image: "/images/brand/protesilaos-logo.png"
-      master: true
-  - scope:
-      type: posts
-    values:
-      layout: post
-      index: "/blog/"
-      group: Blog entries
-      image: "/images/brand/protesilaos-logo.png"
-      master: true
-  - scope:
-      type: pages
-    values:
-      layout: page
-      image: "/images/brand/protesilaos-logo.png"
-      master: false
-  - scope:
-      type: greek
-    values:
-      layout: elpost
-      index: "/greek/"
-      group: Αναρτήσεις στα ελληνικά
-      image: "/images/brand/protesilaos-logo.png"
-      master: true
   - scope:
       type: archive
     values:
@@ -70,11 +52,38 @@ defaults:
       group: Code blog archive entries
       image: "/images/brand/protesilaos-logo.png"
   - scope:
+      type: books
+    values:
+      image: "/images/brand/protesilaos-logo.png"
+      master: true
+  - scope:
       type: codelog
     values:
       layout: post
       index: "/codelog/"
       group: Code blog entries
+      image: "/images/brand/protesilaos-logo.png"
+      master: true
+  - scope:
+      type: greek
+    values:
+      layout: elpost
+      index: "/greek/"
+      group: Αναρτήσεις στα ελληνικά
+      image: "/images/brand/protesilaos-logo.png"
+      master: true
+  - scope:
+      type: pages
+    values:
+      layout: page
+      image: "/images/brand/protesilaos-logo.png"
+      master: false
+  - scope:
+      type: posts
+    values:
+      layout: post
+      index: "/blog/"
+      group: Blog entries
       image: "/images/brand/protesilaos-logo.png"
       master: true
   - scope:
@@ -94,7 +103,10 @@ defaults:
       image: "/images/brand/protesilaos-logo.png"
       master: true
 
-# Social SEO
+# Plugin settings
+# ----------------------------
+
+# social SEO
 social:
   name: Protesilaos Stavrou
   links:
@@ -103,6 +115,7 @@ social:
     - https://www.reddit.com/user/protesilaos
 
 # Where things are
+# ----------------------------
 source:       .
 destination:  _site
 plugins_dir:  _plugins
@@ -111,6 +124,7 @@ data_dir:     _data
 includes_dir: _includes
 
 # Build settings
+# ----------------------------
 incremental: false
 markdown: kramdown
 kramdown:
@@ -119,7 +133,9 @@ kramdown:
   footnote_backlink: ^
   hard_wrap: false
   syntax_highlighting: rouge
-highlighter: rouge
+  syntax_highlighter_opts:
+    disable : true # disable syntax highlighting
+highlighter: none # disable syntax highlighting
 permalink: pretty
 sass:
   style: compressed
