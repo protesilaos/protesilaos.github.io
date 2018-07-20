@@ -6,10 +6,10 @@
         margin-left: $vertical-rhythm-0;
         margin-right: -#{($measure-xl - $measure) / 2};
         margin-top: 0;
-        width: ($measure / 2) - $space-2 - $vertical-rhythm-0;
+        width: calc(calc(50% - #{$space-2}) - #{$vertical-rhythm-0})
     }
 
-    background: $basebg;
+    background: $basebgalt;
     font-size: $ssize;
     display: block;
     margin: $vertical-rhythm-0 0;
