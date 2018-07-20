@@ -148,9 +148,9 @@ $desktop: 75em;
 
 // Font stacks
 // -----------------------------------------------------------------------------
-$serif: serif;
-$sans: 'Noto Sans Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-$mono: "SFMono-Regular", Monaco, Consolas, 'Noto Sans Mono', Hack, 'DejaVu Sans Mono', monospace;
+$serif: 'Times New Roman', 'Liberation Serif', serif;
+$sans: 'Noto Sans Display', Roboto, Helvetica, Arial, sans-serif;
+$mono: "SFMono-Regular", Monaco, Consolas, Hack, 'DejaVu Sans Mono', monospace;
 
 // Functions
 // =============================================================================
