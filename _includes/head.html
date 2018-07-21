@@ -36,8 +36,18 @@
     <!-- Print only -->
     <link rel="stylesheet" type="text/css" href="{{ '/css/cypher-print.css'  | absolute_url }}" media="print">
 
+    <!-- Code styles and modules -->
+    {% if page.layout == "scheme" or page.url contains "codelog" or page.component contains "codeblock" %}
+
+    <style type="text/css">
+    {% capture cypher-syntax %}
+        {% include cypher-code.scss %}
+    {% endcapture %}
+    {{ cypher-syntax | scssify }}
+    </style>
+
     <!-- Homepage styles -->
-    {% if page.layout == "homepage" %}
+    {% elsif page.layout == "homepage" %}
 
     <style type="text/css">
     {% capture cypher-homepage %}
