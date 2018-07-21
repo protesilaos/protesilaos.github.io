@@ -7,6 +7,9 @@ layout: page
 ---
 ## Basic information
 
+![protesilaos_profile_pic](/images/self/prot_2018_150px.jpg)
+{:.author-profile-pic}
+
 **Name:** Protesilaos STAVROU (Πρωτεσίλαος ΣΤΑΥΡΟΥ)  
 **Citizenship:** Cypriot, Greek, European  
 **Birth place:** Greece  

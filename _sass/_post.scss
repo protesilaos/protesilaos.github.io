@@ -115,19 +115,13 @@ h1.h1-plus {
 }
 
 .author-profile-pic img { // Used in about me page
-    max-height: 150px;
-    max-width: 150px;
-
     @include tablet {
         float: right;
         margin-left: $space-1;
         margin-bottom: $space-1;
-        max-width: 200px;
-        max-height: 200px;
     }
 
-    @include desktop {
-        max-width: 300px;
-        max-height: 300px;
-    }
+    border-radius: 50%;
+    max-height: 150px;
+    max-width: 150px;
 }
