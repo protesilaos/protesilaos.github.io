@@ -4,8 +4,8 @@ title: Protesilaos Stavrou
 email: public@protesilaos.com
 author: Protesilaos Stavrou
 description: "Political analyst. Philosopher. Free software contributor."
-baseurl: ""
 url: "https://protesilaos.com"
+baseurl: ""
 date_format: "%Y-%m-%d"
 logo: "/images/brand/protesilaos-logo.png"
 
@@ -103,8 +103,18 @@ defaults:
       image: "/images/brand/protesilaos-logo.png"
       master: true
 
-# Plugin settings
+# Plugins and settings
 # ----------------------------
+
+# plugin list
+# also see Gemfile (though docs seem to suggest either of)
+# install with `bundle install`
+# update with `bundle update`
+plugins:
+  - github-pages
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # social SEO
 social:
@@ -125,25 +135,35 @@ includes_dir: _includes
 
 # Build settings
 # ----------------------------
-incremental: false
+permalink: pretty
+
+# build output
+liquid:
+  error_mode: strict
+  strict_filters: true
+  strict_variables: true
+sass:
+  style: compressed
 markdown: kramdown
 kramdown:
-  input: GFM
   auto_ids: false
   footnote_backlink: ^
   hard_wrap: false
-  syntax_highlighting: rouge
+  input: GFM
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
   syntax_highlighter_opts:
     disable : true # disable syntax highlighting
-highlighter: none # disable syntax highlighting
-permalink: pretty
-sass:
-  style: compressed
-plugins:
-  - github-pages
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+
+# server defaults
+detach: false
+port: 4000
+host: 127.0.0.1
+show_dir_listing: false
+
+# exclude from builds
+# see `_config-dev.yml' for a complete list
+# call that file in development with:
+# bundle exec jekyll serve --config _config.yml,_config-dev.yml
 exclude:
   - README.md
   - Gemfile
