@@ -11,10 +11,8 @@ layout: page
 {:.author-profile-pic}
 
 **Name:** Protesilaos STAVROU (Πρωτεσίλαος ΣΤΑΥΡΟΥ)  
-**Citizenship:** Cypriot, Greek, European  
 **Birth place:** Greece  
 **Birth year:** 1988
-
 **Email:** <public@protesilaos.com>  
 
 ## Skills and education
