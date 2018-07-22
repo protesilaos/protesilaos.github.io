@@ -6,11 +6,11 @@
 
 // For header and footer sections
 // WCAG AAA compliant
-$brandbg: #1a1a1a;
-$brandfg: #e0e0e0;
-$brandfgalt: #cdbebe;
-$brandlink: #94b0e0;
-$brandlinkalt: #d1b0cf;
+$brandbg: #ffffff;
+$brandfg: #1a1a1a;
+$brandfgalt: #4a4a4a;
+$brandlink: #36508a;
+$brandlinkalt: #96205a;
 
 // Palette for content elements (header uses brand colours)
 // -----------------------------------------------------------------------------
@@ -234,6 +234,19 @@ $mono: "SFMono-Regular", Monaco, Consolas, Hack, 'DejaVu Sans Mono', monospace;
 @mixin border($border-position: bottom, $border-width: 1px, $border-style: solid, $border-color: #000) {
     border-#{$border-position}: $border-width $border-style $border-color;
 }
+
+@mixin border-section-main($position: bottom) { // Used in header, footer
+    @include border($position, $border-width-thin, solid, $border-color-dark-0);
+}
+
+@mixin border-section-divider($position: bottom) { // Used by nextprev module
+    @include border($position, $border-width-thin, dashed, $border-color-dark-1);
+}
+
+@mixin border-section-inner($position: bottom) { // Used by footnotes, or between footer blocks
+    @include border($position, $border-width-thin, dotted, $border-color-dark-2);
+}
+
 
 @mixin fluid-width-measure {
     @include tablet {

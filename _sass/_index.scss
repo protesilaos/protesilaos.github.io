@@ -180,7 +180,7 @@
 
 .index-blog-section-heading {
     @include fluid-font-size($impact-text-s);
-    @include border(bottom, $border-width-medium, solid, $border-color-dark-2);
+    @include border-section-divider(bottom);
 
     @include tablet {
         margin-bottom: $vertical-rhythm-1;

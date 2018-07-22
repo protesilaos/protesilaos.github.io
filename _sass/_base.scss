@@ -104,12 +104,18 @@ em {
 }
 
 blockquote {
-    @include border(left, $border-width-thick, solid, $border-color-dark-2);
-
     margin: 0;
     padding: 0;
 
     p {
+        @include tablet {
+            padding-left: $vertical-rhythm-1;
+        }
+
+        @include desktop {
+            padding-left: $vertical-rhythm-2;
+        }
+
         font-style: italic;
         padding-left: $vertical-rhythm-0;
 
@@ -133,10 +139,9 @@ samp {
 }
 
 pre {
-    @include fluid-font-size($ssize);
+    @include fluid-font-size($xssize);
 
-    background: $basebgalt;
-    font-size: $ssize;
+    font-size: $xssize;
     margin: $vertical-rhythm-0 0;
     padding: $space-1;
 	padding-left: $vertical-rhythm-0;

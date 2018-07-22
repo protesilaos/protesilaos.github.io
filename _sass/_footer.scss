@@ -1,17 +1,29 @@
 .footer {
     @extend %clearfix;
 
+    background: $basebg;
+    color: $basefg;
+}
+
+.footer-inner {
+    @extend %clearfix;
+
+    @include fluid-width-measure;
+
+    @include border-section-main(top);
+
     @include fluid-font-size($msize);
 
     @include tablet {
-        padding: $vertical-rhythm-0 0;
+        padding: $vertical-rhythm-1 $space-1;
     }
 
-    background: $basebg;
-    color: $basefg;
     font-size: $msize;
-    padding: $space-0 0;
-    margin-top: $vertical-rhythm-0;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    padding: $vertical-rhythm-0 $space-1;
+    max-width: 100%;
 }
 
 .footer-block {
@@ -22,6 +34,6 @@
     margin: 0 auto;
 
     + .footer-block {
-        @include border(top, $border-width-thin, solid, $border-color-light-2);
+        @include border-section-inner(top);
     }
 }

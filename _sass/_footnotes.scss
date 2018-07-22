@@ -1,6 +1,6 @@
 .footnotes {
     @include fluid-font-size($ssize);
-    @include border(top, $border-width-thin, solid, $border-color-dark-0);
+    @include border-section-inner(top);
 
     font-size: $ssize;
     margin: $vertical-rhythm-2 0 0;
