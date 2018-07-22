@@ -10,9 +10,9 @@ layout: page
 ![protesilaos_profile_pic](/images/self/prot_2018_150px.jpg)
 {:.author-profile-pic}
 
-**Name:** Protesilaos STAVROU (Πρωτεσίλαος ΣΤΑΥΡΟΥ)  
+**Name:** Protesilaos (Πρωτεσίλαος)  
 **Birth place:** Greece  
-**Birth year:** 1988
+**Birth year:** 1988  
 **Email:** <public@protesilaos.com>  
 
 ## Skills and education
