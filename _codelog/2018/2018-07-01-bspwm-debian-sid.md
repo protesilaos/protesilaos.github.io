@@ -268,58 +268,59 @@ Basic motions
 
 Vi like motions:
 
-super + h   Focus window to the left
-super + l   Focus window to the right
-super + j   Focus window to the bottom
-super + k   Focus window to the top
+    super + h   Focus window to the left
+    super + l   Focus window to the right
+    super + j   Focus window to the bottom
+    super + k   Focus window to the top
 
-super + shift + h   Move focused window to the left
-super + shift + l   Move focused window to the right
-super + shift + j   Move focused window to the bottom
-super + shift + k   Move focused window to the top
+    super + shift + h   Move focused window to the left
+    super + shift + l   Move focused window to the right
+    super + shift + j   Move focused window to the bottom
+    super + shift + k   Move focused window to the top
 
 Window operations:
 
-super + q   Close window
-super + shift + q   Kill window
+    super + q   Close window
+    super + shift + q   Kill window
 
-super + m   Toggle monocle view (the equivalent of maximise)
-super + f   Toggle full screen view
-super + space   Toggle floating/tiling
+    super + m   Toggle monocle view (the equivalent of maximise)
+    super + f   Toggle full screen view
+    super + space   Toggle floating/tiling
 
 Workspace operations:
 
-super + 1   Switch to workspace 1
-super + 2   Switch to workspace 2
+    super + 1   Switch to workspace 1
+    super + 2   Switch to workspace 2
 ... same up to 9
 
-super + shift + 1   Move focused window to workspace 1
-super + shift + 2   Move focused window to workspace 2
+    super + shift + 1   Move focused window to workspace 1
+    super + shift + 2   Move focused window to workspace 2
 ... same up to 9
 
-super + ctrl + shift + 1   Move and follow focused window to workspace 1
-super + ctrl + shift + 2   Move and follow focused window to workspace 2
+    super + ctrl + shift + 1   Move and follow focused window to workspace 1
+    super + ctrl + shift + 2   Move and follow focused window to workspace 2
 ... same up to 9
 
 Main tools:
 
-super + d         Open dmenu (for launching programs)
-super + return    Open a urxvt instance
+    super + d         Open dmenu (for launching programs)
+    super + return    Open a urxvt instance
 
 Key chord chains
 ----------------
-These are multiple key presses to perform an action. I include some comments in the sxhkdrc file about why I choose those letters (mnemonic).
+These are multiple key presses to perform an action.
+See comments in sxhkdrc about why I choose those letters.
 
 Commands that affect the environment:
 
-super + e ; s   Reload the sxhkdrc (when making changes)
-super + e ; p   Reload polybar
+    super + e ; s   Reload the sxhkdrc (when making changes)
+    super + e ; p   Reload polybar
 
 Commands that invoke executables (see sxhkdrc for all the commands):
 
-super + x ; 1   Run Firefox
-super + x ; 2   Run a terminal with ranger (file manager)
-super + x ; 3   Run a terminal with newsboat (feed reader)
+    super + x ; 1   Run Firefox
+    super + x ; 2   Run a terminal with ranger (file manager)
+    super + x ; 3   Run a terminal with newsboat (feed reader)
 ```
 
 ### 5.2 The file manager
