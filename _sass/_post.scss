@@ -114,14 +114,22 @@ h1.h1-plus {
     max-width: 200px;
 }
 
-.author-profile-pic img { // Used in about me page
+.author-profile-pic {
     @include tablet {
-        float: right;
-        margin-left: $space-1;
-        margin-bottom: $space-1;
+        text-align: right;
     }
 
-    border-radius: 50%;
-    max-height: 150px;
-    max-width: 150px;
+    text-align: center;
+
+    img { // Used in about me page
+        @include tablet {
+            float: right;
+            margin-left: $space-1;
+            margin-bottom: $space-1;
+        }
+
+        border-radius: 50%;
+        max-height: 150px;
+        max-width: 150px;
+    }
 }
