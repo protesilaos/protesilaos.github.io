@@ -6,7 +6,10 @@ a {
 
     &:hover,
     &:focus {
-        color: $baselinkfghover;
+        @include transition;
+
+        background: $baselinkfghover;
+        color: $basebg;
         outline: none;
     }
 
@@ -22,7 +25,11 @@ a {
 
         &:hover,
         &:focus {
-            color: $bodylinkfghover;
+            @include transition;
+
+            background: $bodylinkfghover;
+            color: $basebg;
+            text-decoration: none;
         }
     }
 
@@ -45,7 +52,10 @@ a {
 
     &:hover,
     &:focus {
-        color: $brandlinkalt;
+        @include transition;
+
+        background: $brandlink;
+        color: $brandbg;
     }
 }
 
@@ -59,5 +69,15 @@ a.skip-link {
     &:focus {
         background: $brandlinkalt;
         color: $brandbg;
+    }
+}
+
+// Indices
+// --------------------------- 
+a.index-scheme-item {
+    &:hover,
+    &:focus {
+        background: $brandbg;
+        color: $brandfgalt;
     }
 }

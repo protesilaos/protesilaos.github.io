@@ -15,9 +15,11 @@ layout: default
 
         {% if page.index-feed %}
             <div class="index-impact-header-meta">
-                <a class="index-rss-feed" href="{{ page.index-feed.url }}">
-                <img class="index-rss-icon" src="{{ 'images/other/rss.png' | absolute_url }}" alt="Feed icon"/>
-                    {{ page.index-feed.text }}
+                <span class="index-rss">
+                    <img class="index-rss-icon" src="{{ 'images/other/rss.png' | absolute_url }}" alt="Feed icon"/>
+                    <a class="index-rss-feed" href="{{ page.index-feed.url }}">
+                        {{ page.index-feed.text }}
+                </span>
                 </a>
             </div>
         {% endif %}

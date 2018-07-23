@@ -58,10 +58,10 @@ $basefgalt: $col8;
 
 // Links
 $baselinkfg: $col4;
-$baselinkfghover: $col5;
+$baselinkfghover: $col12;
 
 $bodylinkfg: $col12;
-$bodylinkfghover: $col13;
+$bodylinkfghover: $col4;
 
 // Buttons and action elements
 $btnmainbg: $col8;
@@ -150,7 +150,7 @@ $desktop: 75em;
 // Font stacks
 // -----------------------------------------------------------------------------
 $serif: 'Times New Roman', 'Liberation Serif', serif;
-$sans: 'Noto Sans Display', Roboto, Helvetica, Arial, sans-serif;
+$sans: 'Noto Sans', Roboto, Helvetica, Arial, sans-serif;
 $mono: "SFMono-Regular", Monaco, Consolas, Hack, 'DejaVu Sans Mono', monospace;
 
 // Functions
