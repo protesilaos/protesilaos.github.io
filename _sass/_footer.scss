@@ -1,7 +1,7 @@
 .footer {
     @extend %clearfix;
 
-    @include desktop {
+    @include tablet {
         background: $brandbg;
     }
 
