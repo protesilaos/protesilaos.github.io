@@ -1,65 +1,42 @@
-// TODO review class names and this entire stylesheet
-.books-meta {
+.books-meta { // container for the book info, "published", "version"...
     @include fluid-font-size($ssize);
 
     font-size: $ssize;
+}
 
-    .books-options {
-        @extend %clearfix;
+// "read online", "print version" book options
+// in the future, these could include links to epub, pdf
+.books-options {
+    @extend %clearfix;
 
-        margin: $space-1 0;
-        padding: $space-1 0;
+    margin: $vertical-rhythm-0 0;
+    padding: $vertical-rhythm-0 0;
+}
 
-        a.books-button {
-            @include radius(3%);
-            @include transition;
+.books-button {
+    @extend %button;
 
-            @include tablet {
-                padding: $space-0 $space-1;
-            }
+    @include tablet {
+        display: inline-block; // side-by-side in >= tablet view
 
-            border-bottom: none;
-            display: inline-block;
-            padding: $space-1;
-            text-transform: lowercase;
-
-            &:hover,
-            &:focus,
-            &:active {
-                border-bottom: none;
-            }
-
-            &:last-of-type {
-                margin-left: $space-0;
-            }
-
-            &.read-online {
-                background: $btnmainbg;
-                color: $btnmainfg;
-
-                &:hover,
-                &:focus,
-                &:active {
-                    background: $btnmainbgactive;
-                    color: $btnmainfgactive;
-                }
-            }
-
-            &.read-offline {
-                background: $btnaltbg;
-                color: $btnaltfg;
-
-                &:hover,
-                &:focus,
-                &:active {
-                    background: $btnaltbgactive;
-                    color: $btnaltfgactive;
-                }
-            }
+        + .books-button {
+            margin-top: 0;
+            margin-left: $space-0;
         }
     }
 
-    span {
-        font-weight: 700;
+    display: block; // one per line in mobile view
+
+        + .books-button {
+            margin-top: $space-0;
+        }
+
+    &.read-offline a { // the print button has different bg
+        background: $btnaltbg;
+
+        &:hover,
+        &:focus {
+            background: $btnaltbgactive;
+        }
     }
 }

@@ -13,16 +13,20 @@ breadcrumbs: true
 
     <div class="books-meta">
 
-        <p>Published: <span>{{ site.data.text.euhandbook.datefull }}</span><br/>Book version: <span>{{ site.data.text.euhandbook.version }}</span></p>
+        <p>Published: <strong>{{ site.data.text.euhandbook.datefull }}</strong><br/>Book version: <strong>{{ site.data.text.euhandbook.version }}</strong></p>
 
         <div class="books-options">
 
-            <a class="books-button read-online" href="{{ '/euhandbook/introduction/'  | prepend: site.url }}">
-            Read online
-            </a>
-            <a class="books-button read-offline" href="{{ '/euhandbook/print/'  | prepend: site.url }}">
-            Print version
-            </a>
+            <div class="button books-button read-online">
+                <a href="{{ '/euhandbook/introduction/'  | prepend: site.url }}">
+                Read online
+                </a>
+            </div>
+            <div class="button books-button read-offline">
+                <a href="{{ '/euhandbook/print/'  | prepend: site.url }}">
+                Print version
+                </a>
+            </div>
 
         </div>
 

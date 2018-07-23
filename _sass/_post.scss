@@ -68,30 +68,10 @@
 .post-meta {
     @extend p;
 
-    // TODO check whether this applies anywhere except _layouts for books
-    // Rendered irrelevant as books will use time tag instead
     span {
         &:not(a) {
             color: $basefgalt;
         }
-
-        + span {
-            @include tablet {
-                display: inline;
-                margin-left: $space-0;
-
-                &::before {
-                    content: '//';
-                    display: inline-block;
-                    padding-right: $space-0;
-                }
-            }
-
-            display: block;
-            font-size: $ssize;
-            margin-top: $space-0;
-        }
-    }
 }
 
 p,

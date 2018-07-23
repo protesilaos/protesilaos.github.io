@@ -64,8 +64,8 @@ $bodylinkfg: $col12;
 $bodylinkfghover: $col4;
 
 // Buttons and action elements
-$btnmainbg: $col8;
-$btnmainbgactive: $col5;
+$btnmainbg: $col10;
+$btnmainbgactive: $col12;
 $btnmainfg: $col15;
 $btnmainfgactive: $btnmainfg;
 
@@ -269,5 +269,28 @@ $mono: "SFMono-Regular", Monaco, Consolas, Hack, 'DejaVu Sans Mono', monospace;
         clear: both;
         content: '';
         display: table;
+    }
+}
+
+%button {
+    a {
+        @include fluid-font-size($xxssize);
+
+        @include radius(3%);
+
+        @include transition;
+
+        display: inline-block;
+        background: $btnmainbg;
+        color: $btnmainfg;
+        font-size: $xssize;
+        text-transform: uppercase;
+        padding: $space-0 $space-2;
+
+        &:hover,
+        &:focus {
+            background: $btnmainbgactive;
+            color: $btnmainfgactive;
+        }
     }
 }
