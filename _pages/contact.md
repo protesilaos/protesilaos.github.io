@@ -18,7 +18,7 @@ Grab my key from the server with the following command:
 gpg --recv-keys A5B8A16D86ADECB21FB8D488BF48FD84FE21D72A
 ```
 
-Or download and then import the file [protesilaos-stavrou-public.key](/pages/certificates/protesilaos-stavrou-public.key).
+Or download and then import the file [protesilaos-stavrou-public.key](/static/protesilaos-stavrou-public.key).
 
 This key is valid as of 2017-06-03. Any older key should be discarded.
 {:.warn}
