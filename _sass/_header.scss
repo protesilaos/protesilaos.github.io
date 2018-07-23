@@ -1,7 +1,11 @@
 .header {
     @extend %clearfix;
 
-    background: $brandbg;
+    @include desktop {
+        background: $brandbg;
+    }
+
+    background: $brandbgalt;
     color: $brandfg;
 }
 
@@ -9,8 +13,6 @@
     @extend %clearfix;
 
     @include fluid-width-measure;
-
-    @include border-section-main(bottom);
 
     @include fluid-font-size($lsize);
 
@@ -26,10 +28,10 @@
     max-width: 100%;
 
     .header-logo {
-        @include fluid-font-size($xxlsize);
+        @include fluid-font-size($xxxlsize);
 
         display: block;
-        font-size: $xxlsize;
+        font-size: $xxxlsize;
         padding: 0;
     }
 

@@ -7,10 +7,11 @@
 // For header and footer sections
 // WCAG AAA compliant
 $brandbg: #ffffff;
+$brandbgalt: #efefef;
 $brandfg: #1a1a1a;
 $brandfgalt: #4a4a4a;
-$brandlink: #36508a;
-$brandlinkalt: #96205a;
+$brandlink: #364d8a;
+$brandlinkalt: #86208a;
 
 // Palette for content elements (header uses brand colours)
 // -----------------------------------------------------------------------------
@@ -235,11 +236,7 @@ $mono: "SFMono-Regular", Monaco, Consolas, Hack, 'DejaVu Sans Mono', monospace;
     border-#{$border-position}: $border-width $border-style $border-color;
 }
 
-@mixin border-section-main($position: bottom) { // Used in header, footer
-    @include border($position, $border-width-thin, solid, $border-color-dark-0);
-}
-
-@mixin border-section-divider($position: bottom) { // Used by nextprev module
+@mixin border-section-divider($position: bottom) { // Used by nextprev module, index section headings
     @include border($position, $border-width-thin, dashed, $border-color-dark-1);
 }
 

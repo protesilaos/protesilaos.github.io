@@ -1,7 +1,11 @@
 .footer {
     @extend %clearfix;
 
-    background: $basebg;
+    @include desktop {
+        background: $brandbg;
+    }
+
+    background: $brandbgalt;
     color: $basefg;
 }
 
@@ -9,8 +13,6 @@
     @extend %clearfix;
 
     @include fluid-width-measure;
-
-    @include border-section-main(top);
 
     @include fluid-font-size($msize);
 
