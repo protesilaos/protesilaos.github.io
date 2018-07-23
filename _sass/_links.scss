@@ -77,7 +77,7 @@ a.skip-link {
 a.index-scheme-item {
     &:hover,
     &:focus {
-        background: $brandbg;
-        color: $brandfgalt;
+        background: $brandbgalt;
+        color: $brandfg;
     }
 }
