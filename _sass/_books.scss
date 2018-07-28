@@ -27,9 +27,9 @@
 
     display: block; // one per line in mobile view
 
-        + .books-button {
-            margin-top: $space-0;
-        }
+    + .books-button {
+        margin-top: $space-0;
+    }
 
     &.read-offline a { // the print button has different bg
         background: $btnaltbg;

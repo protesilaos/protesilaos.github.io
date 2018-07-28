@@ -13,13 +13,10 @@
 // The content must be vertically centered
 .homepage-greeter {
     text-align: center;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     min-height: 100%;
@@ -36,7 +33,6 @@
         padding: $space-1 * 5;
     }
 
-    -webkit-box-flex: 0;
     -ms-flex: none;
     flex: none;
     max-width: calc(calc(100% - 1rem) - 1rem); // FIXME space-1 was not being parsed
@@ -45,7 +41,6 @@
 
 .homepage-greeter-title {
     @include animation-fadeIn(0);
-
     @include fluid-font-size($impact-text-xl);
 
     // On larger viewports, the greater size eliminates the need for bold
@@ -59,7 +54,6 @@
 
 .homepage-greeter-subtitle {
     @include animation-fadeIn(1);
-
     @include fluid-font-size($xlsize);
 
     font-size: $lsize;
@@ -69,7 +63,6 @@
 
 .homepage-greeter-navigation {
     @include animation-fadeIn(2);
-
     @include fluid-font-size($impact-text-s);
 
     font-size: $lsize;

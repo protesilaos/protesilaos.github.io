@@ -13,7 +13,6 @@
     @extend %clearfix;
 
     @include fluid-width-measure;
-
     @include fluid-font-size($msize);
 
     @include tablet {

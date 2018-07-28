@@ -78,7 +78,7 @@
     .index-rss-icon {
         @include radius(50%);
         @include fluid-icon-size($ssize);
-        
+
         display: inline;
         background: $col9;
         color: $basebg;
@@ -151,7 +151,6 @@
     display: inline;
     margin: 0 $space-0 0 0;
 }
-
 
 .index-blog-post-link {
     @include tablet {
