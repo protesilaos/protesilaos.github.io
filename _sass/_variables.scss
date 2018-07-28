@@ -156,8 +156,72 @@ $mono: "SFMono-Regular", Monaco, Consolas, Hack, 'DejaVu Sans Mono', monospace;
 // Functions
 // =============================================================================
 
+// Animations
+// -----------------------------------------------------------------------------
+
+%animation-fadeIn {
+	opacity: 0;
+	-webkit-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+%animation-delay-0 { // very short
+	-webkit-animation-delay: 0.05s;
+	-moz-animation-delay: 0.05s;
+	animation-delay: 0.05s;
+}
+
+%animation-delay-1 { // medium
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+
+%animation-delay-2 { // longer
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+ 
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+ 
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
 // Mixins
 // -----------------------------------------------------------------------------
+
+// Now used in _sass/_homepage.scss
+@mixin animation-fadeIn($delay) {
+	@extend %animation-fadeIn;
+
+	@extend %animation-delay-#{$delay};
+}
+
 @mixin font-smoothing {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

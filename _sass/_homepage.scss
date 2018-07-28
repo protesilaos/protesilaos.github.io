@@ -44,6 +44,8 @@
 }
 
 .homepage-greeter-title {
+    @include animation-fadeIn(0);
+
     @include fluid-font-size($impact-text-xl);
 
     // On larger viewports, the greater size eliminates the need for bold
@@ -56,6 +58,8 @@
 }
 
 .homepage-greeter-subtitle {
+    @include animation-fadeIn(1);
+
     @include fluid-font-size($xlsize);
 
     font-size: $lsize;
@@ -64,6 +68,8 @@
 }
 
 .homepage-greeter-navigation {
+    @include animation-fadeIn(2);
+
     @include fluid-font-size($impact-text-s);
 
     font-size: $lsize;
