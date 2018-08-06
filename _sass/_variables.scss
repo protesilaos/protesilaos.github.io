@@ -112,7 +112,7 @@ $space-3: 3rem;
 
 // Typographic spacing
 $base-font-size: 16px;
-$line-height: 1.424; // Equal to $xxlsize
+$line-height: 1.266; // Equal to $xlsize
 $heading-line-height: 1.125; // Equal to $lsize
 $vertical-rhythm-0: #{$line-height}rem;
 $vertical-rhythm-1: #{$line-height * 1.5}rem;
@@ -147,7 +147,7 @@ $desktop: 75em;
 // Font stacks
 // -----------------------------------------------------------------------------
 $serif: 'Times New Roman', 'Liberation Serif', serif;
-$sans: 'Noto Sans', Roboto, Helvetica, Arial, sans-serif;
+$sans: 'Alegreya Sans', Roboto, Helvetica, Arial, sans-serif;
 $mono: "SFMono-Regular", Monaco, Consolas, Hack, 'DejaVu Sans Mono', monospace;
 
 // Functions
@@ -230,11 +230,11 @@ $mono: "SFMono-Regular", Monaco, Consolas, Hack, 'DejaVu Sans Mono', monospace;
 }
 
 @mixin tablet-font-size($tablet-font-size) {
-    font-size: $tablet-font-size + 0.02;
+    font-size: $tablet-font-size + 0.15;
 }
 
 @mixin desktop-font-size($desktop-font-size) {
-    font-size: $desktop-font-size + 0.04;
+    font-size: $desktop-font-size + 0.25;
 }
 
 // NOTE Combines the above two and is the preferred option

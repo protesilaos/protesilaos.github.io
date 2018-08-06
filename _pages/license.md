@@ -28,7 +28,7 @@ All files referenced in this section are from this website's [git repository](ht
 
 The entire underlying code base—HTML, CSS, JavaScript—is written by me. The implemented theme is internally referred to as `cypher`.
 
-The web fonts are [Noto Sans](https://www.google.com/get/noto/).
+The web fonts are [Alegreya Sans](https://www.huertatipografica.com/en/fonts/alegreya-sans-ht), which are provided under the SIL Open Font License (OFL) 1.1.
 
 ### Back end
 
