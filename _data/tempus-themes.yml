@@ -310,7 +310,7 @@
   slug: "tempus-tempest"
   slugunderscore: "tempus_tempest"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
-  description: "A green-scale, subdued theme for late night hackers (WCAG AAA compliant)"
+  description: "A green-scale, subtle theme for late night hackers (WCAG AAA compliant)"
   col0:  "282b2b" # black variant
   col1:  "c6c80a" # red variant
   col2:  "7ad67a" # green variant
