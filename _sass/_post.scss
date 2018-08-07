@@ -78,8 +78,11 @@
 p,
 li {
     code {
+        @include fluid-font-size($xssize);
+
         background: $inlinecodebg;
         color: $inlinecodefg;
+        font-size: $ssize;
     }
 }
 
