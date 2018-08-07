@@ -46,6 +46,29 @@ $col13: #b03890; // bright magenta variant
 $col14: #007196; // bright cyan variant
 $col15: #fff; // bright white variant
 
+// Palette for code block and syntax highlighting
+// -----------------------------------------------------------------------------
+// Tempus Tempest theme
+// A green-scale, subdued theme for late night hackers
+// All colours are WCAG AAA compliant againt $codecol0 and $codecol8
+// For more, see https://protesilaos.com/tempus-themes
+$codecol0: #282b2b; // black variant
+$codecol1: #c6c80a; // red variant
+$codecol2: #7ad67a; // green variant
+$codecol3: #bfc94a; // yellow variant
+$codecol4: #60d4cd; // blue variant
+$codecol5: #c0c4aa; // magenta variant
+$codecol6: #8ad0b0; // cyan variant
+$codecol7: #b0c8ca; // white variant
+$codecol8: #303434; // bright black variant
+$codecol9: #d1d933; // bright red variant
+$codecol10: #99e299; // bright green variant
+$codecol11: #bbde4f; // bright yellow variant
+$codecol12: #74e4cd; // bright blue variant
+$codecol13: #d2d4aa; // bright magenta variant
+$codecol14: #9bdfc4; // bright cyan variant
+$codecol15: #b6e0ca; // bright white variant
+
 // Colour mapping
 // -----------------------------------------------------------------------------
 
@@ -74,6 +97,10 @@ $btnaltfgactive: $btnmainfg;
 // Inline code element
 $inlinecodebg: $col7;
 $inlinecodefg: $col1;
+
+// Code blocks
+$codeblockbg: $codecol0;
+$codeblockfg: $codecol15;
 
 // Notifications
 $notifyinfo: $col14;

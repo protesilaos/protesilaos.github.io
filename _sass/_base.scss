@@ -141,6 +141,8 @@ samp {
 pre {
     @include fluid-font-size($xssize);
 
+    background: $codeblockbg;
+    color: $codeblockfg;
     font-size: $xssize;
     margin: $vertical-rhythm-0 0;
     padding: $space-1;
