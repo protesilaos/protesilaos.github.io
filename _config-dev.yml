@@ -84,7 +84,7 @@ exclude:
   - codelog.xml
   - _pages/indices/codelog.html
   - _pages/indices/code.html
-  - _includes/cypher-syntax.scss
+  - _includes/cypher-code.scss
   - _schemes # ------------------- Schemes -------------------------
   - _data/themes.yml
   - _includes/prot16-packages.html
