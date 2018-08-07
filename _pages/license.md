@@ -28,7 +28,7 @@ All files referenced in this section are from this website's [git repository](ht
 
 The entire underlying code base—HTML, CSS, JavaScript—is written by me. The implemented theme is internally referred to as `cypher`.
 
-The web fonts are [Alegreya Sans](https://www.huertatipografica.com/en/fonts/alegreya-sans-ht), which are provided under the SIL Open Font License (OFL) 1.1.
+The web fonts are [Alegreya Sans](https://www.huertatipografica.com/en/fonts/alegreya-sans-ht) and [Mononoki](https://madmalik.github.io/mononoki/). Both are distributed under the terms of the SIL Open Font License (OFL), version 1.1. *Alegreya* is available in regular and bold weights, with corresponding italics. *Mononoki* uses the regular weight without italics. Both fonts provide coverage for latin and greek glyphs, serving the needs of this website.
 
 ### Back end
 
