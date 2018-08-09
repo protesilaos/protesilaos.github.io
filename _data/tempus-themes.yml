@@ -3,29 +3,29 @@
   slugunderscore: "tempus_autumn"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "Dark theme with a palette inspired by earthly colours (WCAG AA compliant)"
-  col0: "322622" # black variant
-  col1: "fc5526" # red variant
-  col2: "83973f" # green variant
-  col3: "9e9022" # yellow variant
-  col4: "7f8dbf" # blue variant
-  col5: "ce7673" # magenta variant
-  col6: "6e978b" # cyan variant
+  col0: "2b1d1a" # black variant
+  col1: "f85a10" # red variant
+  col2: "809900" # green variant
+  col3: "ad8b00" # yellow variant
+  col4: "888db0" # blue variant
+  col5: "cb758e" # magenta variant
+  col6: "709a65" # cyan variant
   col7: "919078" # white variant
   col8: "35260f" # bright black variant
-  col9: "dc721a" # bright red variant
-  col10: "609d59" # bright green variant
-  col11: "b1891a" # bright yellow variant
-  col12: "6b8ed6" # bright blue variant
-  col13: "9d80d3" # bright magenta variant
-  col14: "229ea0" # bright cyan variant
-  col15: "8e8f8d" # bright white variant
-  colvr: "dark" # theme variant
-  colbg: "322622" # main background
+  col9: "ce7b1a" # bright red variant
+  col10: "729c1a" # bright green variant
+  col11: "b28910" # bright yellow variant
+  col12: "9385cd" # bright blue variant
+  col13: "c874a3" # bright magenta variant
+  col14: "529d80" # bright cyan variant
+  col15: "a49ba0" # bright white variant
+  colvr: "dark" # light or dark
+  colbg: "2b1d1a" # main background
   colbgalt: "35260f" # alternative background
-  colfg: "8e8f8d" # main foreground
+  colfg: "a49ba0" # main foreground
   colfgalt: "919078" # alternative foreground
-  colcr: "8e8f8d" # cursor background
-  colcr2: "322622" # cursor foreground
+  colcr: "a49ba0" # cursor background
+  colcr2: "2b1d1a" # cursor foreground
 - name: "Tempus Dawn"
   slug: "tempus-dawn"
   slugunderscore: "tempus_dawn"
@@ -47,7 +47,7 @@
   col13: "a24055" # bright magenta variant
   col14: "2d6978" # bright cyan variant
   col15: "f3f1f5" # bright white variant
-  colvr: "light" # theme variant
+  colvr: "light" # light or dark
   colbg: "f3f1f5" # main background
   colbgalt: "dedae9" # alternative background
   colfg: "53575a" # main foreground
@@ -103,7 +103,7 @@
   col13: "c69ac6" # bright magenta variant
   col14: "8caeb6" # bright cyan variant
   col15: "a2a8ba" # bright white variant
-  colvr: "dark" # theme variant
+  colvr: "dark" # light or dark
   colbg: "1f252d" # main background
   colbgalt: "2c3150" # alternative background
   colfg: "a2a8ba" # main foreground
@@ -115,57 +115,57 @@
   slugunderscore: "tempus_fugit"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "Light, pleasant theme optimised for long writing/coding sessions (WCAG AA compliant)"
-  col0: "4d696f" # black variant
-  col1: "df2014" # red variant
-  col2: "587d0a" # green variant
-  col3: "8a6f00" # yellow variant
-  col4: "196bec" # blue variant
-  col5: "c83884" # magenta variant
-  col6: "2a79a2" # cyan variant
-  col7: "faf6f9" # white variant
-  col8: "8b6781" # bright black variant
-  col9: "9a511a" # bright red variant
-  col10: "11742f" # bright green variant
-  col11: "8d590a" # bright yellow variant
-  col12: "004fff" # bright blue variant
-  col13: "9536c0" # bright magenta variant
-  col14: "046c92" # bright cyan variant
+  col0: "4d595f" # black variant
+  col1: "c61a14" # red variant
+  col2: "357200" # green variant
+  col3: "825e00" # yellow variant
+  col4: "1666b0" # blue variant
+  col5: "a83884" # magenta variant
+  col6: "007072" # cyan variant
+  col7: "f2ebe9" # white variant
+  col8: "7b6471" # bright black variant
+  col9: "bd401a" # bright red variant
+  col10: "447720" # bright green variant
+  col11: "985d00" # bright yellow variant
+  col12: "485ddf" # bright blue variant
+  col13: "a438c0" # bright magenta variant
+  col14: "00786a" # bright cyan variant
   col15: "fff5f3" # bright white variant
-  colvr: "light" # theme variant
+  colvr: "light" # light or dark
   colbg: "fff5f3" # main background
-  colbgalt: "faf6f9" # alternative background
-  colfg: "4d696f" # main foreground
-  colfgalt: "8b6781" # alternative foreground
-  colcr: "4d696f" # cursor background
+  colbgalt: "f2ebe9" # alternative background
+  colfg: "4d595f" # main foreground
+  colfgalt: "7b6471" # alternative foreground
+  colcr: "4d595f" # cursor background
   colcr2: "fff5f3" # cursor foreground
 - name: "Tempus Future"
   slug: "tempus-future"
   slugunderscore: "tempus_future"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "Dark theme with colours inspired by concept art of outer space (WCAG AAA compliant)"
-  col0: "18161d" # black variant
-  col1: "ff7780" # red variant
-  col2: "68b183" # green variant
-  col3: "bda014" # yellow variant
-  col4: "54a5ff" # blue variant
-  col5: "da89b2" # magenta variant
-  col6: "79a8c3" # cyan variant
-  col7: "bd9b87" # white variant
-  col8: "001b1a" # bright black variant
-  col9: "ef873d" # bright red variant
-  col10: "08b885" # bright green variant
-  col11: "d39710" # bright yellow variant
-  col12: "a294fe" # bright blue variant
-  col13: "ec7aca" # bright magenta variant
-  col14: "4ab0b9" # bright cyan variant
-  col15: "a4a0ac" # bright white variant
-  colvr: "dark" # theme variant
-  colbg: "18161d" # main background
-  colbgalt: "001b1a" # alternative background
-  colfg: "a4a0ac" # main foreground
-  colfgalt: "bd9b87" # alternative foreground
-  colcr: "a4a0ac" # cursor background
-  colcr2: "18161d" # cursor foreground
+  col0: "150d15" # black variant
+  col1: "ff778a" # red variant
+  col2: "6ab539" # green variant
+  col3: "bfa01a" # yellow variant
+  col4: "5aaec3" # blue variant
+  col5: "da8ab2" # magenta variant
+  col6: "79a9c3" # cyan variant
+  col7: "be9c8a" # white variant
+  col8: "19170D" # bright black variant
+  col9: "f78e2f" # bright red variant
+  col10: "60ba80" # bright green variant
+  col11: "de9b1d" # bright yellow variant
+  col12: "79b0c4" # bright blue variant
+  col13: "e08bd6" # bright magenta variant
+  col14: "5ab7b0" # bright cyan variant
+  col15: "b4abac" # bright white variant
+  colvr: "dark" # light or dark
+  colbg: "150d15" # main background
+  colbgalt: "19170D" # alternative background
+  colfg: "b4abac" # main foreground
+  colfgalt: "be9c8a" # alternative foreground
+  colcr: "b4abac" # cursor background
+  colcr2: "150d15" # cursor foreground
 - name: "Tempus Night"
   slug: "tempus-night"
   slugunderscore: "tempus_night"
@@ -199,135 +199,135 @@
   slugunderscore: "tempus_past"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "Light theme inspired by old vaporwave concept art (WCAG AA compliant)"
-  col0: "63606b" # black variant
-  col1: "c01c10" # red variant
-  col2: "2a7000" # green variant
-  col3: "825a0a" # yellow variant
-  col4: "025ccd" # blue variant
-  col5: "a43878" # magenta variant
-  col6: "49628d" # cyan variant
-  col7: "e0dcd6" # white variant
+  col0: "53545B" # black variant
+  col1: "C00C50" # red variant
+  col2: "0A7040" # green variant
+  col3: "A6403A" # yellow variant
+  col4: "1763AA" # blue variant
+  col5: "B02874" # magenta variant
+  col6: "096A83" # cyan variant
+  col7: "ECE6DE" # white variant
   col8: "80565d" # bright black variant
-  col9: "b43036" # bright red variant
-  col10: "007214" # bright green variant
-  col11: "91520a" # bright yellow variant
-  col12: "5046eb" # bright blue variant
-  col13: "ba166b" # bright magenta variant
-  col14: "076c76" # bright cyan variant
-  col15: "dadce8" # bright white variant
-  colvr: "light" # theme variant
-  colbg: "dadce8" # main background
-  colbgalt: "e0dcd6" # alternative background
-  colfg: "63606b" # main foreground
+  col9: "BD3636" # bright red variant
+  col10: "407343" # bright green variant
+  col11: "9D524A" # bright yellow variant
+  col12: "5A5EBB" # bright blue variant
+  col13: "B225AB" # bright magenta variant
+  col14: "07737A" # bright cyan variant
+  col15: "F3F2F4" # bright white variant
+  colvr: "light" # light or dark
+  colbg: "F3F2F4" # main background
+  colbgalt: "ECE6DE" # alternative background
+  colfg: "53545B" # main foreground
   colfgalt: "80565d" # alternative foreground
-  colcr: "63606b" # cursor background
-  colcr2: "dadce8" # cursor foreground
+  colcr: "53545B" # cursor background
+  colcr2: "F3F2F4" # cursor foreground
 - name: "Tempus Rift"
   slug: "tempus-rift"
   slugunderscore: "tempus_rift"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "Dark theme with a subdued palette on the green side of the spectrum (WCAG AA compliant)"
-  col0: "2b353c" # black variant
-  col1: "be9604" # red variant
-  col2: "0eb40e" # green variant
-  col3: "79aa00" # yellow variant
-  col4: "00acb3" # blue variant
-  col5: "ba964c" # magenta variant
-  col6: "5fa98f" # cyan variant
-  col7: "ab9699" # white variant
-  col8: "3d3038" # bright black variant
-  col9: "bdae13" # bright red variant
-  col10: "3ac53a" # bright green variant
-  col11: "9ab800" # bright yellow variant
-  col12: "20bdce" # bright blue variant
-  col13: "cca57a" # bright magenta variant
-  col14: "6fb9ae" # bright cyan variant
-  col15: "abacac" # bright white variant
-  colvr: "dark" # theme variant
-  colbg: "2b353c" # main background
-  colbgalt: "3d3038" # alternative background
-  colfg: "abacac" # main foreground
-  colfgalt: "ab9699" # alternative foreground
-  colcr: "abacac" # cursor background
-  colcr2: "2b353c" # cursor foreground
+  col0: "162c22" # black variant
+  col1: "c19904" # red variant
+  col2: "34b534" # green variant
+  col3: "7fad00" # yellow variant
+  col4: "30aeb0" # blue variant
+  col5: "c8954c" # magenta variant
+  col6: "5fad8f" # cyan variant
+  col7: "ab9aa9" # white variant
+  col8: "283431" # bright black variant
+  col9: "d2a634" # bright red variant
+  col10: "6ac134" # bright green variant
+  col11: "82bd00" # bright yellow variant
+  col12: "56bdad" # bright blue variant
+  col13: "cca0ba" # bright magenta variant
+  col14: "10c480" # bright cyan variant
+  col15: "bbbcbc" # bright white variant
+  colvr: "dark" # light or dark
+  colbg: "162c22" # main background
+  colbgalt: "283431" # alternative background
+  colfg: "bbbcbc" # main foreground
+  colfgalt: "ab9aa9" # alternative foreground
+  colcr: "bbbcbc" # cursor background
+  colcr2: "162c22" # cursor foreground
 - name: "Tempus Spring"
   slug: "tempus-spring"
   slugunderscore: "tempus_spring"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "Dark theme with a palette inspired by early spring colours (WCAG AA compliant)"
-  col0: "34403c" # black variant
+  col0: "283a37" # black variant
   col1: "ff855a" # red variant
-  col2: "6ab78a" # green variant
+  col2: "52bc6d" # green variant
   col3: "b6aa1a" # yellow variant
-  col4: "5daeee" # blue variant
+  col4: "5db4c0" # blue variant
   col5: "d495b4" # magenta variant
-  col6: "6eb2bc" # cyan variant
+  col6: "36bd84" # cyan variant
   col7: "96aca7" # white variant
   col8: "2a423d" # bright black variant
   col9: "df993a" # bright red variant
-  col10: "4abb88" # bright green variant
+  col10: "3dbf50" # bright green variant
   col11: "99b22a" # bright yellow variant
-  col12: "3caffe" # bright blue variant
+  col12: "4ab4d3" # bright blue variant
   col13: "d091db" # bright magenta variant
-  col14: "4ab4d3" # bright cyan variant
-  col15: "a5a8a7" # bright white variant
-  colvr: "dark" # theme variant
-  colbg: "34403c" # main background
+  col14: "1dbab8" # bright cyan variant
+  col15: "b5b8b7" # bright white variant
+  colvr: "dark" # light or dark
+  colbg: "283a37" # main background
   colbgalt: "2a423d" # alternative background
-  colfg: "a5a8a7" # main foreground
+  colfg: "b5b8b7" # main foreground
   colfgalt: "96aca7" # alternative foreground
-  colcr: "a5a8a7" # cursor background
-  colcr2: "34403c" # cursor foreground
+  colcr: "b5b8b7" # cursor background
+  colcr2: "283a37" # cursor foreground
 - name: "Tempus Summer"
   slug: "tempus-summer"
   slugunderscore: "tempus_summer"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "Dark theme with colours inspired by summer evenings by the sea (WCAG AA compliant)"
-  col0: "293345" # black variant
-  col1: "fe6d32" # red variant
-  col2: "6ba86d" # green variant
+  col0: "202c3d" # black variant
+  col1: "ff6c38" # red variant
+  col2: "4eac6d" # green variant
   col3: "af9a0a" # yellow variant
-  col4: "679ed7" # blue variant
-  col5: "bc8ab6" # magenta variant
-  col6: "6ea590" # cyan variant
+  col4: "3aaaa4" # blue variant
+  col5: "9c90dd" # magenta variant
+  col6: "3dab93" # cyan variant
   col7: "a39799" # white variant
   col8: "352f49" # bright black variant
-  col9: "df8251" # bright red variant
-  col10: "7aa747" # bright green variant
-  col11: "ba953a" # bright yellow variant
-  col12: "3ba1e8" # bright blue variant
+  col9: "eb7b4d" # bright red variant
+  col10: "57ad47" # bright green variant
+  col11: "bd951a" # bright yellow variant
+  col12: "5aa1d4" # bright blue variant
   col13: "c97ed7" # bright magenta variant
-  col14: "52a6b1" # bright cyan variant
-  col15: "9b999e" # bright white variant
-  colvr: "dark" # theme variant
-  colbg: "293345" # main background
+  col14: "29ad8d" # bright cyan variant
+  col15: "a0abae" # bright white variant
+  colvr: "dark" # light or dark
+  colbg: "202c3d" # main background
   colbgalt: "352f49" # alternative background
-  colfg: "9b999e" # main foreground
+  colfg: "a0abae" # main foreground
   colfgalt: "a39799" # alternative foreground
-  colcr: "9b999e" # cursor background
-  colcr2: "293345" # cursor foreground
+  colcr: "a0abae" # cursor background
+  colcr2: "202c3d" # cursor foreground
 - name: "Tempus Tempest"
   slug: "tempus-tempest"
   slugunderscore: "tempus_tempest"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "A green-scale, subtle theme for late night hackers (WCAG AAA compliant)"
-  col0:  "282b2b" # black variant
-  col1:  "c6c80a" # red variant
-  col2:  "7ad67a" # green variant
-  col3:  "bfc94a" # yellow variant
-  col4:  "60d4cd" # blue variant
-  col5:  "c0c4aa" # magenta variant
-  col6:  "8ad0b0" # cyan variant
-  col7:  "b0c8ca" # white variant
-  col8:  "303434" # bright black variant
-  col9:  "d1d933" # bright red variant
+  col0: "282b2b" # black variant
+  col1: "c6c80a" # red variant
+  col2: "7ad67a" # green variant
+  col3: "bfc94a" # yellow variant
+  col4: "60d4cd" # blue variant
+  col5: "c0c4aa" # magenta variant
+  col6: "8ad0b0" # cyan variant
+  col7: "b0c8ca" # white variant
+  col8: "303434" # bright black variant
+  col9: "d1d933" # bright red variant
   col10: "99e299" # bright green variant
   col11: "bbde4f" # bright yellow variant
   col12: "74e4cd" # bright blue variant
   col13: "d2d4aa" # bright magenta variant
   col14: "9bdfc4" # bright cyan variant
   col15: "b6e0ca" # bright white variant
-  colvr: "dark" # theme variant
+  colvr: "dark" # light or dark
   colbg: "282b2b" # main background
   colbgalt: "303434" # alternative background
   colfg: "b6e0ca" # main foreground
@@ -339,82 +339,82 @@
   slugunderscore: "tempus_totus"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "Light theme for prose or for coding in an open space (WCAG AAA compliant)"
-  col0: "52505e" # black variant
+  col0: "4a484d" # black variant
   col1: "a01c10" # red variant
-  col2: "0b5d46" # green variant
-  col3: "545422" # yellow variant
+  col2: "0d5f0f" # green variant
+  col3: "774600" # yellow variant
   col4: "1c4f9f" # blue variant
-  col5: "942166" # magenta variant
+  col5: "912663" # magenta variant
   col6: "185870" # cyan variant
-  col7: "ecf3f3" # white variant
-  col8: "575050" # bright black variant
-  col9: "913210" # bright red variant
+  col7: "f3f1f3" # white variant
+  col8: "5f4d4f" # bright black variant
+  col9: "9a2140" # bright red variant
   col10: "2a5d08" # bright green variant
-  col11: "774611" # bright yellow variant
+  col11: "8b3800" # bright yellow variant
   col12: "5440a7" # bright blue variant
-  col13: "8d0e9b" # bright magenta variant
-  col14: "0e577b" # bright cyan variant
-  col15: "f4f1f0" # bright white variant
-  colvr: "light" # theme variant
-  colbg: "f4f1f0" # main background
-  colbgalt: "ecf3f3" # alternative background
-  colfg: "52505e" # main foreground
-  colfgalt: "575050" # alternative foreground
-  colcr: "52505e" # cursor background
-  colcr2: "f4f1f0" # cursor foreground
+  col13: "9d105b" # bright magenta variant
+  col14: "005e3b" # bright cyan variant
+  col15: "ffffff" # bright white variant
+  colvr: "light" # light or dark
+  colbg: "ffffff" # main background
+  colbgalt: "f3f1f3" # alternative background
+  colfg: "4a484d" # main foreground
+  colfgalt: "5f4d4f" # alternative foreground
+  colcr: "4a484d" # cursor background
+  colcr2: "ffffff" # cursor foreground
 - name: "Tempus Warp"
   slug: "tempus-warp"
   slugunderscore: "tempus_warp"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "Dark theme with a vibrant palette (WCAG AA compliant)"
-  col0: "141a19" # black variant
-  col1: "ff1414" # red variant
-  col2: "009600" # green variant
-  col3: "928100" # yellow variant
-  col4: "4f76ff" # blue variant
-  col5: "dd38bc" # magenta variant
-  col6: "358aaa" # cyan variant
-  col7: "927b80" # white variant
-  col8: "201428" # bright black variant
-  col9: "ff5500" # bright red variant
-  col10: "3aa43a" # bright green variant
-  col11: "b38a00" # bright yellow variant
-  col12: "8082ff" # bright blue variant
-  col13: "d159fd" # bright magenta variant
-  col14: "1da190" # bright cyan variant
-  col15: "928f90" # bright white variant
-  colvr: "dark" # theme variant
-  colbg: "141a19" # main background
-  colbgalt: "201428" # alternative background
-  colfg: "928f90" # main foreground
-  colfgalt: "927b80" # alternative foreground
-  colcr: "928f90" # cursor background
-  colcr2: "141a19" # cursor foreground
+  col0: "001514" # black variant
+  col1: "fa3333" # red variant
+  col2: "139913" # green variant
+  col3: "9e8100" # yellow variant
+  col4: "557feb" # blue variant
+  col5: "d54cbf" # magenta variant
+  col6: "009580" # cyan variant
+  col7: "928080" # white variant
+  col8: "241828" # bright black variant
+  col9: "F0681A" # bright red variant
+  col10: "3aa73a" # bright green variant
+  col11: "ba8a00" # bright yellow variant
+  col12: "8887f0" # bright blue variant
+  col13: "d85cf2" # bright magenta variant
+  col14: "1da1af" # bright cyan variant
+  col15: "a29fa0" # bright white variant
+  colvr: "dark" # light or dark
+  colbg: "001514" # main background
+  colbgalt: "241828" # alternative background
+  colfg: "a29fa0" # main foreground
+  colfgalt: "928080" # alternative foreground
+  colcr: "a29fa0" # cursor background
+  colcr2: "001514" # cursor foreground
 - name: "Tempus Winter"
   slug: "tempus-winter"
   slugunderscore: "tempus_winter"
   author: "Protesilaos Stavrou (https://protesilaos.com)"
   description: "Dark theme with a palette inspired by winter nights at the city (WCAG AA compliant)"
   col0: "202427" # black variant
-  col1: "ca7162" # red variant
-  col2: "589584" # green variant
-  col3: "988b21" # yellow variant
-  col4: "2b92c8" # blue variant
-  col5: "b572b6" # magenta variant
-  col6: "4f91b5" # cyan variant
-  col7: "888a8a" # white variant
-  col8: "1b2431" # bright black variant
-  col9: "c47818" # bright red variant
-  col10: "2c9a81" # bright green variant
-  col11: "a2864b" # bright yellow variant
-  col12: "6987d7" # bright blue variant
-  col13: "987dc2" # bright magenta variant
-  col14: "1f96b0" # bright cyan variant
-  col15: "798ba5" # bright white variant
-  colvr: "dark" # theme variant
+  col1: "ed6a42" # red variant
+  col2: "30a480" # green variant
+  col3: "959721" # yellow variant
+  col4: "2b9dc4" # blue variant
+  col5: "bd7bbe" # magenta variant
+  col6: "2fa1a0" # cyan variant
+  col7: "909294" # white variant
+  col8: "292b35" # bright black variant
+  col9: "db7824" # bright red variant
+  col10: "43a550" # bright green variant
+  col11: "ad8e4b" # bright yellow variant
+  col12: "798fd7" # bright blue variant
+  col13: "c874c2" # bright magenta variant
+  col14: "0fa674" # bright cyan variant
+  col15: "8da3b8" # bright white variant
+  colvr: "dark" # light or dark
   colbg: "202427" # main background
-  colbgalt: "1b2431" # alternative background
-  colfg: "798ba5" # main foreground
-  colfgalt: "888a8a" # alternative foreground
-  colcr: "798ba5" # cursor background
+  colbgalt: "292b35" # alternative background
+  colfg: "8da3b8" # main foreground
+  colfgalt: "909294" # alternative foreground
+  colcr: "8da3b8" # cursor background
   colcr2: "202427" # cursor foreground
