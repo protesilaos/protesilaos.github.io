@@ -58,7 +58,7 @@
     h6 {
         @include fluid-font-size($ssize);
 
-        font-size: $ssize;
+        font-size: $msize;
         text-transform: none;
     }
 
