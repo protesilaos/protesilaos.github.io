@@ -17,9 +17,15 @@ small + h3 {
     margin-top: $vertical-rhythm-0;
 }
 
+// h6 is used in post-header-meta
 h1 + h2.subtitle,
 h2 + h3,
-h3 + h4 {
+h3 + h4,
+h4 + h5,
+h5 + h6,
+h1 + h6,
+h2 + h6,
+h3 + h6 {
     margin-top: 0;
 }
 

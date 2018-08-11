@@ -7,7 +7,9 @@
     padding: $space-1;
 }
 
-.post {
+.post,
+.post-header-inner,
+.post-footer-inner {
     @extend %container;
 }
 
@@ -37,41 +39,33 @@
         color: $basefgalt;
         font-weight: 400;
     }
-
-    time {
-        @include fluid-font-size($ssize);
-
-        font-size: $ssize;
-        margin: $vertical-rhythm-0 0;
-    }
 }
 
-.post-header-inner,
-.post-footer-inner {
-    @extend %container;
-}
-
-// NOTE same styles are found in _sass/_index.scss for `.index-item-label`
-// NOTE used in seminar layout to display arbitrary 'label' (description of seminar series)
-.post-header-subtitle-label {
-    @include fluid-font-size($ssize);
-
-    font-size: $ssize;
-    font-style: italic;
-    color: $basefgalt;
-}
-
-// .post-footer {
-    // background: $basebg;
-// }
-
-.post-meta {
+.post-header-meta {
     @extend p;
 
-    span {
+    h6,
+    span,
+    time {
         &:not(a) {
             color: $basefgalt;
         }
+    }
+
+    // NOTE override _sass/_base.scss styles for h6
+    // h6 is used in this context to denote insignificant heading
+    // I think it is better suited than p or span
+    h6 {
+        @include fluid-font-size($ssize);
+
+        font-size: $ssize;
+        text-transform: none;
+    }
+
+    time {
+        @include fluid-font-size($xssize);
+
+        font-size: $ssize;
     }
 }
 

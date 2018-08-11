@@ -8,13 +8,15 @@ layout: default
         <div class="post-header">
             <h1>{{ page.title }}</h1>
 
-            <div class="post-meta">
-                <span>{{ site.data.text.sov.title }}</span>
-                <time datetime="{{ page.date | date_to_xmlschema }}">{{ site.data.text.sov.datefull }}</time>
+            <div class="post-header-meta">
+                <h6>{{ site.data.text.sov.title }} - <a href="/sov/">Book index</a></h6>
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ site.data.text.sov.date }}</time>
             </div>
         </div>
 
-        {{ content }}
+        <div class="post-body">
+            {{ content }}
+        </div>
 
     </div>
 

@@ -169,10 +169,7 @@ small {
 }
 
 time {
-    @extend p;
-
-    color: $basefgalt;
-    display: block;
+    font-family: $mono;
 }
 
 abbr {

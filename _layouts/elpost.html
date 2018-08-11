@@ -11,8 +11,9 @@ layout: default
             {% if page.subtitle %}
               <h2 class="subtitle">{{ page.subtitle }}</h2>
             {% endif %}
-
-	    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+            <div class="post-header-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</time>
+            </div>
         </div>
 
         {% if page.mediaid %}
@@ -25,7 +26,9 @@ layout: default
         </div>
         {% endif %}
 
-        {{ content }}
+        <div class="post-body">
+            {{ content }}
+        </div>
 
     </div>
 
