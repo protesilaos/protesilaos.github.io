@@ -35,9 +35,7 @@
     }
 
     .header-navigation {
-        height: $vertical-rhythm-0;
         padding: $space-1 0;
-        width: auto;
 
         ul {
             @include tablet {
