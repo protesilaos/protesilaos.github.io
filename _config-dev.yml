@@ -15,7 +15,7 @@ exclude:
   - package-lock.json
   - package.json
   - vendor
-  - _archive/ # ------------------- Unusual -------------------------
+  - _archive/ # ------------------ Unusual -------------------------
   - _pages/indices/blog-archive.html
   - _assets/css
   - _assets/js
@@ -26,7 +26,7 @@ exclude:
   - _includes/guestbox.html
   - css/cypher-print.css
   - master.xml
-  - pages/certificates
+  - static
   - js # ------------------------- JavaScript ----------------------
   - fonts # ---------------------- Webfonts ------------------------
   - css/webfonts.min.css
@@ -61,6 +61,9 @@ exclude:
   - _greek
   - _pages/indices/greek.html
   - _layouts/elpost.html
+  - news.xml # ------------------- News & Announcements ------------
+  - _news
+  - _pages/indices/news.html
   - _books # --------------------- Books ---------------------------
   - _data/books.yml
   - _books/eudi

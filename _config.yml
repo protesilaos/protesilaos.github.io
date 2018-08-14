@@ -14,6 +14,8 @@ logo: "/images/brand/protesilaos-logo.png"
 
 # define collections
 collections:
+  news:
+    output: true
   archive:
     output: true
   archive-codelog:
@@ -37,6 +39,13 @@ collections:
 # `index` sets the base URL slug
 # `master` refers to the catch-all XML feed
 defaults:
+  - scope:
+      type: news
+    values:
+      layout: post
+      index: "/news/"
+      group: News and Announcements
+      image: "/images/brand/protesilaos-logo.png"
   - scope:
       type: archive
     values:
