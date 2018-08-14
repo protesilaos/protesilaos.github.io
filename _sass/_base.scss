@@ -25,6 +25,12 @@ body {
     word-wrap: break-word;
 }
 
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
 h1,
 h2,
 h3,
@@ -172,9 +178,10 @@ time {
     font-family: $mono;
 }
 
-abbr {
-    @include border(bottom, $border-width-thin, dotted, $border-color-dark-0);
-
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
     cursor: help;
 }
 
