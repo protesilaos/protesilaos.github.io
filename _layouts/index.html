@@ -18,9 +18,12 @@ layout: default
                 <span class="index-rss">
                     <img class="index-rss-icon" src="{{ 'images/other/rss.png' | absolute_url }}" alt="Feed icon"/>
                     <a class="index-rss-feed" href="{{ page.index-feed.url }}">
-                        {{ page.index-feed.text }}
+                        {{ page.index-feed.text }} <abbr title="Really Simple Syndication">RSS</abbr>
+                    </a>
+                    <small>
+                        (<a href="/feeds/">What is this?</a>)
+                    </small>
                 </span>
-                </a>
             </div>
         {% endif %}
 
