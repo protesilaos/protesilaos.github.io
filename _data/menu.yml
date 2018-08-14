@@ -6,3 +6,5 @@
   url: "/books/"
 - name: Code
   url: "/code/"
+- name: News
+  url: "/news/"
