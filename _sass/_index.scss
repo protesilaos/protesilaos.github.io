@@ -141,6 +141,8 @@
 }
 
 .index-blog-post-timestamp {
+    @include fluid-font-size($ssize);
+
     @include tablet {
         float: left;
         width: calc(20% - #{$space-0});
@@ -148,6 +150,7 @@
         margin: 0 $space-0 0 0;
     }
 
+    font-size: $sssize;
     color: $basefgalt;
     display: inline;
     margin: 0 $space-0 0 0;
