@@ -90,7 +90,7 @@
             }
 
             display: block;
-            width: calc(calc(100% - $space-1) - $space-1);
+            width: calc(calc(100% - 1rem) - 1rem);
             padding: $space-0 0;
             margin: $space-0;
 

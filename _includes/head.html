@@ -20,7 +20,7 @@
 	<meta name="theme-color" content="#ffffff">
 
     <!-- Main styles -->
-    <style type="text/css">
+    <style>
     {% capture cypher %}
         {% include cypher.scss %}
     {% endcapture %}
@@ -28,7 +28,7 @@
     </style>
 
     <!-- Web fonts -->
-    <link rel="stylesheet" href="{{ '/css/webfonts.min.css'  | absolute_url }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{ '/css/webfonts.min.css'  | absolute_url }}" type="text/css">
 
     <!-- Secondary styles -->
     <link rel="stylesheet" href="{{ '/css/cypher-secondary.css'  | absolute_url }}">
@@ -39,7 +39,7 @@
     <!-- Code styles and modules -->
     {% if page.layout == "scheme" or page.url contains "codelog" or page.component contains "codeblock" %}
 
-    <style type="text/css">
+    <style>
     {% capture cypher-syntax %}
         {% include cypher-code.scss %}
     {% endcapture %}
@@ -49,7 +49,7 @@
     <!-- Homepage styles -->
     {% elsif page.layout == "homepage" %}
 
-    <style type="text/css">
+    <style>
     {% capture cypher-homepage %}
         {% include cypher-homepage.scss %}
     {% endcapture %}
@@ -59,7 +59,7 @@
     <!-- Book indices navigation styles -->
     {% elsif page.breadcrumbs %}
 
-    <style type="text/css">
+    <style>
     {% capture cypher-books %}
         {% include cypher-books.scss %}
     {% endcapture %}
@@ -69,7 +69,7 @@
     <!-- Guest author styles -->
     {% elsif page.guest %}
 
-    <style type="text/css">
+    <style>
     {% capture cypher-guest %}
         {% include cypher-guest.scss %}
     {% endcapture %}
