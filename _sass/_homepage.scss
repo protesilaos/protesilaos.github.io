@@ -85,6 +85,7 @@
         li {
             @include tablet {
                 display: inline-block;
+                width: auto;
                 margin: 0 $space-1;
                 padding: $space-1 $space-1;
             }
