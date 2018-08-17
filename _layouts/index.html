@@ -15,15 +15,23 @@ layout: default
 
         {% if page.index-feed %}
             <div class="index-impact-header-meta">
-                <span class="index-rss">
-                    <img class="index-rss-icon" src="{{ 'images/other/rss.png' | absolute_url }}" alt="Feed icon"/>
-                    <a class="index-rss-feed" href="{{ page.index-feed.url }}">
+
+                <div class="index-rss">
+					<svg width="24" height="24" class="index-rss-icon" viewBox="0 0 10 16" version="1.1" aria-hidden="true">
+						<title>RSS svg icon</title>
+						<desc>Shape of a dot followed by two curved stripes, representing a wave signal</desc>
+						<path fill-rule="evenodd" d="M2 13H0v-2c1.11 0 2 .89 2 2zM0 3v1a9 9 0 0 1 9 9h1C10 7.48 5.52 3 0 3zm0 4v1c2.75 0 5 2.25 5 5h1c0-3.31-2.69-6-6-6z"/>
+					</svg>
+
+                    <a class="index-rss-feed-text" href="{{ page.index-feed.url }}">
                         {{ page.index-feed.text }} <abbr title="Really Simple Syndication">RSS</abbr>
                     </a>
-                    <small>
-                        (<a href="/feeds/">What is this?</a>)
+
+                    <small class="index-rss-feed-text-help">
+                        <a href="/feeds/">What is this?</a>
                     </small>
-                </span>
+                </div>
+
             </div>
         {% endif %}
 

@@ -69,22 +69,31 @@
         display: block;
     }
 
-    .index-rss-feed {
-        @include fluid-font-size($ssize);
-
-        font-size: $ssize;
-    }
-
     .index-rss-icon {
         @include radius(50%);
         @include fluid-icon-size($ssize);
 
         display: inline;
         background: $col9;
-        color: $basebg;
         vertical-align: top;
         padding: $space-0 / 2;
         margin-right: $space-0 / 2;
+
+        path { // icon is an svg
+            fill: $basebg;
+            stroke: $basebg;
+        }
+    }
+
+    .index-rss-feed-text {
+        @include fluid-font-size($ssize);
+
+        font-size: $ssize;
+        margin-right: $space-0 / 2;
+    }
+
+    .index-rss-feed-text-help { // the "What is this?", which is <small>
+        text-transform: uppercase;
     }
 }
 
