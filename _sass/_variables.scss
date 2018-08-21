@@ -257,11 +257,11 @@ $mono: 'Mononoki', Monaco, Consolas, 'Ubuntu Mono', monospace;
 }
 
 @mixin tablet-font-size($tablet-font-size) {
-    font-size: $tablet-font-size + 0.15;
+    font-size: $tablet-font-size + 0.25;
 }
 
 @mixin desktop-font-size($desktop-font-size) {
-    font-size: $desktop-font-size + 0.25;
+    font-size: $desktop-font-size + 0.35;
 }
 
 // NOTE Combines the above two and is the preferred option
