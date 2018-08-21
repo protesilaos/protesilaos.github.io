@@ -1,0 +1,52 @@
+---
+layout: index
+title: "On Human Self Worth"
+subtitle: "About human's self image and place in the world"
+excerpt: "A free web based book on philosophy that touches on some political themes."
+permalink: /hsw/
+breadcrumbs: true
+---
+
+{% assign hsws = site.books | where: 'flag', 'hsw' %}
+
+<div class="index index-blog">
+
+    <div class="books-meta">
+
+        <p>Published: <strong>{{ site.data.text.hsw.datefull }}</strong><br/>Book version: <strong>{{ site.data.text.hsw.version }}</strong></p>
+
+        <div class="books-options">
+
+            <div class="button books-button read-online">
+                <a href="{{ '/hsw/about/'  | prepend: site.url }}">
+                Read online
+                </a>
+            </div>
+            <div class="button books-button read-offline">
+                <a href="{{ '/hsw/print/'  | prepend: site.url }}">
+                Print version
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <h2 class="index-blog-section-heading">Contents</h2>
+
+    <div>
+
+        <ul>
+        {% for hsw in hsws %}
+            <li>
+                <a class="index-blog-post-heading" href="{{ hsw.url | relative_url }}">{{ forloop.index }}. {{ hsw.title }}</a>
+                <p class="index-blog-post-excerpt">{{ hsw.excerpt }}</p>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </div>
+
+    {% include booksnav.html %}
+    
+</div>

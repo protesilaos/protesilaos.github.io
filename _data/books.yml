@@ -51,3 +51,10 @@
   datefull: "29 March 2018"
   url: "stsns"
   book: true
+- title: "On Human Self Worth"
+  version: "1.0.0"
+  description: "About human's self image and place in the world"
+  date: 2018-08-21
+  datefull: "21 August 2018"
+  url: "hsw"
+  book: true
