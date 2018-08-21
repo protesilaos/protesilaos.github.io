@@ -46,6 +46,7 @@ defaults:
       index: "/news/"
       group: News and Announcements
       image: "/images/brand/protesilaos-logo.png"
+      master: true
   - scope:
       type: archive
     values:
@@ -53,6 +54,7 @@ defaults:
       index: "/blog-archive/"
       group: Blog archive entries
       image: "/images/brand/protesilaos-logo.png"
+      master: false
   - scope:
       type: archive-codelog
     values:
@@ -60,11 +62,12 @@ defaults:
       index: "/codelog-archive/"
       group: Code blog archive entries
       image: "/images/brand/protesilaos-logo.png"
+      master: false
   - scope:
       type: books
     values:
       image: "/images/brand/protesilaos-logo.png"
-      master: true
+      master: false
   - scope:
       type: codelog
     values:
