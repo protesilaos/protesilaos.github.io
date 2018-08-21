@@ -35,7 +35,7 @@ necessary.  My interest is to elaborate on the general features
 of the subject of inquiry, allowing space for a range of possible
 conclusions.
 
-Overall, *On Human Self Worth* is an attempt at trying something
-new in my philosophical musings.  I might build on top of it, if
-I feel satisfied with this direction, or learn from its
-shortcomings and adapt accordingly.
+Overall, *On Human Self Worth* is an attempt at something new in
+my philosophical musings.  I might build on top of it, if I feel
+satisfied with this direction, or learn from its shortcomings and
+adapt accordingly.
