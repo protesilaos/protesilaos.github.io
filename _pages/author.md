@@ -34,6 +34,7 @@ layout: page
 
 ### Books and standalone essays
 
+- [On Human Self Worth](/hsw/) (21 August 2018)
 - [Structured Text on Sovereignty, Nationhood, Statehood](/stsns/) (29 March 2018)
 - [Prolegomena to a study of Metaethics](/prolegomena-study-metaethics/) (11 August 2017)
 - [Notes on the modes of Scepticism](/notes-modes-scepticism/) (28 July 2017)
