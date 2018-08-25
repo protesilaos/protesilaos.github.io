@@ -93,7 +93,7 @@ being studied.  It is not clear what the object is.  There is
 fundamental disagreement about what should be discussed and the
 method to be used.  Agnostics do what every sceptic does: they
 conclude that we need more work before we can arrive at a
-satisfactory *starting point*, let along a comprehensive
+satisfactory *starting point*, let alone a comprehensive
 framework.  In this case, we would need to reach a broad
 consensus on the thing being studied, as well as agree on a
 method that would lead us to objective ways of approaching it.
