@@ -21,6 +21,9 @@ permalink: /greek/
             <time class="index-blog-post-timestamp">{{ greek.date | date: site.date_format }}</time>
             <a class="index-blog-post-link" href="{{ greek.url | relative_url }}">
                 <span class="index-blog-post-heading">{{ greek.title }}</span>
+                {% if greek.mediaid %}
+                <span class="index-blog-post-meta-label">Βίντεο</span>
+                {% endif %}
             </a>
         </li>
     {% endfor %}
