@@ -110,26 +110,17 @@ em {
 }
 
 blockquote {
-    margin: 0;
-    padding: 0;
-
-    p {
-        @include tablet {
-            padding-left: $vertical-rhythm-1;
-        }
-
-        @include desktop {
-            padding-left: $vertical-rhythm-2;
-        }
-
-        font-style: italic;
-        padding-left: $vertical-rhythm-0;
-
-        strong,
-        b {
-            font-weight: 700;
-        }
+    @include tablet {
+        padding-left: $vertical-rhythm-1;
     }
+
+    @include desktop {
+        padding-left: $vertical-rhythm-2;
+    }
+
+    font-style: italic;
+    margin: 0;
+    padding-left: $vertical-rhythm-0;
 }
 
 ul,
@@ -179,9 +170,8 @@ time {
 }
 
 abbr[title] {
-    border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted;
+    border-bottom: 1px dotted;
+    text-decoration: none;
     cursor: help;
 }
 
