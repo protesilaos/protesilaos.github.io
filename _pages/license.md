@@ -28,7 +28,7 @@ All files referenced in this section are from this website's [git repository](ht
 
 The entire underlying code base—HTML, CSS, JavaScript—is written by me. The implemented theme is internally referred to as `cypher`.
 
-The web fonts are [Alegreya Sans](https://www.huertatipografica.com/en/fonts/alegreya-sans-ht) and [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro). Both are distributed under the terms of the SIL Open Font License (OFL), version 1.1. *Alegreya* is available in regular and bold weights, with corresponding italics. *Anonymous Pro* uses the regular weight without italics. Both fonts provide coverage for latin and greek glyphs, serving the needs of this website.
+The web fonts are [Alegreya Sans](https://www.huertatipografica.com/en/fonts/alegreya-sans-ht) and [Iosevka](https://be5invis.github.io/Iosevka/). Both are distributed under the terms of the SIL Open Font License (OFL), version 1.1. *Alegreya* is available in regular and bold weights, with corresponding italics. *Iosevka* uses the regular weight without italics. Both fonts provide coverage for latin and greek glyphs, serving the needs of this website.
 
 ### Back end
 
