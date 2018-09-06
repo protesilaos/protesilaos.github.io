@@ -107,7 +107,7 @@ Here is a representation:
 [x] standard system utilities
 ```
 
-You will get Debian Stable running the MATE desktop environment. I always choose a DE because it makes certain things easier, like network access and a functional Xorg display server. It also provides a decent fallback option, as well as something that could be used by other users in the house or a guest.
+You will get Debian Stable running the MATE desktop environment. I always choose a DE because it makes certain things easier, like network access and a functioning Xorg display server. It also provides a decent fallback option, as well as something that could be used by other users in the house or a guest.
 
 Now to prepare for the transition to Debian Sid. Open a terminal and type the following commands (lines starting with `#` are comments and should not be added to the command line).
 
